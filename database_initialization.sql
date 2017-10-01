@@ -1,7 +1,8 @@
-drop table Instructors;
-drop table Courses;
-drop table Students;
 drop table Records;
+drop table Courses;
+drop table Instructors;
+drop table Students;
+
 
 create table Instructors(
 	instructorUsername varchar(15),
@@ -10,13 +11,14 @@ create table Instructors(
 );
 
 create table Courses(
-	title varchar(30) NOT NULL,
-	courseID int check(courseID >= 0)UNIQUE,
+	title varchar(50) NOT NULL,
+	courseID int check(courseID >= 0) UNIQUE,
 	instructorUsername varchar(15),
 	courseDay varchar(15) check(courseDay in ('MWF', 'TR')),
-	courseTime timestamp NOT NULL,
+	courseStartTime timestamp NOT NULL,
+	courseEndTime timestamp NOT NULL,
 	courseSize int check(courseSize >= 0),
-	primary key(courseID, instructorUsername, courseDay, courseTime),
+	primary key(courseID, instructorUsername, courseDay, courseStartTime),
 	foreign key(instructorUsername) references Instructors(instructorUsername)
 );
 

@@ -14,21 +14,18 @@ public class roster {
         String[][] students = new String[5][3];
 
         try {
-            //Create reader to read lines of file
+            //in = new FileInputStream("students.csv");
             BufferedReader br = new BufferedReader(new FileReader("src/students.txt"));
 
             int i = 0;
 
-            //loop through file by line
             while ((line = br.readLine()) != null) {
 
-                //name
                 students[i][0] = line.split(",")[0];
-                //username
                 students[i][1] = line.split(",")[1];
-                //is bluetooth ID
                 students[i][2] = line.split(",")[2];
 
+                System.out.print(students[i][0] + " " + students[i][1] + " " + students[i][2] + "\n");
                 i++;
 
             }
