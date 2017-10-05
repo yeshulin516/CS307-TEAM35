@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.moonsunhwang.blueatt.Modify_attendance_date">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="176dp"
+        android:layout_height="47dp"
+        android:text='Select Student(s) to Modify\n "List of Students Enrolled"'
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        tools:layout_editor_absoluteX="95dp"
+        tools:layout_editor_absoluteY="35dp" />
+
+    <Button
+        android:id="@+id/mark_selected_as_absent_button"
+        android:layout_width="145dp"
+        android:layout_height="127dp"
+        android:text="Mark selected as absent"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        tools:layout_editor_absoluteX="203dp"
+        tools:layout_editor_absoluteY="306dp" />
+
+    <Button
+        android:id="@+id/mark_selected_as_present_button"
+        android:layout_width="145dp"
+        android:layout_height="127dp"
+        android:text="Mark selected as present"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="306dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="256dp"
+        android:layout_height="35dp"
+        android:checked="true"
+        android:text="Kate"
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="225dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="256dp"
+        android:layout_height="35dp"
+        android:text="Jane"
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="176dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="256dp"
+        android:layout_height="35dp"
+        android:checked="true"
+        android:text="Adam"
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="127dp" />
+</android.support.constraint.ConstraintLayout>

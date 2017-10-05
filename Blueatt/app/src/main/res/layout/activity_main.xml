@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.moonsunhwang.bluatt_moonsun.MainActivity">
+
+    <Button
+        android:id="@+id/view_my_attendance_report"
+        android:layout_width="156dp"
+        android:layout_height="112dp"
+        android:text="View My Attendance Report"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="69dp" />
+
+    <Button
+        android:id="@+id/view_my_courses"
+        android:layout_width="158dp"
+        android:layout_height="112dp"
+        android:text="View My Courses"
+        tools:layout_editor_absoluteX="210dp"
+        tools:layout_editor_absoluteY="69dp" />
+
+    <Button
+        android:id="@+id/scan_for_attendance"
+        android:layout_width="200dp"
+        android:layout_height="137dp"
+        android:text="Scan for Attendance"
+        tools:layout_editor_absoluteX="94dp"
+        tools:layout_editor_absoluteY="231dp" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.moonsunhwang.blueatt.Attendance_class_on_date">
+
+    <TextView
+        android:id="@+id/total_attendance_on_this_date_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total attendance on this date:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        tools:layout_editor_absoluteX="101dp"
+        tools:layout_editor_absoluteY="47dp" />
+
+    <TextView
+        android:id="@+id/total_students_that_missed_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total students that missed:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        tools:layout_editor_absoluteX="107dp"
+        tools:layout_editor_absoluteY="88dp" />
+
+    <TextView
+        android:id="@+id/percentage_of_class_that_attended_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Percentage of class that attended"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        tools:layout_editor_absoluteX="86dp"
+        tools:layout_editor_absoluteY="132dp" />
+
+    <Button
+        android:id="@+id/view_students_who_attended_button"
+        android:layout_width="144dp"
+        android:layout_height="94dp"
+        android:text="View students who attended"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        tools:layout_editor_absoluteX="200dp"
+        tools:layout_editor_absoluteY="213dp" />
+
+    <Button
+        android:id="@+id/modify_attendance_button"
+        android:layout_width="144dp"
+        android:layout_height="94dp"
+        android:text="Modify attendance"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        tools:layout_editor_absoluteX="120dp"
+        tools:layout_editor_absoluteY="340dp" />
+
+    <Button
+        android:id="@+id/view_students_who_missed_button"
+        android:layout_width="144dp"
+        android:layout_height="94dp"
+        android:text="View students who missed "
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="213dp" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.moonsunhwang.blueatt.Scanning_for_attendance">
+
+    <TextView
+        android:id="@+id/number_of_students_recorded_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number of Students Recorded:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        tools:layout_editor_absoluteX="94dp"
+        tools:layout_editor_absoluteY="46dp" />
+
+    <TextView
+        android:id="@+id/number_of_students_queued_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number of Students Queued:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="88dp" />
+
+    <TextView
+        android:id="@+id/percentage_of_students_attending"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Percentage of Students Attending:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        tools:layout_editor_absoluteX="82dp"
+        tools:layout_editor_absoluteY="131dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:background="@android:color/holo_red_light"
+        android:textColor="@android:color/white"
+        android:layout_width="253dp"
+        android:layout_height="129dp"
+        android:text="Stop Scanning for Attendance"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        tools:layout_editor_absoluteX="66dp"
+        tools:layout_editor_absoluteY="241dp" />
+
+</android.support.constraint.ConstraintLayout>

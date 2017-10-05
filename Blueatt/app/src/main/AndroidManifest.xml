@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.moonsunhwang.blueatt">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".View_my_attendance_report"
+            android:label="Please select a course to view" />
+        <activity
+            android:name=".Select_date"
+            android:label="Attendance for Class 1" />
+        <activity
+            android:name=".Attendance_class_on_date"
+            android:label="Attendance for the class on &apos;&apos;date&apos;&apos;" />
+        <activity
+            android:name=".Modify_attendance_date"
+            android:label="Modify Attendance Date" />
+        <activity
+            android:name=".View_my_courses"
+            android:label="Courses taught by &apos;&apos;Instructor Name&apos;&apos;" />
+        <activity
+            android:name=".Students_list_enrolled"
+            android:label="Students Enrolled &apos;&apos;Course Name&apos;&apos;" />
+        <activity
+            android:name=".Scanning_time_intervals"
+            android:label="Select Timing Intervals" />
+        <activity
+            android:name=".Scanning_for_attendance"
+            android:label="Scanning for Attendance" />
+        <activity android:name=".Success_message" />
+        <activity android:name=".check"></activity>
+    </application>
+
+</manifest>

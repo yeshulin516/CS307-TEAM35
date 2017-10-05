@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.moonsunhwang.blueatt.Students_list_enrolled">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="176dp"
+        android:layout_height="47dp"
+        android:text='Select Student(s) to Modify\n "List of Students Enrolled"'
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        tools:layout_editor_absoluteX="95dp"
+        tools:layout_editor_absoluteY="35dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="256dp"
+        android:layout_height="35dp"
+        android:checked="true"
+        android:text="Kate"
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="197dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="256dp"
+        android:layout_height="35dp"
+        android:text="Jane"
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="153dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="256dp"
+        android:layout_height="35dp"
+        android:checked="true"
+        android:text="Adam"
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="107dp" />
+
+    <Button
+        android:id="@+id/remove_selected_from_the_course_button"
+        android:layout_width="262dp"
+        android:layout_height="114dp"
+        android:text="Remove selected from the course"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        tools:layout_editor_absoluteX="61dp"
+        tools:layout_editor_absoluteY="364dp" />
+
+    <Button
+        android:id="@+id/view_selected_students_attendance_trend_button"
+        android:layout_width="262dp"
+        android:layout_height="114dp"
+        android:text="View selected students'\n attendance trend"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        tools:layout_editor_absoluteX="61dp"
+        tools:layout_editor_absoluteY="242dp" />
+
+</android.support.constraint.ConstraintLayout>
