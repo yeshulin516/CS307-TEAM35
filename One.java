@@ -60,9 +60,13 @@ public class One {
 	public static void ScanningSpeedCheck(){
 		long limit = 3000000;
 		long startTime = System.nanoTime();
+		System.out.println();
+  		System.out.println("Function 2: ");
 		WebApplicationInteractWithScanner();
 		long endTime = System.nanoTime();
 		long duration = (endTime - startTime); //25467
+		System.out.println(); 
+  		System.out.println("Function 3: ");
 		if (duration < limit){
 			System.out.println("Scanner works quickly enough!");
 		}
@@ -70,6 +74,8 @@ public class One {
 
 	public static String RouteToCorrectLocation()
 	{
+		System.out.println();
+		System.out.println("Function 4: ");
 		//dummy variable
 		boolean route = false;
 		String info = "option1";
@@ -97,12 +103,24 @@ public class One {
 
 
 	 public static void main(String []args) {
-    	selectClassFromTheUI();
+    	//selectClassFromTheUI();
+
+
+
+
+
+	 	System.out.println();
+	 	System.out.println("Function 1: ");
     	pullClassRosterFromDB();
+
+  	
+
     	ScanningSpeedCheck();
     	if (!RouteToCorrectLocation().equals("Fail")){
     		System.out.println("Route successfully!");
     	}
+    	System.out.println();
+    	System.out.println("Function 5: ");
     	OptionToReScan(); 
 	}
 
