@@ -12,17 +12,26 @@
         android:layout_height="42dp"
         android:text="Please select the time interval\nto scan attendance"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        tools:layout_editor_absoluteX="74dp"
-        tools:layout_editor_absoluteY="29dp" />
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="29dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/twenty_seconds"
-        android:layout_width="120dp"
+        android:layout_width="0dp"
         android:layout_height="88dp"
         android:text="20 Seconds"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        tools:layout_editor_absoluteX="49dp"
-        tools:layout_editor_absoluteY="112dp" />
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/sixty_seconds"
+        app:layout_constraintBaseline_toBaselineOf="@+id/fourty_seconds"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/sixty_seconds" />
 
     <Button
         android:id="@+id/fourty_seconds"
@@ -30,8 +39,13 @@
         android:layout_height="88dp"
         android:text="40 Seconds"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        tools:layout_editor_absoluteX="201dp"
-        tools:layout_editor_absoluteY="112dp" />
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/eighty_seconds"
+        android:layout_marginStart="32dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="29dp"
+        app:layout_constraintLeft_toRightOf="@+id/twenty_seconds"
+        android:layout_marginLeft="32dp" />
 
     <Button
         android:id="@+id/sixty_seconds"
@@ -39,34 +53,53 @@
         android:layout_height="88dp"
         android:text="60 Seconds"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        tools:layout_editor_absoluteX="49dp"
-        tools:layout_editor_absoluteY="229dp" />
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/hundred_seconds"
+        android:layout_marginStart="49dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="49dp" />
 
     <Button
         android:id="@+id/eighty_seconds"
-        android:layout_width="120dp"
+        android:layout_width="0dp"
         android:layout_height="88dp"
         android:text="80 Seconds"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        tools:layout_editor_absoluteX="201dp"
-        tools:layout_editor_absoluteY="229dp" />
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/hunderedAndTwenty_seconds"
+        app:layout_constraintRight_toRightOf="@+id/fourty_seconds"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintLeft_toLeftOf="@+id/fourty_seconds" />
 
     <Button
         android:id="@+id/hundred_seconds"
-        android:layout_width="120dp"
+        android:layout_width="0dp"
         android:layout_height="88dp"
         android:text="100 Seconds"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        tools:layout_editor_absoluteX="49dp"
-        tools:layout_editor_absoluteY="345dp" />
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/sixty_seconds"
+        app:layout_constraintBaseline_toBaselineOf="@+id/hunderedAndTwenty_seconds"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/sixty_seconds" />
 
     <Button
         android:id="@+id/hunderedAndTwenty_seconds"
-        android:layout_width="120dp"
+        android:layout_width="0dp"
         android:layout_height="88dp"
         android:text="120 Seconds"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        tools:layout_editor_absoluteX="201dp"
-        tools:layout_editor_absoluteY="345dp" />
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/eighty_seconds"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="78dp"
+        app:layout_constraintLeft_toLeftOf="@+id/eighty_seconds" />
 
 </android.support.constraint.ConstraintLayout>

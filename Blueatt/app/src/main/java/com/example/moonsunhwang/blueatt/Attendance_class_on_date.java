@@ -11,8 +11,5 @@ public class Attendance_class_on_date extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_attendance_class_on_date);
 
-        DialogFragment dialog = new Success_message();
-        dialog.show(getSupportFragmentManager(), "MyDialogFragmentTag");
-
     }
 }

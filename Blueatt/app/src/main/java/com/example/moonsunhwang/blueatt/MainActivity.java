@@ -23,15 +23,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        //class 1 as a sample
-        Button view_attendance_report_button = (Button)findViewById(R.id.class1);
-
-        view_attendance_report_button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, Select_date.class));
-            }
-        });
 
 
 

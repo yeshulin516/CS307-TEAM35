@@ -12,8 +12,13 @@
         android:layout_height="wrap_content"
         android:text="Total attendance on this date:"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        tools:layout_editor_absoluteX="101dp"
-        tools:layout_editor_absoluteY="47dp" />
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="47dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/total_students_that_missed_button"
@@ -21,8 +26,13 @@
         android:layout_height="wrap_content"
         android:text="Total students that missed:"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        tools:layout_editor_absoluteX="107dp"
-        tools:layout_editor_absoluteY="88dp" />
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/total_attendance_on_this_date_button"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/total_attendance_on_this_date_button"
+        android:layout_marginLeft="6dp" />
 
     <TextView
         android:id="@+id/percentage_of_class_that_attended_button"
@@ -30,8 +40,13 @@
         android:layout_height="wrap_content"
         android:text="Percentage of class that attended"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        tools:layout_editor_absoluteX="86dp"
-        tools:layout_editor_absoluteY="132dp" />
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="27dp"
+        app:layout_constraintTop_toBottomOf="@+id/total_students_that_missed_button"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent" />
 
     <Button
         android:id="@+id/view_students_who_attended_button"
@@ -39,8 +54,14 @@
         android:layout_height="94dp"
         android:text="View students who attended"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        tools:layout_editor_absoluteX="200dp"
-        tools:layout_editor_absoluteY="213dp" />
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="19dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/view_students_who_missed_button"
+        android:layout_marginLeft="19dp" />
 
     <Button
         android:id="@+id/modify_attendance_button"
@@ -48,8 +69,13 @@
         android:layout_height="94dp"
         android:text="Modify attendance"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        tools:layout_editor_absoluteX="120dp"
-        tools:layout_editor_absoluteY="340dp" />
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="33dp"
+        app:layout_constraintTop_toBottomOf="@+id/view_students_who_missed_button"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent" />
 
     <Button
         android:id="@+id/view_students_who_missed_button"
@@ -57,6 +83,10 @@
         android:layout_height="94dp"
         android:text="View students who missed "
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        tools:layout_editor_absoluteX="37dp"
-        tools:layout_editor_absoluteY="213dp" />
+        android:layout_marginStart="37dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/view_students_who_attended_button"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="37dp" />
 </android.support.constraint.ConstraintLayout>
