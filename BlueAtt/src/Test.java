@@ -1,4 +1,5 @@
-import java.util.Scanner;
+import java.lang.*;
+import java.util.*;
 public class Test {
 	public static void main(String[] args) {
 
@@ -50,9 +51,27 @@ public class Test {
 				ins3.printInfo();
 				break;
 			case 3:
-				course1.printInfo();
-				course2.printInfo();
-				course3.printInfo();
+
+				ArrayList <String> courses = new ArrayList<String>();
+				courses.add("course1");
+				courses.add("course2");
+				courses.add("course3");
+				System.out.println("Select from: ");
+				System.out.println(Arrays.toString(courses.toArray()));
+				String courseName = scan.next();
+				switch (courseName){
+					case "course1":
+						course1.printInfo();
+						break;
+					case "course2":
+						course2.printInfo();
+						break;
+					case "course3":
+						course3.printInfo();
+						break;
+					case "exit":
+						break;
+				}
 				break;
 			case 4:
 				Bluetooth test = new Bluetooth();
