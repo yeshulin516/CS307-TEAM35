@@ -11,6 +11,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Popup Test"
+<<<<<<< HEAD
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="136dp" />
+=======
         tools:layout_constraintTop_creator="1"
         tools:layout_constraintRight_creator="1"
         app:layout_constraintRight_toRightOf="parent"
@@ -18,4 +22,5 @@
         tools:layout_constraintLeft_creator="1"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+>>>>>>> c45c184d49ca63300889d5faace98ebba01c14fa
 </android.support.constraint.ConstraintLayout>

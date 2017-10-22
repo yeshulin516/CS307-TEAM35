@@ -40,8 +40,16 @@
         <activity
             android:name=".Scanning_for_attendance"
             android:label="Scanning for Attendance" />
-        <activity android:name=".Success_message" />
-        <activity android:name=".check"></activity>
+        <activity android:name=".check" />
+        <activity
+            android:name=".View_registered_courses"
+            android:label="Registered Courses for &apos;&apos;Student name&apos;&apos;" />
+        <activity
+            android:name=".Attendance_for_class"
+            android:label="Attendance for Class 1" />
+        <activity
+            android:name=".Import_roster"
+            android:label="Import Roster" />
     </application>
 
 </manifest>

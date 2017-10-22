@@ -23,7 +23,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-<<<<<<< HEAD
         //class 1 as a sample
         Button view_attendance_report_button = (Button)findViewById(R.id.class1);
 
@@ -34,9 +33,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         */
-=======
-
->>>>>>> c45c184d49ca63300889d5faace98ebba01c14fa
 
 
 
