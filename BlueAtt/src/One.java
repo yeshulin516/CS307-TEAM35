@@ -57,9 +57,9 @@ public class One {
 		}
 	}
 
-	public static void ScanningSpeedCheck(){
+	public static void ScanningSpeedCheck(long limit){
 		System.out.println("Function 11: ");
-		long limit = 3000000;
+		
 		long startTime = System.nanoTime();
 		System.out.println();
 		System.out.println("Function 2: ");
@@ -70,6 +70,9 @@ public class One {
 		System.out.println("Function 3: ");
 		if (duration < limit){
 			System.out.println("Scanner works quickly enough!");
+		}
+		else {
+			OptionToReScan();
 		}
 	}
 
@@ -214,6 +217,7 @@ public class One {
 	}
 
 	public static void main(String []args) {
+		/*
 		System.out.println("Function 7: ");
 		selectClassFromTheUI();
 
@@ -246,7 +250,14 @@ public class One {
 		notifyDB(true);
 		System.out.println("Function 10: ");
 		matchDeviceWithRoster(t1);
+		*/
 
+		//test for pass
+		ScanningSpeedCheck(3000000);
+
+
+		//test for fail
+		ScanningSpeedCheck(10000);
 
 	}
 

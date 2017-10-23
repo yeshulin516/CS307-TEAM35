@@ -1,0 +1,151 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/src/main/AndroidManifest.xml:2:1-47:12
+	package
+		ADDED from /Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/src/main/AndroidManifest.xml:3:5-47
+		INJECTED from /Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/src/main/AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from /Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/src/main/AndroidManifest.xml
+application
+ADDED from /Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/src/main/AndroidManifest.xml:5:5-45:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/YeShulin/.android/build-cache/25fa6661036811f5616ed0f5f57eecde1bacea62/output/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:design:26.0.0-alpha1] /Users/YeShulin/.android/build-cache/dfdb762e74612c0145ffbea8abfcc1035ec0a383/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/YeShulin/.android/build-cache/0a1f047138458478ef081eb4e92e5ee9d037e7cd/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /Users/YeShulin/.android/build-cache/802cc620a5966ae0dd938f70891f72ddf300d7e0/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /Users/YeShulin/.android/build-cache/2d0dcb477c5964a79016dceb8edd2977d8919d62/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:transition:26.0.0-alpha1] /Users/YeShulin/.android/build-cache/355470cf5aa75dc4f84c6ef131a7a8d46589e73e/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /Users/YeShulin/.android/build-cache/f6b54ae2511db564db9512090fb45ae89180492f/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /Users/YeShulin/.android/build-cache/9905701fa3589014f1f6e5135eef40253fd5d52f/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /Users/YeShulin/.android/build-cache/c41c7d1bbffe90eb9e0de58ce1fa9e852f933d0c/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /Users/YeShulin/.android/build-cache/7f87b2394944d4402d2a85c478ac4324e1b4ca61/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /Users/YeShulin/.android/build-cache/42dad15846f69aabd3f6f1e38a80ecaf1f48615b/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Users/YeShulin/.android/build-cache/3dedf3235eeb50a797cc12a7751e7a3a3d78e69d/output/AndroidManifest.xml:29:5-20
+	android:label
+		ADDED from /Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/src/main/AndroidManifest.xml:8:9-41
+	android:supportsRtl
+		ADDED from /Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/src/main/AndroidManifest.xml:10:9-35
+	android:roundIcon
+		ADDED from /Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/src/main/AndroidManifest.xml:9:9-54
+	android:allowBackup
+		ADDED from /Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/src/main/AndroidManifest.xml:6:9-35
+	android:icon
+		ADDED from /Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/src/main/AndroidManifest.xml:7:9-43
+	android:theme
+		ADDED from /Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/src/main/AndroidManifest.xml:11:9-40
+activity#com.example.moonsunhwang.blueatt.MainActivity
+ADDED from /Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/src/main/AndroidManifest.xml:12:9-18:20
+	android:name
+		ADDED from /Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/src/main/AndroidManifest.xml:12:19-47
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/src/main/AndroidManifest.xml:13:13-17:29
+action#android.intent.action.MAIN
+ADDED from /Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/src/main/AndroidManifest.xml:14:17-69
+	android:name
+		ADDED from /Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/src/main/AndroidManifest.xml:14:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/src/main/AndroidManifest.xml:16:17-77
+	android:name
+		ADDED from /Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/src/main/AndroidManifest.xml:16:27-74
+activity#com.example.moonsunhwang.blueatt.View_my_attendance_report
+ADDED from /Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/src/main/AndroidManifest.xml:19:9-21:62
+	android:label
+		ADDED from /Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/src/main/AndroidManifest.xml:21:13-59
+	android:name
+		ADDED from /Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/src/main/AndroidManifest.xml:20:13-54
+activity#com.example.moonsunhwang.blueatt.Select_date
+ADDED from /Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/src/main/AndroidManifest.xml:22:9-24:54
+	android:label
+		ADDED from /Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/src/main/AndroidManifest.xml:24:13-51
+	android:name
+		ADDED from /Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/src/main/AndroidManifest.xml:23:13-40
+activity#com.example.moonsunhwang.blueatt.Attendance_class_on_date
+ADDED from /Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/src/main/AndroidManifest.xml:25:9-27:88
+	android:label
+		ADDED from /Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/src/main/AndroidManifest.xml:27:13-85
+	android:name
+		ADDED from /Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/src/main/AndroidManifest.xml:26:13-53
+activity#com.example.moonsunhwang.blueatt.Modify_attendance_date
+ADDED from /Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/src/main/AndroidManifest.xml:28:9-30:54
+	android:label
+		ADDED from /Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/src/main/AndroidManifest.xml:30:13-51
+	android:name
+		ADDED from /Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/src/main/AndroidManifest.xml:29:13-51
+activity#com.example.moonsunhwang.blueatt.View_my_courses
+ADDED from /Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/src/main/AndroidManifest.xml:31:9-33:89
+	android:label
+		ADDED from /Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/src/main/AndroidManifest.xml:33:13-86
+	android:name
+		ADDED from /Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/src/main/AndroidManifest.xml:32:13-44
+activity#com.example.moonsunhwang.blueatt.Students_list_enrolled
+ADDED from /Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/src/main/AndroidManifest.xml:34:9-36:85
+	android:label
+		ADDED from /Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/src/main/AndroidManifest.xml:36:13-82
+	android:name
+		ADDED from /Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/src/main/AndroidManifest.xml:35:13-51
+activity#com.example.moonsunhwang.blueatt.Scanning_time_intervals
+ADDED from /Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/src/main/AndroidManifest.xml:37:9-39:55
+	android:label
+		ADDED from /Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/src/main/AndroidManifest.xml:39:13-52
+	android:name
+		ADDED from /Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/src/main/AndroidManifest.xml:38:13-52
+activity#com.example.moonsunhwang.blueatt.Scanning_for_attendance
+ADDED from /Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/src/main/AndroidManifest.xml:40:9-42:55
+	android:label
+		ADDED from /Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/src/main/AndroidManifest.xml:42:13-52
+	android:name
+		ADDED from /Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/src/main/AndroidManifest.xml:41:13-52
+activity#com.example.moonsunhwang.blueatt.Success_message
+ADDED from /Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/src/main/AndroidManifest.xml:43:9-53
+	android:name
+		ADDED from /Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/src/main/AndroidManifest.xml:43:19-50
+activity#com.example.moonsunhwang.blueatt.check
+ADDED from /Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/src/main/AndroidManifest.xml:44:9-52
+	android:name
+		ADDED from /Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/src/main/AndroidManifest.xml:44:19-40
+uses-sdk
+INJECTED from /Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/YeShulin/.android/build-cache/25fa6661036811f5616ed0f5f57eecde1bacea62/output/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:design:26.0.0-alpha1] /Users/YeShulin/.android/build-cache/dfdb762e74612c0145ffbea8abfcc1035ec0a383/output/AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/YeShulin/.android/build-cache/0a1f047138458478ef081eb4e92e5ee9d037e7cd/output/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /Users/YeShulin/.android/build-cache/802cc620a5966ae0dd938f70891f72ddf300d7e0/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /Users/YeShulin/.android/build-cache/2d0dcb477c5964a79016dceb8edd2977d8919d62/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] /Users/YeShulin/.android/build-cache/b80bed98c0348b9fc835deddbb471dde34bba5f9/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:26.0.0-alpha1] /Users/YeShulin/.android/build-cache/355470cf5aa75dc4f84c6ef131a7a8d46589e73e/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /Users/YeShulin/.android/build-cache/f6b54ae2511db564db9512090fb45ae89180492f/output/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /Users/YeShulin/.android/build-cache/9905701fa3589014f1f6e5135eef40253fd5d52f/output/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /Users/YeShulin/.android/build-cache/c41c7d1bbffe90eb9e0de58ce1fa9e852f933d0c/output/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /Users/YeShulin/.android/build-cache/7f87b2394944d4402d2a85c478ac4324e1b4ca61/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /Users/YeShulin/.android/build-cache/42dad15846f69aabd3f6f1e38a80ecaf1f48615b/output/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Users/YeShulin/.android/build-cache/3dedf3235eeb50a797cc12a7751e7a3a3d78e69d/output/AndroidManifest.xml:21:5-23:58
+	tools:overrideLibrary
+		ADDED from [com.android.support:design:26.0.0-alpha1] /Users/YeShulin/.android/build-cache/dfdb762e74612c0145ffbea8abfcc1035ec0a383/output/AndroidManifest.xml:23:9-59
+	android:targetSdkVersion
+		INJECTED from /Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/src/main/AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:design:26.0.0-alpha1] /Users/YeShulin/.android/build-cache/dfdb762e74612c0145ffbea8abfcc1035ec0a383/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/YeShulin/.android/build-cache/0a1f047138458478ef081eb4e92e5ee9d037e7cd/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /Users/YeShulin/.android/build-cache/802cc620a5966ae0dd938f70891f72ddf300d7e0/output/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /Users/YeShulin/.android/build-cache/2d0dcb477c5964a79016dceb8edd2977d8919d62/output/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] /Users/YeShulin/.android/build-cache/b80bed98c0348b9fc835deddbb471dde34bba5f9/output/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:transition:26.0.0-alpha1] /Users/YeShulin/.android/build-cache/355470cf5aa75dc4f84c6ef131a7a8d46589e73e/output/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /Users/YeShulin/.android/build-cache/f6b54ae2511db564db9512090fb45ae89180492f/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /Users/YeShulin/.android/build-cache/9905701fa3589014f1f6e5135eef40253fd5d52f/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /Users/YeShulin/.android/build-cache/c41c7d1bbffe90eb9e0de58ce1fa9e852f933d0c/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /Users/YeShulin/.android/build-cache/7f87b2394944d4402d2a85c478ac4324e1b4ca61/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /Users/YeShulin/.android/build-cache/42dad15846f69aabd3f6f1e38a80ecaf1f48615b/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Users/YeShulin/.android/build-cache/3dedf3235eeb50a797cc12a7751e7a3a3d78e69d/output/AndroidManifest.xml:25:5-27:41
+	android:value
+		ADDED from [com.android.support:design:26.0.0-alpha1] /Users/YeShulin/.android/build-cache/dfdb762e74612c0145ffbea8abfcc1035ec0a383/output/AndroidManifest.xml:27:9-38
+	android:name
+		ADDED from [com.android.support:design:26.0.0-alpha1] /Users/YeShulin/.android/build-cache/dfdb762e74612c0145ffbea8abfcc1035ec0a383/output/AndroidManifest.xml:26:9-47

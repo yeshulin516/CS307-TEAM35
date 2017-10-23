@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.moonsunhwang.blueatt"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="26" />
+
+    <meta-data
+        android:name="android.support.VERSION"
+        android:value="26.0.0-alpha1" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name="com.example.moonsunhwang.blueatt.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.moonsunhwang.blueatt.View_my_attendance_report"
+            android:label="Please select a course to view" />
+        <activity
+            android:name="com.example.moonsunhwang.blueatt.Select_date"
+            android:label="Attendance for Class 1" />
+        <activity
+            android:name="com.example.moonsunhwang.blueatt.Attendance_class_on_date"
+            android:label="Attendance for the class on &apos;&apos;date&apos;&apos;" />
+        <activity
+            android:name="com.example.moonsunhwang.blueatt.Modify_attendance_date"
+            android:label="Modify Attendance Date" />
+        <activity
+            android:name="com.example.moonsunhwang.blueatt.View_my_courses"
+            android:label="Courses taught by &apos;&apos;Instructor Name&apos;&apos;" />
+        <activity
+            android:name="com.example.moonsunhwang.blueatt.Students_list_enrolled"
+            android:label="Students Enrolled &apos;&apos;Course Name&apos;&apos;" />
+        <activity
+            android:name="com.example.moonsunhwang.blueatt.Scanning_time_intervals"
+            android:label="Select Timing Intervals" />
+        <activity
+            android:name="com.example.moonsunhwang.blueatt.Scanning_for_attendance"
+            android:label="Scanning for Attendance" />
+        <activity android:name="com.example.moonsunhwang.blueatt.Success_message" />
+        <activity android:name="com.example.moonsunhwang.blueatt.check" />
+    </application>
+
+</manifest>

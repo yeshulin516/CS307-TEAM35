@@ -1,0 +1,26 @@
+[
+    {
+        "outputFile": "/Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values/values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 45,
+                    "endOffset": 96
+                },
+                "from": {
+                    "file": "/Users/YeShulin/.android/build-cache/35b7b4b4370c29f98b47fb0ae4dab74b7f7bcdfa/output/res/values/values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 229,
+                        "endColumn": 45,
+                        "endOffset": 270
+                    }
+                }
+            }
+        ]
+    }
+]

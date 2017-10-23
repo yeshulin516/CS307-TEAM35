@@ -7,7 +7,7 @@ import java.lang.*;
 public class One {
 	
 	
-
+	/*
 	//Select class from the UI
 	public static void selectClassFromTheUI () {
 		//dummy variavle
@@ -20,7 +20,7 @@ public class One {
 			}
 		}
 	}
-
+	
 	//Pull class roster from the database
 	public static void pullClassRosterFromDB () {
 		//Connect to DB
@@ -36,7 +36,7 @@ public class One {
 		for(int i = 0; i < stored.size(); i++) {   
 			System.out.println(stored.get(i));
 		}  
-	}
+	}*/
 
 	public static void WebApplicationInteractWithScanner () {
 		//Libraries for scanners to start to work
@@ -57,21 +57,26 @@ public class One {
 		}
 	}
 
-	public static void ScanningSpeedCheck(){
-		System.out.println("Function 11: ");
-		long limit = 3000000;
+	public static void ScanningSpeedCheck(long limit){
+		//System.out.println("Function 11: ");
+		
 		long startTime = System.nanoTime();
 		System.out.println();
-		System.out.println("Function 2: ");
+		//System.out.println("Function 2: ");
 		WebApplicationInteractWithScanner();
 		long endTime = System.nanoTime();
 		long duration = (endTime - startTime); //25467
 		System.out.println(); 
-		System.out.println("Function 3: ");
+		//System.out.println("Function 3: ");
 		if (duration < limit){
 			System.out.println("Scanner works quickly enough!");
 		}
+		else {
+			OptionToReScan();
+		}
 	}
+
+/*
 
 	public static String RouteToCorrectLocation()
 	{
@@ -89,7 +94,7 @@ public class One {
 			return info;
 		}
 		return "Fail";
-	}
+	}*/
 
 	public static void OptionToReScan(){
 		//dummy variable
@@ -102,9 +107,8 @@ public class One {
 	}
 
 
+	/*
 	
-	
-
 
 	public static void addStuents(String t){
 		ArrayList<String> list=new ArrayList<String>();
@@ -127,6 +131,7 @@ public class One {
 			System.out.println("Student already exist.");
 		}
 	}
+
 	public static void removdStudents(String t){
 		ArrayList<String> list=new ArrayList<String>();
 
@@ -188,6 +193,7 @@ public class One {
 		}
 
 	}
+	
 	public static void notifyDB(boolean db){
 		if (db){
 			System.out.println("Update database successfully!");
@@ -212,8 +218,9 @@ public class One {
 		}
 		
 	}
-
+	*/
 	public static void main(String []args) {
+		/*
 		System.out.println("Function 7: ");
 		selectClassFromTheUI();
 
@@ -246,7 +253,18 @@ public class One {
 		notifyDB(true);
 		System.out.println("Function 10: ");
 		matchDeviceWithRoster(t1);
+		*/
 
+		//test for pass
+		System.out.println("test case 1: ");
+		ScanningSpeedCheck(3000000);
+
+		System.out.println();
+
+		//test for not pass
+		System.out.println("test case 2: ");
+		ScanningSpeedCheck(10000);
+		System.out.println();
 
 	}
 

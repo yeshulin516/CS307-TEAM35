@@ -1,0 +1,7 @@
+#Thu Oct 05 21:41:30 EDT 2017
+base.0=/Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_215250a89b50a59c7dbeb546dcf0da7a6e378a90
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=/Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_be5ea91c78a2411d06592a66f5f14e526184eb31/classes.dex
+base.1=/Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_be5ea91c78a2411d06592a66f5f14e526184eb31
+file.0=/Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_215250a89b50a59c7dbeb546dcf0da7a6e378a90/classes.dex

@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/build/intermediates/res/merged/debug/layout-v11/notification_template_big_media.xml",
+        "source": "/Users/YeShulin/.android/build-cache/0a1f047138458478ef081eb4e92e5ee9d037e7cd/output/res/layout-v11/notification_template_big_media.xml"
+    },
+    {
+        "merged": "/Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/build/intermediates/res/merged/debug/layout-v11/notification_media_cancel_action.xml",
+        "source": "/Users/YeShulin/.android/build-cache/0a1f047138458478ef081eb4e92e5ee9d037e7cd/output/res/layout-v11/notification_media_cancel_action.xml"
+    },
+    {
+        "merged": "/Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/build/intermediates/res/merged/debug/layout-v11/notification_template_big_media_narrow_custom.xml",
+        "source": "/Users/YeShulin/.android/build-cache/0a1f047138458478ef081eb4e92e5ee9d037e7cd/output/res/layout-v11/notification_template_big_media_narrow_custom.xml"
+    },
+    {
+        "merged": "/Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/build/intermediates/res/merged/debug/layout-v11/notification_template_big_media_narrow.xml",
+        "source": "/Users/YeShulin/.android/build-cache/0a1f047138458478ef081eb4e92e5ee9d037e7cd/output/res/layout-v11/notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "/Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/build/intermediates/res/merged/debug/layout-v11/notification_template_big_media_custom.xml",
+        "source": "/Users/YeShulin/.android/build-cache/0a1f047138458478ef081eb4e92e5ee9d037e7cd/output/res/layout-v11/notification_template_big_media_custom.xml"
+    },
+    {
+        "merged": "/Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/build/intermediates/res/merged/debug/layout-v11/notification_media_action.xml",
+        "source": "/Users/YeShulin/.android/build-cache/0a1f047138458478ef081eb4e92e5ee9d037e7cd/output/res/layout-v11/notification_media_action.xml"
+    }
+]

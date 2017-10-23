@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/YeShulin/.android/build-cache/f6b54ae2511db564db9512090fb45ae89180492f/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_39a4c476693d913d135762fbcb7de09cf32802f5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/YeShulin/.android/build-cache/7f87b2394944d4402d2a85c478ac4324e1b4ca61/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="fcd01fd11233459f546c437ec927e9b61bf7caf1">
+        <dex dex="/Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_6115168b292cf28e6ad0f32aad8dc9ebece4d14d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/YeShulin/.android/build-cache/0a1f047138458478ef081eb4e92e5ee9d037e7cd/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="47471eb19df288158b00b8d9cfa41bce7373f5cc">
+        <dex dex="/Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_cc912ff547dfd0acd1cef33063cd662af46ae32a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/YeShulin/.android/build-cache/355470cf5aa75dc4f84c6ef131a7a8d46589e73e/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="cddcd0fb93bc70e27325f2f715b2710332004ebb">
+        <dex dex="/Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_8352a76b7f92a27f03d8e7def9e1e7fa84062ae2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/YeShulin/.android/build-cache/b80bed98c0348b9fc835deddbb471dde34bba5f9/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="c4f45092eee6cdf1a5dbd597b2b6819be652ce2e">
+        <dex dex="/Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ab7d902e7eec8797470d7b8699ee313a4c30d347/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/YeShulin/.android/build-cache/2d0dcb477c5964a79016dceb8edd2977d8919d62/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="952944218ecedea1554a513dec0c14d570642843">
+        <dex dex="/Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c57fa36145fbef02b4f49579f87f10a9be232ece/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/YeShulin/.android/build-cache/25fa6661036811f5616ed0f5f57eecde1bacea62/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="/Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e882b81c6605fe9a11c129ccbf31c0a4f18959fe/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/YeShulin/.android/build-cache/dfdb762e74612c0145ffbea8abfcc1035ec0a383/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="6a022bf00ccd0948a8180c505e8e458bbddd43a6">
+        <dex dex="/Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_cc3753930dc8d6ff1975a495e0840b6598ab0591/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="c33655a052ea7394132764431202ad29cc862e21">
+        <dex dex="/Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_215250a89b50a59c7dbeb546dcf0da7a6e378a90/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/YeShulin/.android/build-cache/c41c7d1bbffe90eb9e0de58ce1fa9e852f933d0c/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="18d31838aa4fcc768a8a0516e22cc13b94655d89">
+        <dex dex="/Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_216b3cf18e246669f6512a2e2e3c94982ee1b3e5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/YeShulin/.android/build-cache/3dedf3235eeb50a797cc12a7751e7a3a3d78e69d/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="8df0e365e40beb151bc42dee20817721a6cab7b0">
+        <dex dex="/Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ce037fe4cf5426255c4ddd7cd19bb3321db37b12/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/YeShulin/.android/build-cache/42dad15846f69aabd3f6f1e38a80ecaf1f48615b/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="2e92aa0163544a804a0b34f169ca61801770839a">
+        <dex dex="/Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_03e1068cc3434cbf54bbd4340f45b9c50256c7ce/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/YeShulin/.android/build-cache/802cc620a5966ae0dd938f70891f72ddf300d7e0/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="88246166d5afb106f532f6e6deae683c66b42c89">
+        <dex dex="/Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_6ab7b91f1eed99c67d986936abc517a1a183cb3b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/YeShulin/.android/build-cache/9905701fa3589014f1f6e5135eef40253fd5d52f/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="9935891f23923f39d002087085d9696568a9f657">
+        <dex dex="/Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_45146981bd5d422cf7b4df7d9d9359502bce25ed/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_be5ea91c78a2411d06592a66f5f14e526184eb31/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/YeShulin/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/26.0.0-alpha1/support-annotations-26.0.0-alpha1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="023ee503b631f69511e335a061ea008f8da60f40">
+        <dex dex="/Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-26.0.0-alpha1_505af98516df3cbad8767af8b89a12f685dad2d2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/YeShulin/Library/Android/sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.2/constraint-layout-solver-1.0.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="/Users/YeShulin/Desktop/CS307-TEAM35/BlueAtt/app/build/intermediates/transforms/dex/debug/folders/1000/10/constraint-layout-solver-1.0.2_20f2ee08885b324ca744d58c268dfe81fd28f34d/classes.dex" />
+    </item>
+
+</items>
