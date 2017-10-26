@@ -11,10 +11,5 @@ public class Attendance_class_on_date extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_attendance_class_on_date);
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> c45c184d49ca63300889d5faace98ebba01c14fa
     }
 }
