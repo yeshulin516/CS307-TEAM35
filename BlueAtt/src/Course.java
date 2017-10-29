@@ -127,6 +127,9 @@ public class Course {
 			System.out.println("\tAttendance for date " + log[i].date + ":");
 			log[i].printAttended();
 			log[i].printAbsent();
+			System.out.print("Percentage Attended: ");
+			System.out.printf("%.2f", (double)(log[i].numAttended)/(double)(this.studentCount) * 100);
+			System.out.println("%");
 		}
 	}
 	
@@ -137,6 +140,9 @@ public class Course {
 				System.out.println("\tAttendance for date " + log[i].date + ":");
 				log[i].printAttended();
 				log[i].printAbsent();
+				System.out.print("Percentage Attended: ");
+				System.out.printf("%.2f", (double)(log[i].numAttended)/(double)(this.studentCount) * 100);
+				System.out.println("%");
 				return;
 			}
 		}
