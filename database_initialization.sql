@@ -1,12 +1,14 @@
 drop table Records;
 drop table Courses;
 drop table Instructors;
+drop table Devices;
 drop table Students;
 
 
+
 create table Instructors(
-	instructorUsername varchar(15),
 	instructorName varchar(30) NOT NULL,
+	instructorUsername varchar(15),
 	primary key(instructorUsername)
 );
 
@@ -25,8 +27,14 @@ create table Courses(
 create table Students(
 	studentName varchar(30) NOT NULL,
 	studentUsername varchar(15),
-	deviceID varchar(30) NOT NULL,
 	primary key(studentUsername)
+);
+
+create table Devices(
+	studentUsername varchar(15) NOT NULL,
+	deviceID varchar(30),
+	primary key(deviceID),
+	foreign key(studentUsername) references Students(studentUsername)
 );
 
 create table Records(
@@ -34,7 +42,7 @@ create table Records(
 	courseID int check(courseID >= 0),
 	recordDate date NOT NULL,
 	attendance char(1) check(attendance in ('Y', 'N')) NOT NULL,
-	primary key(studentUsername, courseID),
+	primary key(studentUsername, courseID, recordDate),
 	foreign key(studentUsername) references Students(studentUsername),
 	foreign key(courseID) references Courses(courseID)
 );
