@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.moonsunhwang.bluatt_student"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="26" />
+
+    <meta-data
+        android:name="android.support.VERSION"
+        android:value="26.0.0-alpha1" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name="com.example.moonsunhwang.bluatt_student.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.moonsunhwang.bluatt_student.Register_Device" />
+        <activity android:name="com.example.moonsunhwang.bluatt_student.Register_Device_Result" />
+        <activity android:name="com.example.moonsunhwang.bluatt_student.Update_Device" />
+        <activity android:name="com.example.moonsunhwang.bluatt_student.Update_Device_Result" />
+        <activity android:name="com.example.moonsunhwang.bluatt_student.Attendance_Trend_and_Data" />
+        <activity android:name="com.example.moonsunhwang.bluatt_student.Select_Date" />
+        <activity android:name="com.example.moonsunhwang.bluatt_student.Select_Date_Result" />
+        <activity android:name="com.example.moonsunhwang.bluatt_student.Select_Class" />
+        <activity android:name="com.example.moonsunhwang.bluatt_student.Give_Feedback" />
+    </application>
+
+</manifest>

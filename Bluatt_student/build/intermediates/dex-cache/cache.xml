@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/moonsunhwang/Desktop/Bluatt_student/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="54b786bdf79d572f80a38776e48038327cffccff">
+        <dex dex="/Users/moonsunhwang/Desktop/Bluatt_student/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_85a27ca418543af3d825af6fa3d06f32faabfdde/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/moonsunhwang/Desktop/Bluatt_student/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/Users/moonsunhwang/Desktop/Bluatt_student/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_1efecd03a7c7c7caf980d02cf537359add23f8f2/classes.dex" />
+    </item>
+
+</items>
