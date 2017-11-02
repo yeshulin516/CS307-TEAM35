@@ -1,5 +1,3 @@
-package com.example.justin.bluetooth_test;
-
 /**
  * Created by justin on 9/26/17.
  */
@@ -39,26 +37,28 @@ public class roster {
         int numInstructors = 0;
         int numCourses = 0;
         int numRecords = 0;
+        int numDevices = 0;
 
         //string matrix to store file's input
         String[][] students = new String[0][0];
         String[][] instructors = new String[0][0];
         String[][] courses = new String[0][0];
         String[][] records = new String[0][0];
+        String[][] devices = new String[0][0];
 
         //READ STUDENTS FILE
         try {
             //read file into buffer
-            BufferedReader br = new BufferedReader(new FileReader("/Users/justin/AndroidStudioProjects/DatabaseTest/app/src/main/java/edu/boudrejpurdue/databasetest/students.csv"));
+            BufferedReader br = new BufferedReader(new FileReader("src/students.csv"));
 
             //read how many lines are in .csv file
             lines = 0;
             while ((line = br.readLine()) != null) {lines++;}
             br.close();
-            br = new BufferedReader(new FileReader("/Users/justin/AndroidStudioProjects/DatabaseTest/app/src/main/java/edu/boudrejpurdue/databasetest/students.csv"));
+            br = new BufferedReader(new FileReader("src/students.csv"));
 
             //string matrix with row same as file
-            students = new String[lines][3];
+            students = new String[lines][2];
 
             numStudents = lines;
 
@@ -69,8 +69,6 @@ public class roster {
                 students[i][0] = line.split(",")[0];
                 //second value is username
                 students[i][1] = line.split(",")[1];
-                //third value is bluetooth ID
-                students[i][2] = line.split(",")[2];
                 i++;
             }
 
@@ -90,13 +88,13 @@ public class roster {
         //READ INSTRUCTORS FILE
         try {
             //read file into buffer
-            BufferedReader br = new BufferedReader(new FileReader("/Users/justin/AndroidStudioProjects/DatabaseTest/app/src/main/java/edu/boudrejpurdue/databasetest/instructors.csv"));
+            BufferedReader br = new BufferedReader(new FileReader("src/instructors.csv"));
 
             //read how many lines are in .csv file
             lines = 0;
             while ((line = br.readLine()) != null) {lines++;}
             br.close();
-            br = new BufferedReader(new FileReader("/Users/justin/AndroidStudioProjects/DatabaseTest/app/src/main/java/edu/boudrejpurdue/databasetest/instructors.csv"));
+            br = new BufferedReader(new FileReader("src/instructors.csv"));
 
             //string matrix with row same as file
             instructors = new String[lines][2];
@@ -125,13 +123,13 @@ public class roster {
         //READ COURSES FILE
         try {
             //read file into buffer
-            BufferedReader br = new BufferedReader(new FileReader("/Users/justin/AndroidStudioProjects/DatabaseTest/app/src/main/java/edu/boudrejpurdue/databasetest/courses.csv"));
+            BufferedReader br = new BufferedReader(new FileReader("src/courses.csv"));
 
             //read how many lines are in .csv file
             lines = 0;
             while ((line = br.readLine()) != null) {lines++;}
             br.close();
-            br = new BufferedReader(new FileReader("/Users/justin/AndroidStudioProjects/DatabaseTest/app/src/main/java/edu/boudrejpurdue/databasetest/courses.csv"));
+            br = new BufferedReader(new FileReader("src/courses.csv"));
 
             //string matrix with row same as file
             courses = new String[lines][7];
@@ -171,13 +169,13 @@ public class roster {
         //READ RECORDS FILE
         try {
             //read file into buffer
-            BufferedReader br = new BufferedReader(new FileReader("/Users/justin/AndroidStudioProjects/DatabaseTest/app/src/main/java/edu/boudrejpurdue/databasetest/records.csv"));
+            BufferedReader br = new BufferedReader(new FileReader("src/records.csv"));
 
             //read how many lines are in .csv file
             lines = 0;
             while ((line = br.readLine()) != null) {lines++;}
             br.close();
-            br = new BufferedReader(new FileReader("/Users/justin/AndroidStudioProjects/DatabaseTest/app/src/main/java/edu/boudrejpurdue/databasetest/records.csv"));
+            br = new BufferedReader(new FileReader("src/records.csv"));
 
             //string matrix with row same as file
             records = new String[lines][4];
@@ -195,6 +193,43 @@ public class roster {
                 records[i][2] = line.split(",")[2];
                 //fourth value is attendance value
                 records[i][3] = line.split(",")[3];
+                i++;
+            }
+
+            br.close();
+        }
+        catch (FileNotFoundException exp) {
+            System.out.println("File Not Found!");
+        }
+        catch (IOException ex) {
+            System.out.println("IO Error!");
+        }
+
+        //READ DEVICES FILE
+        try {
+            //read file into buffer
+            BufferedReader br = new BufferedReader(new FileReader("src/devices.csv"));
+
+            //read how many lines are in .csv file
+            lines = 0;
+            while ((line = br.readLine()) != null) {lines++;}
+            br.close();
+
+            br = new BufferedReader(new FileReader("src/devices.csv"));
+
+            //string matrix with row same as file
+            devices = new String[lines][2];
+
+            numDevices = lines;
+
+
+            int i = 0;
+            //loop through each line parsing based on commas
+            while ((line = br.readLine()) != null) {
+                //first value is username
+                devices[i][0] = line.split(",")[0];
+                //second value is deviceID
+                devices[i][1] = line.split(",")[1];
                 i++;
             }
 
@@ -225,6 +260,11 @@ public class roster {
             val = mdb.addCourseToDatabase(courses[j]);
         }
 
+        //loop through all devices and add to database
+        for (int j = 0; j < numDevices; j++) {
+            val = mdb.addDeviceToDatabase(devices[j]);
+        }
+
         String[] n = new String[1];
         //loop through all records and add to database
         for (int j = 0; j < numRecords; j++) {
@@ -233,10 +273,12 @@ public class roster {
         }
 
 
+
+
         ArrayList<String> array = new ArrayList<>();
         String string;
 
-        mdb.printArrayList(mdb.pullStudentTable(), 3);
+        mdb.printArrayList(mdb.pullStudentTable(), 2);
         mdb.printArrayList(mdb.pullInstructorTable(), 2);
         mdb.printArrayList(mdb.pullCourseTable(), 7);
         mdb.printArrayList(mdb.pullRecordTable(), 4);
@@ -372,13 +414,13 @@ public class roster {
         return val;
     }
 
-    /* ADD STUDENT TO DATABASE */
+    /* ADD DEVICE TO DATABASE */
     //returns
-    public int addStudentToDatabase ( String[] student ) {
+    public int addDeviceToDatabase ( String[] device ) {
 
         int val = 0;
 
-        String query = "insert into Students values ('" + student[0] + "', '" + student[1] + "', '" + student[2] + "')";
+        String query = "insert into Devices values ('" + device[0] + "', '" + device[1] + "')";
 
         try {
             Statement stmt = con.createStatement();
@@ -412,6 +454,26 @@ public class roster {
         return val;
     }
 
+    /* ADD STUDENT TO DATABASE */
+    //returns
+    public int addStudentToDatabase ( String[] student ) {
+
+        int val = 0;
+
+        String query = "insert into Students values ('" + student[0] + "', '" + student[1] + "')";
+
+        try {
+            Statement stmt = con.createStatement();
+            val = stmt.executeUpdate(query);
+
+            stmt.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return val;
+    }
+
     /* ADD RECORD TO DATABASE */
     //returns
     public int addRecordToDatabase ( String studentUsername, int courseID, String recordDate, String attendance ) {
@@ -430,27 +492,6 @@ public class roster {
         }
 
         return val;
-    }
-
-    /* UPDATE STUDENT'S DEVICE ID */
-    //returns
-    public int updateStudentDeviceID ( String studentUsername, String  deviceID ) {
-
-        int val = 0;
-
-        String query = "update Students set deviceID = '" + deviceID + "' where studentUsername = '" + studentUsername + "'";
-
-        try {
-            Statement stmt = con.createStatement();
-            val = stmt.executeUpdate(query);
-
-            stmt.close();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-
-        return val;
-
     }
 
     /* PULL STUDENT'S ATTENDANCE ON A SPECIFIC DATE */
@@ -680,7 +721,6 @@ public class roster {
             while ( rs.next() ) {
                 array.add(rs.getString( "studentName" ));
                 array.add(rs.getString( "studentUsername" ));
-                array.add(rs.getString( "deviceID" ));
             }
 
             stmt.close();

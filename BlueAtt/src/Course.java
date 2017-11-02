@@ -1,5 +1,13 @@
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
 
 public class Course {
+
+	Connection con;
+
 	private String courseName;
 	private Instructor instructor;
 	int size = 100;
@@ -141,5 +149,196 @@ public class Course {
 			}
 		}
 		System.out.println("Date not found in log");
+	}
+
+	/* ADD STUDENTS TO RECORDS TABLE LINK STUDENT WITH COURSE */
+	//returns
+	public int addStudentToCourse ( String[] studentUsernames, int courseID ) {
+
+		int val = 0;
+
+		for (int i = 0; i < studentUsernames.length; i++) {
+
+			//Adds a pre determined date to recognize initialized record
+			String query = "insert into Records values ('" + studentUsernames[i] + "', " + courseID + ", '1-JAN-00', 'N')";
+
+			try {
+				Statement stmt = con.createStatement();
+				int rs = stmt.executeUpdate(query);
+
+				val = rs;
+
+				stmt.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
+
+		return val;
+	}
+
+	/* PULL STUDENT'S ATTENDANCE ON A SPECIFIC DATE */
+	//returns String of 'Y' or 'N' or "NULL"
+	public String pullSpecificDateAttendance ( String studentUsername, int courseID, String date) {
+
+		String record = "NULL";
+
+		String query = "select attendance from Records where studentUsername = '" + studentUsername + "' and courseID = " + courseID + " and recordDate = '" + date + "'";
+
+		try {
+			Statement stmt = con.createStatement();
+			ResultSet rs = stmt.executeQuery(query);
+
+			while ( rs.next() ) {
+				record = rs.getString( "attendance" );
+			}
+
+			stmt.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+
+		return record;
+	}
+
+	/* PULL ROSTER FROM A COURSE */
+	//returns ArrayList of student usernames in course
+	public ArrayList<String> pullRosterFromCourse (int courseID) {
+
+		ArrayList<String> usernames = new ArrayList<>();
+
+		String query = "select studentUsername from Students natural join Records where recordDate = '1-JAN-00' and courseID = " + courseID;
+
+		try {
+			Statement stmt = con.createStatement();
+			ResultSet rs = stmt.executeQuery(query);
+
+			while ( rs.next() ) {
+				usernames.add(rs.getString( "studentUsername" ));
+			}
+
+			stmt.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+
+		return usernames;
+
+	}
+
+	/* PULL COURSE'S ATTENDANCE ON A SPECIFIC DATE */
+	//returns ArrayList of attendance record, each cell is 'Y' or 'N'
+	public ArrayList<String> pullCourseSpecificDateAttendance ( int courseID, String date ) {
+
+		ArrayList<String> attRecord = new ArrayList<>();
+
+		String query = "select attendance from Records where courseID = " + courseID + " and recordDate = '" + date + "'";
+
+		try {
+			Statement stmt = con.createStatement();
+			ResultSet rs = stmt.executeQuery(query);
+
+			while ( rs.next() ) {
+				attRecord.add(rs.getString( "attendance" ));
+			}
+
+			stmt.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+
+		return attRecord;
+	}
+
+	/* PULL COURSE'S ATTENDANCE FOR THE WHOLE SEMESTER */
+	//returns ArrayList of attendance record, each cell is 'Y' or 'N'
+	public ArrayList<String> pullCourseSemesterAttendance ( String studentUsername, int courseID ) {
+
+		ArrayList<String> attRecord = new ArrayList<>();
+
+		String query = "select attendance from Records where courseID = " + courseID + " and recordDate > '1-JAN-00'";
+
+		try {
+			Statement stmt = con.createStatement();
+			ResultSet rs = stmt.executeQuery(query);
+
+			while ( rs.next() ) {
+				attRecord.add(rs.getString( "attendance" ));
+			}
+
+			stmt.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+
+		return attRecord;
+	}
+
+	/* PULL STUDENTS' DEVICE IDs FROM COURSE ROSTER */
+	//returns ArrayList of device IDs
+	public ArrayList<String> pullCourseDeviceIDs ( int courseID ) {
+
+		ArrayList<String> deviceIDs = new ArrayList<>();
+
+		String query = "select deviceID from Students natural join Records where recordDate = '1-JAN-00' and courseID = " + courseID;
+
+		try {
+			Statement stmt = con.createStatement();
+			ResultSet rs = stmt.executeQuery(query);
+
+			while ( rs.next() ) {
+				deviceIDs.add(rs.getString( "deviceID" ));
+			}
+
+			stmt.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+
+		return deviceIDs;
+	}
+
+	/* UPDATE STUDENT'S ATTENDANCE ON A SPECIFIC DATE */
+	//returns
+	public int updateAttendenceOnSpecificDate (String studentUsername, int courseID, String date, String attendanceVal) {
+
+		int val = 0;
+
+		String query = "update Records set attendance = '" + attendanceVal + "' where studentUsername = '" + studentUsername + "' and courseID = " + courseID + " and recordDate = '" +  date + "'";
+
+		try {
+			Statement stmt = con.createStatement();
+			int rs = stmt.executeUpdate(query);
+
+			val = rs;
+
+			stmt.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+
+		return val;
+	}
+
+	/* REMOVE STUDENT AND ALL RECORDS FROM A COURSE */
+	public int removeStudentFromCourse (String studentUsername, int coureseID) {
+
+		int val = 0;
+
+		String query = "delete from Records where studentUsername = '" + studentUsername + "' and courseID = " + coureseID;
+
+		try {
+			Statement stmt = con.createStatement();
+			int rs = stmt.executeUpdate(query);
+
+			val = rs;
+
+			stmt.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+
+		return val;
+
 	}
 }
