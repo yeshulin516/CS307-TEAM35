@@ -15,8 +15,8 @@
       <file leaf-file-name="roster.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/roster.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4170">
-              <caret line="280" column="52" lean-forward="false" selection-start-line="280" selection-start-column="52" selection-end-line="280" selection-end-column="52" />
+            <state relative-caret-position="453">
+              <caret line="595" column="66" lean-forward="false" selection-start-line="595" selection-start-column="66" selection-end-line="595" selection-end-column="66" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#addStudentToCourse#0;class#roster#0" expanded="false" />
@@ -37,55 +37,59 @@
                 <element signature="method#pullStudentTable#0;class#roster#0" expanded="false" />
                 <element signature="method#pullCourseTable#0;class#roster#0" expanded="false" />
                 <element signature="method#pullRecordTable#0;class#roster#0" expanded="false" />
-                <marker date="1509581227000" expanded="true" signature="12414:12443" ph="insert into Records... " />
-                <marker date="1509581227000" expanded="true" signature="12414:12472" ph="insert into Records... " />
-                <marker date="1509581227000" expanded="true" signature="12414:12473" ph="insert into Records... " />
-                <marker date="1509581227000" expanded="true" signature="12414:12491" ph="insert into Records... " />
-                <marker date="1509581227000" expanded="true" signature="12414:12507" ph="insert into Records... " />
-                <marker date="1509581227000" expanded="true" signature="12986:13066" ph="insert into Students... " />
-                <marker date="1509581227000" expanded="true" signature="12986:13067" ph="insert into Students... " />
-                <marker date="1509581227000" expanded="true" signature="13466:13495" ph="insert into Students... " />
-                <marker date="1509581227000" expanded="true" signature="13466:13516" ph="insert into Students... " />
-                <marker date="1509581227000" expanded="true" signature="13466:13534" ph="insert into Students... " />
-                <marker date="1509581227000" expanded="true" signature="13466:13535" ph="insert into Devices... " />
-                <marker date="1509581227000" expanded="true" signature="13934:13963" ph="insert into Courses... " />
-                <marker date="1509581227000" expanded="true" signature="13934:13983" ph="insert into Courses... " />
-                <marker date="1509581227000" expanded="true" signature="13934:14002" ph="insert into Courses... " />
-                <marker date="1509581227000" expanded="true" signature="13934:14022" ph="insert into Courses... " />
-                <marker date="1509581227000" expanded="true" signature="13934:14042" ph="insert into Courses... " />
-                <marker date="1509581227000" expanded="true" signature="13934:14062" ph="insert into Courses... " />
-                <marker date="1509581227000" expanded="true" signature="13934:14082" ph="insert into Courses... " />
-                <marker date="1509581227000" expanded="true" signature="13934:14100" ph="insert into Courses... " />
-                <marker date="1509581227000" expanded="true" signature="14502:14573" ph="insert into Students... " />
-                <marker date="1509581227000" expanded="true" signature="14502:14574" ph="insert into Students... " />
-                <marker date="1509581227000" expanded="true" signature="15032:15061" ph="insert into Records... " />
-                <marker date="1509581227000" expanded="true" signature="15032:15148" ph="insert into Records... " />
-                <marker date="1509581227000" expanded="true" signature="15661:15805" ph="select atten... Records" />
-                <marker date="1509581227000" expanded="true" signature="16482:16613" ph="select atten... Records" />
-                <marker date="1509581227000" expanded="true" signature="16482:16622" ph="select atten... Records" />
-                <marker date="1509581227000" expanded="true" signature="17306:17398" ph="select atten... Records" />
-                <marker date="1509581227000" expanded="true" signature="18071:18154" ph="select atten... Records" />
-                <marker date="1509581227000" expanded="true" signature="18071:18167" ph="select atten... Records" />
-                <marker date="1509581227000" expanded="true" signature="18783:18879" ph="select devic... Students" />
-                <marker date="1509581227000" expanded="true" signature="19501:19604" ph="select stude... Students" />
-                <marker date="1509581227000" expanded="true" signature="20233:20264" ph="update Recor... " />
-                <marker date="1509581227000" expanded="true" signature="20233:20265" ph="update Recor... " />
-                <marker date="1509581227000" expanded="true" signature="20233:20312" ph="update Recor... " />
-                <marker date="1509581227000" expanded="true" signature="20233:20313" ph="update Recor... " />
-                <marker date="1509581227000" expanded="true" signature="20233:20337" ph="update Recor... " />
-                <marker date="1509581227000" expanded="true" signature="20233:20353" ph="update Recor... " />
-                <marker date="1509581227000" expanded="true" signature="20233:20354" ph="update Recor... " />
-                <marker date="1509581227000" expanded="true" signature="20233:20387" ph="update Recor... " />
-                <marker date="1509581227000" expanded="true" signature="20233:20388" ph="update Recor... " />
-                <marker date="1509581227000" expanded="true" signature="20233:20389" ph="update Recor... " />
-                <marker date="1509581227000" expanded="true" signature="20233:20403" ph="update Recor... " />
-                <marker date="1509581227000" expanded="true" signature="20860:20905" ph="delete from " />
-                <marker date="1509581227000" expanded="true" signature="20860:20944" ph="delete from " />
-                <marker date="1509581227000" expanded="true" signature="20860:20945" ph="delete from " />
-                <marker date="1509581227000" expanded="true" signature="21397:21422" ph="select * fro... Instructors" />
-                <marker date="1509581227000" expanded="true" signature="22014:22036" ph="select * fro... Students" />
-                <marker date="1509581227000" expanded="true" signature="22620:22641" ph="select * fro... Courses" />
-                <marker date="1509581227000" expanded="true" signature="23512:23533" ph="select * fro... Records" />
+                <element signature="method#pullDevicesTable#0;class#roster#0" expanded="false" />
+                <marker date="1509648976000" expanded="true" signature="12469:12498" ph="insert into Records... " />
+                <marker date="1509648976000" expanded="true" signature="12469:12527" ph="insert into Records... " />
+                <marker date="1509648976000" expanded="true" signature="12469:12528" ph="insert into Records... " />
+                <marker date="1509648976000" expanded="true" signature="12469:12546" ph="insert into Records... " />
+                <marker date="1509648976000" expanded="true" signature="12469:12562" ph="insert into Records... " />
+                <marker date="1509648976000" expanded="true" signature="13041:13121" ph="insert into Students... " />
+                <marker date="1509648976000" expanded="true" signature="13041:13122" ph="insert into Students... " />
+                <marker date="1509648976000" expanded="true" signature="13521:13550" ph="insert into Students... " />
+                <marker date="1509648976000" expanded="true" signature="13521:13571" ph="insert into Students... " />
+                <marker date="1509648976000" expanded="true" signature="13521:13589" ph="insert into Students... " />
+                <marker date="1509648976000" expanded="true" signature="13521:13590" ph="insert into Devices... " />
+                <marker date="1509648976000" expanded="true" signature="13989:14018" ph="insert into Courses... " />
+                <marker date="1509648976000" expanded="true" signature="13989:14038" ph="insert into Courses... " />
+                <marker date="1509648976000" expanded="true" signature="13989:14057" ph="insert into Courses... " />
+                <marker date="1509648976000" expanded="true" signature="13989:14077" ph="insert into Courses... " />
+                <marker date="1509648976000" expanded="true" signature="13989:14097" ph="insert into Courses... " />
+                <marker date="1509648976000" expanded="true" signature="13989:14117" ph="insert into Courses... " />
+                <marker date="1509648976000" expanded="true" signature="13989:14137" ph="insert into Courses... " />
+                <marker date="1509648976000" expanded="true" signature="13989:14155" ph="insert into Courses... " />
+                <marker date="1509648976000" expanded="true" signature="14557:14628" ph="insert into Students... " />
+                <marker date="1509648976000" expanded="true" signature="14557:14629" ph="insert into Students... " />
+                <marker date="1509648976000" expanded="true" signature="15087:15116" ph="insert into Records... " />
+                <marker date="1509648976000" expanded="true" signature="15087:15203" ph="insert into Records... " />
+                <marker date="1509648976000" expanded="true" signature="15716:15860" ph="select atten... Records" />
+                <marker date="1509648976000" expanded="true" signature="16537:16668" ph="select atten... Records" />
+                <marker date="1509648976000" expanded="true" signature="16537:16677" ph="select atten... Records" />
+                <marker date="1509648976000" expanded="true" signature="17361:17453" ph="select atten... Records" />
+                <marker date="1509648976000" expanded="true" signature="18126:18209" ph="select atten... Records" />
+                <marker date="1509648976000" expanded="true" signature="18126:18222" ph="select atten... Records" />
+                <marker date="1509648976000" expanded="true" signature="18838:18955" ph="select devic... Devices" />
+                <marker date="1509648976000" expanded="true" signature="18838:18971" ph="select devic... Devices" />
+                <marker date="1509648976000" expanded="true" signature="18838:18973" ph="select devic... Devices" />
+                <marker date="1509648976000" expanded="true" signature="19584:19687" ph="select stude... Students" />
+                <marker date="1509648976000" expanded="true" signature="20316:20347" ph="update Recor... " />
+                <marker date="1509648976000" expanded="true" signature="20316:20348" ph="update Recor... " />
+                <marker date="1509648976000" expanded="true" signature="20316:20395" ph="update Recor... " />
+                <marker date="1509648976000" expanded="true" signature="20316:20396" ph="update Recor... " />
+                <marker date="1509648976000" expanded="true" signature="20316:20420" ph="update Recor... " />
+                <marker date="1509648976000" expanded="true" signature="20316:20436" ph="update Recor... " />
+                <marker date="1509648976000" expanded="true" signature="20316:20437" ph="update Recor... " />
+                <marker date="1509648976000" expanded="true" signature="20316:20470" ph="update Recor... " />
+                <marker date="1509648976000" expanded="true" signature="20316:20471" ph="update Recor... " />
+                <marker date="1509648976000" expanded="true" signature="20316:20472" ph="update Recor... " />
+                <marker date="1509648976000" expanded="true" signature="20316:20486" ph="update Recor... " />
+                <marker date="1509648976000" expanded="true" signature="20943:20988" ph="delete from " />
+                <marker date="1509648976000" expanded="true" signature="20943:21027" ph="delete from " />
+                <marker date="1509648976000" expanded="true" signature="20943:21028" ph="delete from " />
+                <marker date="1509648976000" expanded="true" signature="21480:21505" ph="select * fro... Instructors" />
+                <marker date="1509648976000" expanded="true" signature="22097:22119" ph="select * fro... Students" />
+                <marker date="1509648976000" expanded="true" signature="22703:22724" ph="select * fro... Courses" />
+                <marker date="1509648976000" expanded="true" signature="23595:23616" ph="select * fro... Records" />
+                <marker date="1509648976000" expanded="true" signature="24313:24334" ph="select * fro... Devices" />
               </folding>
             </state>
           </provider>
@@ -217,6 +221,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -230,7 +235,6 @@
       </pane>
       <pane id="Scope" />
       <pane id="Scratches" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -437,11 +441,12 @@
       <workItem from="1509580303628" duration="1265000" />
       <workItem from="1509582450485" duration="236000" />
       <workItem from="1509584804263" duration="5000" />
+      <workItem from="1509648474655" duration="530000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47607000" />
+    <option name="totallyTimeSpent" value="48137000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1791" height="1105" extended-state="0" />
@@ -449,6 +454,7 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32910156" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -459,7 +465,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970297" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2046884" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20697542" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -471,7 +477,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32910156" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -484,7 +489,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="9" />
+      <option name="time" value="10" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -527,55 +532,59 @@
             <element signature="method#pullStudentTable#0;class#roster#0" expanded="false" />
             <element signature="method#pullCourseTable#0;class#roster#0" expanded="false" />
             <element signature="method#pullRecordTable#0;class#roster#0" expanded="false" />
-            <marker date="1509581227000" expanded="true" signature="12414:12443" ph="insert into Records... " />
-            <marker date="1509581227000" expanded="true" signature="12414:12472" ph="insert into Records... " />
-            <marker date="1509581227000" expanded="true" signature="12414:12473" ph="insert into Records... " />
-            <marker date="1509581227000" expanded="true" signature="12414:12491" ph="insert into Records... " />
-            <marker date="1509581227000" expanded="true" signature="12414:12507" ph="insert into Records... " />
-            <marker date="1509581227000" expanded="true" signature="12986:13066" ph="insert into Students... " />
-            <marker date="1509581227000" expanded="true" signature="12986:13067" ph="insert into Students... " />
-            <marker date="1509581227000" expanded="true" signature="13466:13495" ph="insert into Students... " />
-            <marker date="1509581227000" expanded="true" signature="13466:13516" ph="insert into Students... " />
-            <marker date="1509581227000" expanded="true" signature="13466:13534" ph="insert into Students... " />
-            <marker date="1509581227000" expanded="true" signature="13466:13535" ph="insert into Devices... " />
-            <marker date="1509581227000" expanded="true" signature="13934:13963" ph="insert into Courses... " />
-            <marker date="1509581227000" expanded="true" signature="13934:13983" ph="insert into Courses... " />
-            <marker date="1509581227000" expanded="true" signature="13934:14002" ph="insert into Courses... " />
-            <marker date="1509581227000" expanded="true" signature="13934:14022" ph="insert into Courses... " />
-            <marker date="1509581227000" expanded="true" signature="13934:14042" ph="insert into Courses... " />
-            <marker date="1509581227000" expanded="true" signature="13934:14062" ph="insert into Courses... " />
-            <marker date="1509581227000" expanded="true" signature="13934:14082" ph="insert into Courses... " />
-            <marker date="1509581227000" expanded="true" signature="13934:14100" ph="insert into Courses... " />
-            <marker date="1509581227000" expanded="true" signature="14502:14573" ph="insert into Students... " />
-            <marker date="1509581227000" expanded="true" signature="14502:14574" ph="insert into Students... " />
-            <marker date="1509581227000" expanded="true" signature="15032:15061" ph="insert into Records... " />
-            <marker date="1509581227000" expanded="true" signature="15032:15148" ph="insert into Records... " />
-            <marker date="1509581227000" expanded="true" signature="15661:15805" ph="select atten... Records" />
-            <marker date="1509581227000" expanded="true" signature="16482:16613" ph="select atten... Records" />
-            <marker date="1509581227000" expanded="true" signature="16482:16622" ph="select atten... Records" />
-            <marker date="1509581227000" expanded="true" signature="17306:17398" ph="select atten... Records" />
-            <marker date="1509581227000" expanded="true" signature="18071:18154" ph="select atten... Records" />
-            <marker date="1509581227000" expanded="true" signature="18071:18167" ph="select atten... Records" />
-            <marker date="1509581227000" expanded="true" signature="18783:18879" ph="select devic... Students" />
-            <marker date="1509581227000" expanded="true" signature="19501:19604" ph="select stude... Students" />
-            <marker date="1509581227000" expanded="true" signature="20233:20264" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20265" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20312" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20313" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20337" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20353" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20354" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20387" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20388" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20389" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20403" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20860:20905" ph="delete from " />
-            <marker date="1509581227000" expanded="true" signature="20860:20944" ph="delete from " />
-            <marker date="1509581227000" expanded="true" signature="20860:20945" ph="delete from " />
-            <marker date="1509581227000" expanded="true" signature="21397:21422" ph="select * fro... Instructors" />
-            <marker date="1509581227000" expanded="true" signature="22014:22036" ph="select * fro... Students" />
-            <marker date="1509581227000" expanded="true" signature="22620:22641" ph="select * fro... Courses" />
-            <marker date="1509581227000" expanded="true" signature="23512:23533" ph="select * fro... Records" />
+            <element signature="method#pullDevicesTable#0;class#roster#0" expanded="false" />
+            <marker date="1509648976000" expanded="true" signature="12469:12498" ph="insert into Records... " />
+            <marker date="1509648976000" expanded="true" signature="12469:12527" ph="insert into Records... " />
+            <marker date="1509648976000" expanded="true" signature="12469:12528" ph="insert into Records... " />
+            <marker date="1509648976000" expanded="true" signature="12469:12546" ph="insert into Records... " />
+            <marker date="1509648976000" expanded="true" signature="12469:12562" ph="insert into Records... " />
+            <marker date="1509648976000" expanded="true" signature="13041:13121" ph="insert into Students... " />
+            <marker date="1509648976000" expanded="true" signature="13041:13122" ph="insert into Students... " />
+            <marker date="1509648976000" expanded="true" signature="13521:13550" ph="insert into Students... " />
+            <marker date="1509648976000" expanded="true" signature="13521:13571" ph="insert into Students... " />
+            <marker date="1509648976000" expanded="true" signature="13521:13589" ph="insert into Students... " />
+            <marker date="1509648976000" expanded="true" signature="13521:13590" ph="insert into Devices... " />
+            <marker date="1509648976000" expanded="true" signature="13989:14018" ph="insert into Courses... " />
+            <marker date="1509648976000" expanded="true" signature="13989:14038" ph="insert into Courses... " />
+            <marker date="1509648976000" expanded="true" signature="13989:14057" ph="insert into Courses... " />
+            <marker date="1509648976000" expanded="true" signature="13989:14077" ph="insert into Courses... " />
+            <marker date="1509648976000" expanded="true" signature="13989:14097" ph="insert into Courses... " />
+            <marker date="1509648976000" expanded="true" signature="13989:14117" ph="insert into Courses... " />
+            <marker date="1509648976000" expanded="true" signature="13989:14137" ph="insert into Courses... " />
+            <marker date="1509648976000" expanded="true" signature="13989:14155" ph="insert into Courses... " />
+            <marker date="1509648976000" expanded="true" signature="14557:14628" ph="insert into Students... " />
+            <marker date="1509648976000" expanded="true" signature="14557:14629" ph="insert into Students... " />
+            <marker date="1509648976000" expanded="true" signature="15087:15116" ph="insert into Records... " />
+            <marker date="1509648976000" expanded="true" signature="15087:15203" ph="insert into Records... " />
+            <marker date="1509648976000" expanded="true" signature="15716:15860" ph="select atten... Records" />
+            <marker date="1509648976000" expanded="true" signature="16537:16668" ph="select atten... Records" />
+            <marker date="1509648976000" expanded="true" signature="16537:16677" ph="select atten... Records" />
+            <marker date="1509648976000" expanded="true" signature="17361:17453" ph="select atten... Records" />
+            <marker date="1509648976000" expanded="true" signature="18126:18209" ph="select atten... Records" />
+            <marker date="1509648976000" expanded="true" signature="18126:18222" ph="select atten... Records" />
+            <marker date="1509648976000" expanded="true" signature="18838:18955" ph="select devic... Devices" />
+            <marker date="1509648976000" expanded="true" signature="18838:18971" ph="select devic... Devices" />
+            <marker date="1509648976000" expanded="true" signature="18838:18973" ph="select devic... Devices" />
+            <marker date="1509648976000" expanded="true" signature="19584:19687" ph="select stude... Students" />
+            <marker date="1509648976000" expanded="true" signature="20316:20347" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20348" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20395" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20396" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20420" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20436" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20437" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20470" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20471" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20472" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20486" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20943:20988" ph="delete from " />
+            <marker date="1509648976000" expanded="true" signature="20943:21027" ph="delete from " />
+            <marker date="1509648976000" expanded="true" signature="20943:21028" ph="delete from " />
+            <marker date="1509648976000" expanded="true" signature="21480:21505" ph="select * fro... Instructors" />
+            <marker date="1509648976000" expanded="true" signature="22097:22119" ph="select * fro... Students" />
+            <marker date="1509648976000" expanded="true" signature="22703:22724" ph="select * fro... Courses" />
+            <marker date="1509648976000" expanded="true" signature="23595:23616" ph="select * fro... Records" />
+            <marker date="1509648976000" expanded="true" signature="24313:24334" ph="select * fro... Devices" />
           </folding>
         </state>
       </provider>
@@ -692,55 +701,59 @@
             <element signature="method#pullStudentTable#0;class#roster#0" expanded="false" />
             <element signature="method#pullCourseTable#0;class#roster#0" expanded="false" />
             <element signature="method#pullRecordTable#0;class#roster#0" expanded="false" />
-            <marker date="1509581227000" expanded="true" signature="12414:12443" ph="insert into Records... " />
-            <marker date="1509581227000" expanded="true" signature="12414:12472" ph="insert into Records... " />
-            <marker date="1509581227000" expanded="true" signature="12414:12473" ph="insert into Records... " />
-            <marker date="1509581227000" expanded="true" signature="12414:12491" ph="insert into Records... " />
-            <marker date="1509581227000" expanded="true" signature="12414:12507" ph="insert into Records... " />
-            <marker date="1509581227000" expanded="true" signature="12986:13066" ph="insert into Students... " />
-            <marker date="1509581227000" expanded="true" signature="12986:13067" ph="insert into Students... " />
-            <marker date="1509581227000" expanded="true" signature="13466:13495" ph="insert into Students... " />
-            <marker date="1509581227000" expanded="true" signature="13466:13516" ph="insert into Students... " />
-            <marker date="1509581227000" expanded="true" signature="13466:13534" ph="insert into Students... " />
-            <marker date="1509581227000" expanded="true" signature="13466:13535" ph="insert into Devices... " />
-            <marker date="1509581227000" expanded="true" signature="13934:13963" ph="insert into Courses... " />
-            <marker date="1509581227000" expanded="true" signature="13934:13983" ph="insert into Courses... " />
-            <marker date="1509581227000" expanded="true" signature="13934:14002" ph="insert into Courses... " />
-            <marker date="1509581227000" expanded="true" signature="13934:14022" ph="insert into Courses... " />
-            <marker date="1509581227000" expanded="true" signature="13934:14042" ph="insert into Courses... " />
-            <marker date="1509581227000" expanded="true" signature="13934:14062" ph="insert into Courses... " />
-            <marker date="1509581227000" expanded="true" signature="13934:14082" ph="insert into Courses... " />
-            <marker date="1509581227000" expanded="true" signature="13934:14100" ph="insert into Courses... " />
-            <marker date="1509581227000" expanded="true" signature="14502:14573" ph="insert into Students... " />
-            <marker date="1509581227000" expanded="true" signature="14502:14574" ph="insert into Students... " />
-            <marker date="1509581227000" expanded="true" signature="15032:15061" ph="insert into Records... " />
-            <marker date="1509581227000" expanded="true" signature="15032:15148" ph="insert into Records... " />
-            <marker date="1509581227000" expanded="true" signature="15661:15805" ph="select atten... Records" />
-            <marker date="1509581227000" expanded="true" signature="16482:16613" ph="select atten... Records" />
-            <marker date="1509581227000" expanded="true" signature="16482:16622" ph="select atten... Records" />
-            <marker date="1509581227000" expanded="true" signature="17306:17398" ph="select atten... Records" />
-            <marker date="1509581227000" expanded="true" signature="18071:18154" ph="select atten... Records" />
-            <marker date="1509581227000" expanded="true" signature="18071:18167" ph="select atten... Records" />
-            <marker date="1509581227000" expanded="true" signature="18783:18879" ph="select devic... Students" />
-            <marker date="1509581227000" expanded="true" signature="19501:19604" ph="select stude... Students" />
-            <marker date="1509581227000" expanded="true" signature="20233:20264" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20265" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20312" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20313" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20337" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20353" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20354" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20387" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20388" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20389" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20403" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20860:20905" ph="delete from " />
-            <marker date="1509581227000" expanded="true" signature="20860:20944" ph="delete from " />
-            <marker date="1509581227000" expanded="true" signature="20860:20945" ph="delete from " />
-            <marker date="1509581227000" expanded="true" signature="21397:21422" ph="select * fro... Instructors" />
-            <marker date="1509581227000" expanded="true" signature="22014:22036" ph="select * fro... Students" />
-            <marker date="1509581227000" expanded="true" signature="22620:22641" ph="select * fro... Courses" />
-            <marker date="1509581227000" expanded="true" signature="23512:23533" ph="select * fro... Records" />
+            <element signature="method#pullDevicesTable#0;class#roster#0" expanded="false" />
+            <marker date="1509648976000" expanded="true" signature="12469:12498" ph="insert into Records... " />
+            <marker date="1509648976000" expanded="true" signature="12469:12527" ph="insert into Records... " />
+            <marker date="1509648976000" expanded="true" signature="12469:12528" ph="insert into Records... " />
+            <marker date="1509648976000" expanded="true" signature="12469:12546" ph="insert into Records... " />
+            <marker date="1509648976000" expanded="true" signature="12469:12562" ph="insert into Records... " />
+            <marker date="1509648976000" expanded="true" signature="13041:13121" ph="insert into Students... " />
+            <marker date="1509648976000" expanded="true" signature="13041:13122" ph="insert into Students... " />
+            <marker date="1509648976000" expanded="true" signature="13521:13550" ph="insert into Students... " />
+            <marker date="1509648976000" expanded="true" signature="13521:13571" ph="insert into Students... " />
+            <marker date="1509648976000" expanded="true" signature="13521:13589" ph="insert into Students... " />
+            <marker date="1509648976000" expanded="true" signature="13521:13590" ph="insert into Devices... " />
+            <marker date="1509648976000" expanded="true" signature="13989:14018" ph="insert into Courses... " />
+            <marker date="1509648976000" expanded="true" signature="13989:14038" ph="insert into Courses... " />
+            <marker date="1509648976000" expanded="true" signature="13989:14057" ph="insert into Courses... " />
+            <marker date="1509648976000" expanded="true" signature="13989:14077" ph="insert into Courses... " />
+            <marker date="1509648976000" expanded="true" signature="13989:14097" ph="insert into Courses... " />
+            <marker date="1509648976000" expanded="true" signature="13989:14117" ph="insert into Courses... " />
+            <marker date="1509648976000" expanded="true" signature="13989:14137" ph="insert into Courses... " />
+            <marker date="1509648976000" expanded="true" signature="13989:14155" ph="insert into Courses... " />
+            <marker date="1509648976000" expanded="true" signature="14557:14628" ph="insert into Students... " />
+            <marker date="1509648976000" expanded="true" signature="14557:14629" ph="insert into Students... " />
+            <marker date="1509648976000" expanded="true" signature="15087:15116" ph="insert into Records... " />
+            <marker date="1509648976000" expanded="true" signature="15087:15203" ph="insert into Records... " />
+            <marker date="1509648976000" expanded="true" signature="15716:15860" ph="select atten... Records" />
+            <marker date="1509648976000" expanded="true" signature="16537:16668" ph="select atten... Records" />
+            <marker date="1509648976000" expanded="true" signature="16537:16677" ph="select atten... Records" />
+            <marker date="1509648976000" expanded="true" signature="17361:17453" ph="select atten... Records" />
+            <marker date="1509648976000" expanded="true" signature="18126:18209" ph="select atten... Records" />
+            <marker date="1509648976000" expanded="true" signature="18126:18222" ph="select atten... Records" />
+            <marker date="1509648976000" expanded="true" signature="18838:18955" ph="select devic... Devices" />
+            <marker date="1509648976000" expanded="true" signature="18838:18971" ph="select devic... Devices" />
+            <marker date="1509648976000" expanded="true" signature="18838:18973" ph="select devic... Devices" />
+            <marker date="1509648976000" expanded="true" signature="19584:19687" ph="select stude... Students" />
+            <marker date="1509648976000" expanded="true" signature="20316:20347" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20348" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20395" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20396" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20420" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20436" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20437" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20470" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20471" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20472" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20486" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20943:20988" ph="delete from " />
+            <marker date="1509648976000" expanded="true" signature="20943:21027" ph="delete from " />
+            <marker date="1509648976000" expanded="true" signature="20943:21028" ph="delete from " />
+            <marker date="1509648976000" expanded="true" signature="21480:21505" ph="select * fro... Instructors" />
+            <marker date="1509648976000" expanded="true" signature="22097:22119" ph="select * fro... Students" />
+            <marker date="1509648976000" expanded="true" signature="22703:22724" ph="select * fro... Courses" />
+            <marker date="1509648976000" expanded="true" signature="23595:23616" ph="select * fro... Records" />
+            <marker date="1509648976000" expanded="true" signature="24313:24334" ph="select * fro... Devices" />
           </folding>
         </state>
       </provider>
@@ -784,55 +797,59 @@
             <element signature="method#pullStudentTable#0;class#roster#0" expanded="false" />
             <element signature="method#pullCourseTable#0;class#roster#0" expanded="false" />
             <element signature="method#pullRecordTable#0;class#roster#0" expanded="false" />
-            <marker date="1509581227000" expanded="true" signature="12414:12443" ph="insert into Records... " />
-            <marker date="1509581227000" expanded="true" signature="12414:12472" ph="insert into Records... " />
-            <marker date="1509581227000" expanded="true" signature="12414:12473" ph="insert into Records... " />
-            <marker date="1509581227000" expanded="true" signature="12414:12491" ph="insert into Records... " />
-            <marker date="1509581227000" expanded="true" signature="12414:12507" ph="insert into Records... " />
-            <marker date="1509581227000" expanded="true" signature="12986:13066" ph="insert into Students... " />
-            <marker date="1509581227000" expanded="true" signature="12986:13067" ph="insert into Students... " />
-            <marker date="1509581227000" expanded="true" signature="13466:13495" ph="insert into Students... " />
-            <marker date="1509581227000" expanded="true" signature="13466:13516" ph="insert into Students... " />
-            <marker date="1509581227000" expanded="true" signature="13466:13534" ph="insert into Students... " />
-            <marker date="1509581227000" expanded="true" signature="13466:13535" ph="insert into Devices... " />
-            <marker date="1509581227000" expanded="true" signature="13934:13963" ph="insert into Courses... " />
-            <marker date="1509581227000" expanded="true" signature="13934:13983" ph="insert into Courses... " />
-            <marker date="1509581227000" expanded="true" signature="13934:14002" ph="insert into Courses... " />
-            <marker date="1509581227000" expanded="true" signature="13934:14022" ph="insert into Courses... " />
-            <marker date="1509581227000" expanded="true" signature="13934:14042" ph="insert into Courses... " />
-            <marker date="1509581227000" expanded="true" signature="13934:14062" ph="insert into Courses... " />
-            <marker date="1509581227000" expanded="true" signature="13934:14082" ph="insert into Courses... " />
-            <marker date="1509581227000" expanded="true" signature="13934:14100" ph="insert into Courses... " />
-            <marker date="1509581227000" expanded="true" signature="14502:14573" ph="insert into Students... " />
-            <marker date="1509581227000" expanded="true" signature="14502:14574" ph="insert into Students... " />
-            <marker date="1509581227000" expanded="true" signature="15032:15061" ph="insert into Records... " />
-            <marker date="1509581227000" expanded="true" signature="15032:15148" ph="insert into Records... " />
-            <marker date="1509581227000" expanded="true" signature="15661:15805" ph="select atten... Records" />
-            <marker date="1509581227000" expanded="true" signature="16482:16613" ph="select atten... Records" />
-            <marker date="1509581227000" expanded="true" signature="16482:16622" ph="select atten... Records" />
-            <marker date="1509581227000" expanded="true" signature="17306:17398" ph="select atten... Records" />
-            <marker date="1509581227000" expanded="true" signature="18071:18154" ph="select atten... Records" />
-            <marker date="1509581227000" expanded="true" signature="18071:18167" ph="select atten... Records" />
-            <marker date="1509581227000" expanded="true" signature="18783:18879" ph="select devic... Students" />
-            <marker date="1509581227000" expanded="true" signature="19501:19604" ph="select stude... Students" />
-            <marker date="1509581227000" expanded="true" signature="20233:20264" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20265" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20312" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20313" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20337" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20353" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20354" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20387" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20388" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20389" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20403" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20860:20905" ph="delete from " />
-            <marker date="1509581227000" expanded="true" signature="20860:20944" ph="delete from " />
-            <marker date="1509581227000" expanded="true" signature="20860:20945" ph="delete from " />
-            <marker date="1509581227000" expanded="true" signature="21397:21422" ph="select * fro... Instructors" />
-            <marker date="1509581227000" expanded="true" signature="22014:22036" ph="select * fro... Students" />
-            <marker date="1509581227000" expanded="true" signature="22620:22641" ph="select * fro... Courses" />
-            <marker date="1509581227000" expanded="true" signature="23512:23533" ph="select * fro... Records" />
+            <element signature="method#pullDevicesTable#0;class#roster#0" expanded="false" />
+            <marker date="1509648976000" expanded="true" signature="12469:12498" ph="insert into Records... " />
+            <marker date="1509648976000" expanded="true" signature="12469:12527" ph="insert into Records... " />
+            <marker date="1509648976000" expanded="true" signature="12469:12528" ph="insert into Records... " />
+            <marker date="1509648976000" expanded="true" signature="12469:12546" ph="insert into Records... " />
+            <marker date="1509648976000" expanded="true" signature="12469:12562" ph="insert into Records... " />
+            <marker date="1509648976000" expanded="true" signature="13041:13121" ph="insert into Students... " />
+            <marker date="1509648976000" expanded="true" signature="13041:13122" ph="insert into Students... " />
+            <marker date="1509648976000" expanded="true" signature="13521:13550" ph="insert into Students... " />
+            <marker date="1509648976000" expanded="true" signature="13521:13571" ph="insert into Students... " />
+            <marker date="1509648976000" expanded="true" signature="13521:13589" ph="insert into Students... " />
+            <marker date="1509648976000" expanded="true" signature="13521:13590" ph="insert into Devices... " />
+            <marker date="1509648976000" expanded="true" signature="13989:14018" ph="insert into Courses... " />
+            <marker date="1509648976000" expanded="true" signature="13989:14038" ph="insert into Courses... " />
+            <marker date="1509648976000" expanded="true" signature="13989:14057" ph="insert into Courses... " />
+            <marker date="1509648976000" expanded="true" signature="13989:14077" ph="insert into Courses... " />
+            <marker date="1509648976000" expanded="true" signature="13989:14097" ph="insert into Courses... " />
+            <marker date="1509648976000" expanded="true" signature="13989:14117" ph="insert into Courses... " />
+            <marker date="1509648976000" expanded="true" signature="13989:14137" ph="insert into Courses... " />
+            <marker date="1509648976000" expanded="true" signature="13989:14155" ph="insert into Courses... " />
+            <marker date="1509648976000" expanded="true" signature="14557:14628" ph="insert into Students... " />
+            <marker date="1509648976000" expanded="true" signature="14557:14629" ph="insert into Students... " />
+            <marker date="1509648976000" expanded="true" signature="15087:15116" ph="insert into Records... " />
+            <marker date="1509648976000" expanded="true" signature="15087:15203" ph="insert into Records... " />
+            <marker date="1509648976000" expanded="true" signature="15716:15860" ph="select atten... Records" />
+            <marker date="1509648976000" expanded="true" signature="16537:16668" ph="select atten... Records" />
+            <marker date="1509648976000" expanded="true" signature="16537:16677" ph="select atten... Records" />
+            <marker date="1509648976000" expanded="true" signature="17361:17453" ph="select atten... Records" />
+            <marker date="1509648976000" expanded="true" signature="18126:18209" ph="select atten... Records" />
+            <marker date="1509648976000" expanded="true" signature="18126:18222" ph="select atten... Records" />
+            <marker date="1509648976000" expanded="true" signature="18838:18955" ph="select devic... Devices" />
+            <marker date="1509648976000" expanded="true" signature="18838:18971" ph="select devic... Devices" />
+            <marker date="1509648976000" expanded="true" signature="18838:18973" ph="select devic... Devices" />
+            <marker date="1509648976000" expanded="true" signature="19584:19687" ph="select stude... Students" />
+            <marker date="1509648976000" expanded="true" signature="20316:20347" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20348" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20395" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20396" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20420" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20436" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20437" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20470" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20471" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20472" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20486" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20943:20988" ph="delete from " />
+            <marker date="1509648976000" expanded="true" signature="20943:21027" ph="delete from " />
+            <marker date="1509648976000" expanded="true" signature="20943:21028" ph="delete from " />
+            <marker date="1509648976000" expanded="true" signature="21480:21505" ph="select * fro... Instructors" />
+            <marker date="1509648976000" expanded="true" signature="22097:22119" ph="select * fro... Students" />
+            <marker date="1509648976000" expanded="true" signature="22703:22724" ph="select * fro... Courses" />
+            <marker date="1509648976000" expanded="true" signature="23595:23616" ph="select * fro... Records" />
+            <marker date="1509648976000" expanded="true" signature="24313:24334" ph="select * fro... Devices" />
           </folding>
         </state>
       </provider>
@@ -869,55 +886,59 @@
             <element signature="method#pullStudentTable#0;class#roster#0" expanded="false" />
             <element signature="method#pullCourseTable#0;class#roster#0" expanded="false" />
             <element signature="method#pullRecordTable#0;class#roster#0" expanded="false" />
-            <marker date="1509581227000" expanded="true" signature="12414:12443" ph="insert into Records... " />
-            <marker date="1509581227000" expanded="true" signature="12414:12472" ph="insert into Records... " />
-            <marker date="1509581227000" expanded="true" signature="12414:12473" ph="insert into Records... " />
-            <marker date="1509581227000" expanded="true" signature="12414:12491" ph="insert into Records... " />
-            <marker date="1509581227000" expanded="true" signature="12414:12507" ph="insert into Records... " />
-            <marker date="1509581227000" expanded="true" signature="12986:13066" ph="insert into Students... " />
-            <marker date="1509581227000" expanded="true" signature="12986:13067" ph="insert into Students... " />
-            <marker date="1509581227000" expanded="true" signature="13466:13495" ph="insert into Students... " />
-            <marker date="1509581227000" expanded="true" signature="13466:13516" ph="insert into Students... " />
-            <marker date="1509581227000" expanded="true" signature="13466:13534" ph="insert into Students... " />
-            <marker date="1509581227000" expanded="true" signature="13466:13535" ph="insert into Devices... " />
-            <marker date="1509581227000" expanded="true" signature="13934:13963" ph="insert into Courses... " />
-            <marker date="1509581227000" expanded="true" signature="13934:13983" ph="insert into Courses... " />
-            <marker date="1509581227000" expanded="true" signature="13934:14002" ph="insert into Courses... " />
-            <marker date="1509581227000" expanded="true" signature="13934:14022" ph="insert into Courses... " />
-            <marker date="1509581227000" expanded="true" signature="13934:14042" ph="insert into Courses... " />
-            <marker date="1509581227000" expanded="true" signature="13934:14062" ph="insert into Courses... " />
-            <marker date="1509581227000" expanded="true" signature="13934:14082" ph="insert into Courses... " />
-            <marker date="1509581227000" expanded="true" signature="13934:14100" ph="insert into Courses... " />
-            <marker date="1509581227000" expanded="true" signature="14502:14573" ph="insert into Students... " />
-            <marker date="1509581227000" expanded="true" signature="14502:14574" ph="insert into Students... " />
-            <marker date="1509581227000" expanded="true" signature="15032:15061" ph="insert into Records... " />
-            <marker date="1509581227000" expanded="true" signature="15032:15148" ph="insert into Records... " />
-            <marker date="1509581227000" expanded="true" signature="15661:15805" ph="select atten... Records" />
-            <marker date="1509581227000" expanded="true" signature="16482:16613" ph="select atten... Records" />
-            <marker date="1509581227000" expanded="true" signature="16482:16622" ph="select atten... Records" />
-            <marker date="1509581227000" expanded="true" signature="17306:17398" ph="select atten... Records" />
-            <marker date="1509581227000" expanded="true" signature="18071:18154" ph="select atten... Records" />
-            <marker date="1509581227000" expanded="true" signature="18071:18167" ph="select atten... Records" />
-            <marker date="1509581227000" expanded="true" signature="18783:18879" ph="select devic... Students" />
-            <marker date="1509581227000" expanded="true" signature="19501:19604" ph="select stude... Students" />
-            <marker date="1509581227000" expanded="true" signature="20233:20264" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20265" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20312" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20313" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20337" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20353" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20354" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20387" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20388" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20389" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20403" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20860:20905" ph="delete from " />
-            <marker date="1509581227000" expanded="true" signature="20860:20944" ph="delete from " />
-            <marker date="1509581227000" expanded="true" signature="20860:20945" ph="delete from " />
-            <marker date="1509581227000" expanded="true" signature="21397:21422" ph="select * fro... Instructors" />
-            <marker date="1509581227000" expanded="true" signature="22014:22036" ph="select * fro... Students" />
-            <marker date="1509581227000" expanded="true" signature="22620:22641" ph="select * fro... Courses" />
-            <marker date="1509581227000" expanded="true" signature="23512:23533" ph="select * fro... Records" />
+            <element signature="method#pullDevicesTable#0;class#roster#0" expanded="false" />
+            <marker date="1509648976000" expanded="true" signature="12469:12498" ph="insert into Records... " />
+            <marker date="1509648976000" expanded="true" signature="12469:12527" ph="insert into Records... " />
+            <marker date="1509648976000" expanded="true" signature="12469:12528" ph="insert into Records... " />
+            <marker date="1509648976000" expanded="true" signature="12469:12546" ph="insert into Records... " />
+            <marker date="1509648976000" expanded="true" signature="12469:12562" ph="insert into Records... " />
+            <marker date="1509648976000" expanded="true" signature="13041:13121" ph="insert into Students... " />
+            <marker date="1509648976000" expanded="true" signature="13041:13122" ph="insert into Students... " />
+            <marker date="1509648976000" expanded="true" signature="13521:13550" ph="insert into Students... " />
+            <marker date="1509648976000" expanded="true" signature="13521:13571" ph="insert into Students... " />
+            <marker date="1509648976000" expanded="true" signature="13521:13589" ph="insert into Students... " />
+            <marker date="1509648976000" expanded="true" signature="13521:13590" ph="insert into Devices... " />
+            <marker date="1509648976000" expanded="true" signature="13989:14018" ph="insert into Courses... " />
+            <marker date="1509648976000" expanded="true" signature="13989:14038" ph="insert into Courses... " />
+            <marker date="1509648976000" expanded="true" signature="13989:14057" ph="insert into Courses... " />
+            <marker date="1509648976000" expanded="true" signature="13989:14077" ph="insert into Courses... " />
+            <marker date="1509648976000" expanded="true" signature="13989:14097" ph="insert into Courses... " />
+            <marker date="1509648976000" expanded="true" signature="13989:14117" ph="insert into Courses... " />
+            <marker date="1509648976000" expanded="true" signature="13989:14137" ph="insert into Courses... " />
+            <marker date="1509648976000" expanded="true" signature="13989:14155" ph="insert into Courses... " />
+            <marker date="1509648976000" expanded="true" signature="14557:14628" ph="insert into Students... " />
+            <marker date="1509648976000" expanded="true" signature="14557:14629" ph="insert into Students... " />
+            <marker date="1509648976000" expanded="true" signature="15087:15116" ph="insert into Records... " />
+            <marker date="1509648976000" expanded="true" signature="15087:15203" ph="insert into Records... " />
+            <marker date="1509648976000" expanded="true" signature="15716:15860" ph="select atten... Records" />
+            <marker date="1509648976000" expanded="true" signature="16537:16668" ph="select atten... Records" />
+            <marker date="1509648976000" expanded="true" signature="16537:16677" ph="select atten... Records" />
+            <marker date="1509648976000" expanded="true" signature="17361:17453" ph="select atten... Records" />
+            <marker date="1509648976000" expanded="true" signature="18126:18209" ph="select atten... Records" />
+            <marker date="1509648976000" expanded="true" signature="18126:18222" ph="select atten... Records" />
+            <marker date="1509648976000" expanded="true" signature="18838:18955" ph="select devic... Devices" />
+            <marker date="1509648976000" expanded="true" signature="18838:18971" ph="select devic... Devices" />
+            <marker date="1509648976000" expanded="true" signature="18838:18973" ph="select devic... Devices" />
+            <marker date="1509648976000" expanded="true" signature="19584:19687" ph="select stude... Students" />
+            <marker date="1509648976000" expanded="true" signature="20316:20347" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20348" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20395" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20396" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20420" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20436" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20437" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20470" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20471" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20472" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20486" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20943:20988" ph="delete from " />
+            <marker date="1509648976000" expanded="true" signature="20943:21027" ph="delete from " />
+            <marker date="1509648976000" expanded="true" signature="20943:21028" ph="delete from " />
+            <marker date="1509648976000" expanded="true" signature="21480:21505" ph="select * fro... Instructors" />
+            <marker date="1509648976000" expanded="true" signature="22097:22119" ph="select * fro... Students" />
+            <marker date="1509648976000" expanded="true" signature="22703:22724" ph="select * fro... Courses" />
+            <marker date="1509648976000" expanded="true" signature="23595:23616" ph="select * fro... Records" />
+            <marker date="1509648976000" expanded="true" signature="24313:24334" ph="select * fro... Devices" />
           </folding>
         </state>
       </provider>
@@ -954,55 +975,59 @@
             <element signature="method#pullStudentTable#0;class#roster#0" expanded="false" />
             <element signature="method#pullCourseTable#0;class#roster#0" expanded="false" />
             <element signature="method#pullRecordTable#0;class#roster#0" expanded="false" />
-            <marker date="1509581227000" expanded="true" signature="12414:12443" ph="insert into Records... " />
-            <marker date="1509581227000" expanded="true" signature="12414:12472" ph="insert into Records... " />
-            <marker date="1509581227000" expanded="true" signature="12414:12473" ph="insert into Records... " />
-            <marker date="1509581227000" expanded="true" signature="12414:12491" ph="insert into Records... " />
-            <marker date="1509581227000" expanded="true" signature="12414:12507" ph="insert into Records... " />
-            <marker date="1509581227000" expanded="true" signature="12986:13066" ph="insert into Students... " />
-            <marker date="1509581227000" expanded="true" signature="12986:13067" ph="insert into Students... " />
-            <marker date="1509581227000" expanded="true" signature="13466:13495" ph="insert into Students... " />
-            <marker date="1509581227000" expanded="true" signature="13466:13516" ph="insert into Students... " />
-            <marker date="1509581227000" expanded="true" signature="13466:13534" ph="insert into Students... " />
-            <marker date="1509581227000" expanded="true" signature="13466:13535" ph="insert into Devices... " />
-            <marker date="1509581227000" expanded="true" signature="13934:13963" ph="insert into Courses... " />
-            <marker date="1509581227000" expanded="true" signature="13934:13983" ph="insert into Courses... " />
-            <marker date="1509581227000" expanded="true" signature="13934:14002" ph="insert into Courses... " />
-            <marker date="1509581227000" expanded="true" signature="13934:14022" ph="insert into Courses... " />
-            <marker date="1509581227000" expanded="true" signature="13934:14042" ph="insert into Courses... " />
-            <marker date="1509581227000" expanded="true" signature="13934:14062" ph="insert into Courses... " />
-            <marker date="1509581227000" expanded="true" signature="13934:14082" ph="insert into Courses... " />
-            <marker date="1509581227000" expanded="true" signature="13934:14100" ph="insert into Courses... " />
-            <marker date="1509581227000" expanded="true" signature="14502:14573" ph="insert into Students... " />
-            <marker date="1509581227000" expanded="true" signature="14502:14574" ph="insert into Students... " />
-            <marker date="1509581227000" expanded="true" signature="15032:15061" ph="insert into Records... " />
-            <marker date="1509581227000" expanded="true" signature="15032:15148" ph="insert into Records... " />
-            <marker date="1509581227000" expanded="true" signature="15661:15805" ph="select atten... Records" />
-            <marker date="1509581227000" expanded="true" signature="16482:16613" ph="select atten... Records" />
-            <marker date="1509581227000" expanded="true" signature="16482:16622" ph="select atten... Records" />
-            <marker date="1509581227000" expanded="true" signature="17306:17398" ph="select atten... Records" />
-            <marker date="1509581227000" expanded="true" signature="18071:18154" ph="select atten... Records" />
-            <marker date="1509581227000" expanded="true" signature="18071:18167" ph="select atten... Records" />
-            <marker date="1509581227000" expanded="true" signature="18783:18879" ph="select devic... Students" />
-            <marker date="1509581227000" expanded="true" signature="19501:19604" ph="select stude... Students" />
-            <marker date="1509581227000" expanded="true" signature="20233:20264" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20265" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20312" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20313" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20337" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20353" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20354" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20387" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20388" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20389" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20403" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20860:20905" ph="delete from " />
-            <marker date="1509581227000" expanded="true" signature="20860:20944" ph="delete from " />
-            <marker date="1509581227000" expanded="true" signature="20860:20945" ph="delete from " />
-            <marker date="1509581227000" expanded="true" signature="21397:21422" ph="select * fro... Instructors" />
-            <marker date="1509581227000" expanded="true" signature="22014:22036" ph="select * fro... Students" />
-            <marker date="1509581227000" expanded="true" signature="22620:22641" ph="select * fro... Courses" />
-            <marker date="1509581227000" expanded="true" signature="23512:23533" ph="select * fro... Records" />
+            <element signature="method#pullDevicesTable#0;class#roster#0" expanded="false" />
+            <marker date="1509648976000" expanded="true" signature="12469:12498" ph="insert into Records... " />
+            <marker date="1509648976000" expanded="true" signature="12469:12527" ph="insert into Records... " />
+            <marker date="1509648976000" expanded="true" signature="12469:12528" ph="insert into Records... " />
+            <marker date="1509648976000" expanded="true" signature="12469:12546" ph="insert into Records... " />
+            <marker date="1509648976000" expanded="true" signature="12469:12562" ph="insert into Records... " />
+            <marker date="1509648976000" expanded="true" signature="13041:13121" ph="insert into Students... " />
+            <marker date="1509648976000" expanded="true" signature="13041:13122" ph="insert into Students... " />
+            <marker date="1509648976000" expanded="true" signature="13521:13550" ph="insert into Students... " />
+            <marker date="1509648976000" expanded="true" signature="13521:13571" ph="insert into Students... " />
+            <marker date="1509648976000" expanded="true" signature="13521:13589" ph="insert into Students... " />
+            <marker date="1509648976000" expanded="true" signature="13521:13590" ph="insert into Devices... " />
+            <marker date="1509648976000" expanded="true" signature="13989:14018" ph="insert into Courses... " />
+            <marker date="1509648976000" expanded="true" signature="13989:14038" ph="insert into Courses... " />
+            <marker date="1509648976000" expanded="true" signature="13989:14057" ph="insert into Courses... " />
+            <marker date="1509648976000" expanded="true" signature="13989:14077" ph="insert into Courses... " />
+            <marker date="1509648976000" expanded="true" signature="13989:14097" ph="insert into Courses... " />
+            <marker date="1509648976000" expanded="true" signature="13989:14117" ph="insert into Courses... " />
+            <marker date="1509648976000" expanded="true" signature="13989:14137" ph="insert into Courses... " />
+            <marker date="1509648976000" expanded="true" signature="13989:14155" ph="insert into Courses... " />
+            <marker date="1509648976000" expanded="true" signature="14557:14628" ph="insert into Students... " />
+            <marker date="1509648976000" expanded="true" signature="14557:14629" ph="insert into Students... " />
+            <marker date="1509648976000" expanded="true" signature="15087:15116" ph="insert into Records... " />
+            <marker date="1509648976000" expanded="true" signature="15087:15203" ph="insert into Records... " />
+            <marker date="1509648976000" expanded="true" signature="15716:15860" ph="select atten... Records" />
+            <marker date="1509648976000" expanded="true" signature="16537:16668" ph="select atten... Records" />
+            <marker date="1509648976000" expanded="true" signature="16537:16677" ph="select atten... Records" />
+            <marker date="1509648976000" expanded="true" signature="17361:17453" ph="select atten... Records" />
+            <marker date="1509648976000" expanded="true" signature="18126:18209" ph="select atten... Records" />
+            <marker date="1509648976000" expanded="true" signature="18126:18222" ph="select atten... Records" />
+            <marker date="1509648976000" expanded="true" signature="18838:18955" ph="select devic... Devices" />
+            <marker date="1509648976000" expanded="true" signature="18838:18971" ph="select devic... Devices" />
+            <marker date="1509648976000" expanded="true" signature="18838:18973" ph="select devic... Devices" />
+            <marker date="1509648976000" expanded="true" signature="19584:19687" ph="select stude... Students" />
+            <marker date="1509648976000" expanded="true" signature="20316:20347" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20348" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20395" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20396" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20420" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20436" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20437" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20470" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20471" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20472" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20486" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20943:20988" ph="delete from " />
+            <marker date="1509648976000" expanded="true" signature="20943:21027" ph="delete from " />
+            <marker date="1509648976000" expanded="true" signature="20943:21028" ph="delete from " />
+            <marker date="1509648976000" expanded="true" signature="21480:21505" ph="select * fro... Instructors" />
+            <marker date="1509648976000" expanded="true" signature="22097:22119" ph="select * fro... Students" />
+            <marker date="1509648976000" expanded="true" signature="22703:22724" ph="select * fro... Courses" />
+            <marker date="1509648976000" expanded="true" signature="23595:23616" ph="select * fro... Records" />
+            <marker date="1509648976000" expanded="true" signature="24313:24334" ph="select * fro... Devices" />
           </folding>
         </state>
       </provider>
@@ -1039,55 +1064,59 @@
             <element signature="method#pullStudentTable#0;class#roster#0" expanded="false" />
             <element signature="method#pullCourseTable#0;class#roster#0" expanded="false" />
             <element signature="method#pullRecordTable#0;class#roster#0" expanded="false" />
-            <marker date="1509581227000" expanded="true" signature="12414:12443" ph="insert into Records... " />
-            <marker date="1509581227000" expanded="true" signature="12414:12472" ph="insert into Records... " />
-            <marker date="1509581227000" expanded="true" signature="12414:12473" ph="insert into Records... " />
-            <marker date="1509581227000" expanded="true" signature="12414:12491" ph="insert into Records... " />
-            <marker date="1509581227000" expanded="true" signature="12414:12507" ph="insert into Records... " />
-            <marker date="1509581227000" expanded="true" signature="12986:13066" ph="insert into Students... " />
-            <marker date="1509581227000" expanded="true" signature="12986:13067" ph="insert into Students... " />
-            <marker date="1509581227000" expanded="true" signature="13466:13495" ph="insert into Students... " />
-            <marker date="1509581227000" expanded="true" signature="13466:13516" ph="insert into Students... " />
-            <marker date="1509581227000" expanded="true" signature="13466:13534" ph="insert into Students... " />
-            <marker date="1509581227000" expanded="true" signature="13466:13535" ph="insert into Devices... " />
-            <marker date="1509581227000" expanded="true" signature="13934:13963" ph="insert into Courses... " />
-            <marker date="1509581227000" expanded="true" signature="13934:13983" ph="insert into Courses... " />
-            <marker date="1509581227000" expanded="true" signature="13934:14002" ph="insert into Courses... " />
-            <marker date="1509581227000" expanded="true" signature="13934:14022" ph="insert into Courses... " />
-            <marker date="1509581227000" expanded="true" signature="13934:14042" ph="insert into Courses... " />
-            <marker date="1509581227000" expanded="true" signature="13934:14062" ph="insert into Courses... " />
-            <marker date="1509581227000" expanded="true" signature="13934:14082" ph="insert into Courses... " />
-            <marker date="1509581227000" expanded="true" signature="13934:14100" ph="insert into Courses... " />
-            <marker date="1509581227000" expanded="true" signature="14502:14573" ph="insert into Students... " />
-            <marker date="1509581227000" expanded="true" signature="14502:14574" ph="insert into Students... " />
-            <marker date="1509581227000" expanded="true" signature="15032:15061" ph="insert into Records... " />
-            <marker date="1509581227000" expanded="true" signature="15032:15148" ph="insert into Records... " />
-            <marker date="1509581227000" expanded="true" signature="15661:15805" ph="select atten... Records" />
-            <marker date="1509581227000" expanded="true" signature="16482:16613" ph="select atten... Records" />
-            <marker date="1509581227000" expanded="true" signature="16482:16622" ph="select atten... Records" />
-            <marker date="1509581227000" expanded="true" signature="17306:17398" ph="select atten... Records" />
-            <marker date="1509581227000" expanded="true" signature="18071:18154" ph="select atten... Records" />
-            <marker date="1509581227000" expanded="true" signature="18071:18167" ph="select atten... Records" />
-            <marker date="1509581227000" expanded="true" signature="18783:18879" ph="select devic... Students" />
-            <marker date="1509581227000" expanded="true" signature="19501:19604" ph="select stude... Students" />
-            <marker date="1509581227000" expanded="true" signature="20233:20264" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20265" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20312" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20313" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20337" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20353" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20354" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20387" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20388" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20389" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20403" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20860:20905" ph="delete from " />
-            <marker date="1509581227000" expanded="true" signature="20860:20944" ph="delete from " />
-            <marker date="1509581227000" expanded="true" signature="20860:20945" ph="delete from " />
-            <marker date="1509581227000" expanded="true" signature="21397:21422" ph="select * fro... Instructors" />
-            <marker date="1509581227000" expanded="true" signature="22014:22036" ph="select * fro... Students" />
-            <marker date="1509581227000" expanded="true" signature="22620:22641" ph="select * fro... Courses" />
-            <marker date="1509581227000" expanded="true" signature="23512:23533" ph="select * fro... Records" />
+            <element signature="method#pullDevicesTable#0;class#roster#0" expanded="false" />
+            <marker date="1509648976000" expanded="true" signature="12469:12498" ph="insert into Records... " />
+            <marker date="1509648976000" expanded="true" signature="12469:12527" ph="insert into Records... " />
+            <marker date="1509648976000" expanded="true" signature="12469:12528" ph="insert into Records... " />
+            <marker date="1509648976000" expanded="true" signature="12469:12546" ph="insert into Records... " />
+            <marker date="1509648976000" expanded="true" signature="12469:12562" ph="insert into Records... " />
+            <marker date="1509648976000" expanded="true" signature="13041:13121" ph="insert into Students... " />
+            <marker date="1509648976000" expanded="true" signature="13041:13122" ph="insert into Students... " />
+            <marker date="1509648976000" expanded="true" signature="13521:13550" ph="insert into Students... " />
+            <marker date="1509648976000" expanded="true" signature="13521:13571" ph="insert into Students... " />
+            <marker date="1509648976000" expanded="true" signature="13521:13589" ph="insert into Students... " />
+            <marker date="1509648976000" expanded="true" signature="13521:13590" ph="insert into Devices... " />
+            <marker date="1509648976000" expanded="true" signature="13989:14018" ph="insert into Courses... " />
+            <marker date="1509648976000" expanded="true" signature="13989:14038" ph="insert into Courses... " />
+            <marker date="1509648976000" expanded="true" signature="13989:14057" ph="insert into Courses... " />
+            <marker date="1509648976000" expanded="true" signature="13989:14077" ph="insert into Courses... " />
+            <marker date="1509648976000" expanded="true" signature="13989:14097" ph="insert into Courses... " />
+            <marker date="1509648976000" expanded="true" signature="13989:14117" ph="insert into Courses... " />
+            <marker date="1509648976000" expanded="true" signature="13989:14137" ph="insert into Courses... " />
+            <marker date="1509648976000" expanded="true" signature="13989:14155" ph="insert into Courses... " />
+            <marker date="1509648976000" expanded="true" signature="14557:14628" ph="insert into Students... " />
+            <marker date="1509648976000" expanded="true" signature="14557:14629" ph="insert into Students... " />
+            <marker date="1509648976000" expanded="true" signature="15087:15116" ph="insert into Records... " />
+            <marker date="1509648976000" expanded="true" signature="15087:15203" ph="insert into Records... " />
+            <marker date="1509648976000" expanded="true" signature="15716:15860" ph="select atten... Records" />
+            <marker date="1509648976000" expanded="true" signature="16537:16668" ph="select atten... Records" />
+            <marker date="1509648976000" expanded="true" signature="16537:16677" ph="select atten... Records" />
+            <marker date="1509648976000" expanded="true" signature="17361:17453" ph="select atten... Records" />
+            <marker date="1509648976000" expanded="true" signature="18126:18209" ph="select atten... Records" />
+            <marker date="1509648976000" expanded="true" signature="18126:18222" ph="select atten... Records" />
+            <marker date="1509648976000" expanded="true" signature="18838:18955" ph="select devic... Devices" />
+            <marker date="1509648976000" expanded="true" signature="18838:18971" ph="select devic... Devices" />
+            <marker date="1509648976000" expanded="true" signature="18838:18973" ph="select devic... Devices" />
+            <marker date="1509648976000" expanded="true" signature="19584:19687" ph="select stude... Students" />
+            <marker date="1509648976000" expanded="true" signature="20316:20347" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20348" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20395" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20396" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20420" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20436" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20437" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20470" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20471" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20472" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20486" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20943:20988" ph="delete from " />
+            <marker date="1509648976000" expanded="true" signature="20943:21027" ph="delete from " />
+            <marker date="1509648976000" expanded="true" signature="20943:21028" ph="delete from " />
+            <marker date="1509648976000" expanded="true" signature="21480:21505" ph="select * fro... Instructors" />
+            <marker date="1509648976000" expanded="true" signature="22097:22119" ph="select * fro... Students" />
+            <marker date="1509648976000" expanded="true" signature="22703:22724" ph="select * fro... Courses" />
+            <marker date="1509648976000" expanded="true" signature="23595:23616" ph="select * fro... Records" />
+            <marker date="1509648976000" expanded="true" signature="24313:24334" ph="select * fro... Devices" />
           </folding>
         </state>
       </provider>
@@ -1124,55 +1153,59 @@
             <element signature="method#pullStudentTable#0;class#roster#0" expanded="false" />
             <element signature="method#pullCourseTable#0;class#roster#0" expanded="false" />
             <element signature="method#pullRecordTable#0;class#roster#0" expanded="false" />
-            <marker date="1509581227000" expanded="true" signature="12414:12443" ph="insert into Records... " />
-            <marker date="1509581227000" expanded="true" signature="12414:12472" ph="insert into Records... " />
-            <marker date="1509581227000" expanded="true" signature="12414:12473" ph="insert into Records... " />
-            <marker date="1509581227000" expanded="true" signature="12414:12491" ph="insert into Records... " />
-            <marker date="1509581227000" expanded="true" signature="12414:12507" ph="insert into Records... " />
-            <marker date="1509581227000" expanded="true" signature="12986:13066" ph="insert into Students... " />
-            <marker date="1509581227000" expanded="true" signature="12986:13067" ph="insert into Students... " />
-            <marker date="1509581227000" expanded="true" signature="13466:13495" ph="insert into Students... " />
-            <marker date="1509581227000" expanded="true" signature="13466:13516" ph="insert into Students... " />
-            <marker date="1509581227000" expanded="true" signature="13466:13534" ph="insert into Students... " />
-            <marker date="1509581227000" expanded="true" signature="13466:13535" ph="insert into Devices... " />
-            <marker date="1509581227000" expanded="true" signature="13934:13963" ph="insert into Courses... " />
-            <marker date="1509581227000" expanded="true" signature="13934:13983" ph="insert into Courses... " />
-            <marker date="1509581227000" expanded="true" signature="13934:14002" ph="insert into Courses... " />
-            <marker date="1509581227000" expanded="true" signature="13934:14022" ph="insert into Courses... " />
-            <marker date="1509581227000" expanded="true" signature="13934:14042" ph="insert into Courses... " />
-            <marker date="1509581227000" expanded="true" signature="13934:14062" ph="insert into Courses... " />
-            <marker date="1509581227000" expanded="true" signature="13934:14082" ph="insert into Courses... " />
-            <marker date="1509581227000" expanded="true" signature="13934:14100" ph="insert into Courses... " />
-            <marker date="1509581227000" expanded="true" signature="14502:14573" ph="insert into Students... " />
-            <marker date="1509581227000" expanded="true" signature="14502:14574" ph="insert into Students... " />
-            <marker date="1509581227000" expanded="true" signature="15032:15061" ph="insert into Records... " />
-            <marker date="1509581227000" expanded="true" signature="15032:15148" ph="insert into Records... " />
-            <marker date="1509581227000" expanded="true" signature="15661:15805" ph="select atten... Records" />
-            <marker date="1509581227000" expanded="true" signature="16482:16613" ph="select atten... Records" />
-            <marker date="1509581227000" expanded="true" signature="16482:16622" ph="select atten... Records" />
-            <marker date="1509581227000" expanded="true" signature="17306:17398" ph="select atten... Records" />
-            <marker date="1509581227000" expanded="true" signature="18071:18154" ph="select atten... Records" />
-            <marker date="1509581227000" expanded="true" signature="18071:18167" ph="select atten... Records" />
-            <marker date="1509581227000" expanded="true" signature="18783:18879" ph="select devic... Students" />
-            <marker date="1509581227000" expanded="true" signature="19501:19604" ph="select stude... Students" />
-            <marker date="1509581227000" expanded="true" signature="20233:20264" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20265" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20312" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20313" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20337" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20353" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20354" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20387" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20388" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20389" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20403" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20860:20905" ph="delete from " />
-            <marker date="1509581227000" expanded="true" signature="20860:20944" ph="delete from " />
-            <marker date="1509581227000" expanded="true" signature="20860:20945" ph="delete from " />
-            <marker date="1509581227000" expanded="true" signature="21397:21422" ph="select * fro... Instructors" />
-            <marker date="1509581227000" expanded="true" signature="22014:22036" ph="select * fro... Students" />
-            <marker date="1509581227000" expanded="true" signature="22620:22641" ph="select * fro... Courses" />
-            <marker date="1509581227000" expanded="true" signature="23512:23533" ph="select * fro... Records" />
+            <element signature="method#pullDevicesTable#0;class#roster#0" expanded="false" />
+            <marker date="1509648976000" expanded="true" signature="12469:12498" ph="insert into Records... " />
+            <marker date="1509648976000" expanded="true" signature="12469:12527" ph="insert into Records... " />
+            <marker date="1509648976000" expanded="true" signature="12469:12528" ph="insert into Records... " />
+            <marker date="1509648976000" expanded="true" signature="12469:12546" ph="insert into Records... " />
+            <marker date="1509648976000" expanded="true" signature="12469:12562" ph="insert into Records... " />
+            <marker date="1509648976000" expanded="true" signature="13041:13121" ph="insert into Students... " />
+            <marker date="1509648976000" expanded="true" signature="13041:13122" ph="insert into Students... " />
+            <marker date="1509648976000" expanded="true" signature="13521:13550" ph="insert into Students... " />
+            <marker date="1509648976000" expanded="true" signature="13521:13571" ph="insert into Students... " />
+            <marker date="1509648976000" expanded="true" signature="13521:13589" ph="insert into Students... " />
+            <marker date="1509648976000" expanded="true" signature="13521:13590" ph="insert into Devices... " />
+            <marker date="1509648976000" expanded="true" signature="13989:14018" ph="insert into Courses... " />
+            <marker date="1509648976000" expanded="true" signature="13989:14038" ph="insert into Courses... " />
+            <marker date="1509648976000" expanded="true" signature="13989:14057" ph="insert into Courses... " />
+            <marker date="1509648976000" expanded="true" signature="13989:14077" ph="insert into Courses... " />
+            <marker date="1509648976000" expanded="true" signature="13989:14097" ph="insert into Courses... " />
+            <marker date="1509648976000" expanded="true" signature="13989:14117" ph="insert into Courses... " />
+            <marker date="1509648976000" expanded="true" signature="13989:14137" ph="insert into Courses... " />
+            <marker date="1509648976000" expanded="true" signature="13989:14155" ph="insert into Courses... " />
+            <marker date="1509648976000" expanded="true" signature="14557:14628" ph="insert into Students... " />
+            <marker date="1509648976000" expanded="true" signature="14557:14629" ph="insert into Students... " />
+            <marker date="1509648976000" expanded="true" signature="15087:15116" ph="insert into Records... " />
+            <marker date="1509648976000" expanded="true" signature="15087:15203" ph="insert into Records... " />
+            <marker date="1509648976000" expanded="true" signature="15716:15860" ph="select atten... Records" />
+            <marker date="1509648976000" expanded="true" signature="16537:16668" ph="select atten... Records" />
+            <marker date="1509648976000" expanded="true" signature="16537:16677" ph="select atten... Records" />
+            <marker date="1509648976000" expanded="true" signature="17361:17453" ph="select atten... Records" />
+            <marker date="1509648976000" expanded="true" signature="18126:18209" ph="select atten... Records" />
+            <marker date="1509648976000" expanded="true" signature="18126:18222" ph="select atten... Records" />
+            <marker date="1509648976000" expanded="true" signature="18838:18955" ph="select devic... Devices" />
+            <marker date="1509648976000" expanded="true" signature="18838:18971" ph="select devic... Devices" />
+            <marker date="1509648976000" expanded="true" signature="18838:18973" ph="select devic... Devices" />
+            <marker date="1509648976000" expanded="true" signature="19584:19687" ph="select stude... Students" />
+            <marker date="1509648976000" expanded="true" signature="20316:20347" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20348" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20395" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20396" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20420" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20436" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20437" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20470" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20471" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20472" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20486" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20943:20988" ph="delete from " />
+            <marker date="1509648976000" expanded="true" signature="20943:21027" ph="delete from " />
+            <marker date="1509648976000" expanded="true" signature="20943:21028" ph="delete from " />
+            <marker date="1509648976000" expanded="true" signature="21480:21505" ph="select * fro... Instructors" />
+            <marker date="1509648976000" expanded="true" signature="22097:22119" ph="select * fro... Students" />
+            <marker date="1509648976000" expanded="true" signature="22703:22724" ph="select * fro... Courses" />
+            <marker date="1509648976000" expanded="true" signature="23595:23616" ph="select * fro... Records" />
+            <marker date="1509648976000" expanded="true" signature="24313:24334" ph="select * fro... Devices" />
           </folding>
         </state>
       </provider>
@@ -1209,55 +1242,59 @@
             <element signature="method#pullStudentTable#0;class#roster#0" expanded="false" />
             <element signature="method#pullCourseTable#0;class#roster#0" expanded="false" />
             <element signature="method#pullRecordTable#0;class#roster#0" expanded="false" />
-            <marker date="1509581227000" expanded="true" signature="12414:12443" ph="insert into Records... " />
-            <marker date="1509581227000" expanded="true" signature="12414:12472" ph="insert into Records... " />
-            <marker date="1509581227000" expanded="true" signature="12414:12473" ph="insert into Records... " />
-            <marker date="1509581227000" expanded="true" signature="12414:12491" ph="insert into Records... " />
-            <marker date="1509581227000" expanded="true" signature="12414:12507" ph="insert into Records... " />
-            <marker date="1509581227000" expanded="true" signature="12986:13066" ph="insert into Students... " />
-            <marker date="1509581227000" expanded="true" signature="12986:13067" ph="insert into Students... " />
-            <marker date="1509581227000" expanded="true" signature="13466:13495" ph="insert into Students... " />
-            <marker date="1509581227000" expanded="true" signature="13466:13516" ph="insert into Students... " />
-            <marker date="1509581227000" expanded="true" signature="13466:13534" ph="insert into Students... " />
-            <marker date="1509581227000" expanded="true" signature="13466:13535" ph="insert into Devices... " />
-            <marker date="1509581227000" expanded="true" signature="13934:13963" ph="insert into Courses... " />
-            <marker date="1509581227000" expanded="true" signature="13934:13983" ph="insert into Courses... " />
-            <marker date="1509581227000" expanded="true" signature="13934:14002" ph="insert into Courses... " />
-            <marker date="1509581227000" expanded="true" signature="13934:14022" ph="insert into Courses... " />
-            <marker date="1509581227000" expanded="true" signature="13934:14042" ph="insert into Courses... " />
-            <marker date="1509581227000" expanded="true" signature="13934:14062" ph="insert into Courses... " />
-            <marker date="1509581227000" expanded="true" signature="13934:14082" ph="insert into Courses... " />
-            <marker date="1509581227000" expanded="true" signature="13934:14100" ph="insert into Courses... " />
-            <marker date="1509581227000" expanded="true" signature="14502:14573" ph="insert into Students... " />
-            <marker date="1509581227000" expanded="true" signature="14502:14574" ph="insert into Students... " />
-            <marker date="1509581227000" expanded="true" signature="15032:15061" ph="insert into Records... " />
-            <marker date="1509581227000" expanded="true" signature="15032:15148" ph="insert into Records... " />
-            <marker date="1509581227000" expanded="true" signature="15661:15805" ph="select atten... Records" />
-            <marker date="1509581227000" expanded="true" signature="16482:16613" ph="select atten... Records" />
-            <marker date="1509581227000" expanded="true" signature="16482:16622" ph="select atten... Records" />
-            <marker date="1509581227000" expanded="true" signature="17306:17398" ph="select atten... Records" />
-            <marker date="1509581227000" expanded="true" signature="18071:18154" ph="select atten... Records" />
-            <marker date="1509581227000" expanded="true" signature="18071:18167" ph="select atten... Records" />
-            <marker date="1509581227000" expanded="true" signature="18783:18879" ph="select devic... Students" />
-            <marker date="1509581227000" expanded="true" signature="19501:19604" ph="select stude... Students" />
-            <marker date="1509581227000" expanded="true" signature="20233:20264" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20265" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20312" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20313" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20337" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20353" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20354" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20387" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20388" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20389" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20403" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20860:20905" ph="delete from " />
-            <marker date="1509581227000" expanded="true" signature="20860:20944" ph="delete from " />
-            <marker date="1509581227000" expanded="true" signature="20860:20945" ph="delete from " />
-            <marker date="1509581227000" expanded="true" signature="21397:21422" ph="select * fro... Instructors" />
-            <marker date="1509581227000" expanded="true" signature="22014:22036" ph="select * fro... Students" />
-            <marker date="1509581227000" expanded="true" signature="22620:22641" ph="select * fro... Courses" />
-            <marker date="1509581227000" expanded="true" signature="23512:23533" ph="select * fro... Records" />
+            <element signature="method#pullDevicesTable#0;class#roster#0" expanded="false" />
+            <marker date="1509648976000" expanded="true" signature="12469:12498" ph="insert into Records... " />
+            <marker date="1509648976000" expanded="true" signature="12469:12527" ph="insert into Records... " />
+            <marker date="1509648976000" expanded="true" signature="12469:12528" ph="insert into Records... " />
+            <marker date="1509648976000" expanded="true" signature="12469:12546" ph="insert into Records... " />
+            <marker date="1509648976000" expanded="true" signature="12469:12562" ph="insert into Records... " />
+            <marker date="1509648976000" expanded="true" signature="13041:13121" ph="insert into Students... " />
+            <marker date="1509648976000" expanded="true" signature="13041:13122" ph="insert into Students... " />
+            <marker date="1509648976000" expanded="true" signature="13521:13550" ph="insert into Students... " />
+            <marker date="1509648976000" expanded="true" signature="13521:13571" ph="insert into Students... " />
+            <marker date="1509648976000" expanded="true" signature="13521:13589" ph="insert into Students... " />
+            <marker date="1509648976000" expanded="true" signature="13521:13590" ph="insert into Devices... " />
+            <marker date="1509648976000" expanded="true" signature="13989:14018" ph="insert into Courses... " />
+            <marker date="1509648976000" expanded="true" signature="13989:14038" ph="insert into Courses... " />
+            <marker date="1509648976000" expanded="true" signature="13989:14057" ph="insert into Courses... " />
+            <marker date="1509648976000" expanded="true" signature="13989:14077" ph="insert into Courses... " />
+            <marker date="1509648976000" expanded="true" signature="13989:14097" ph="insert into Courses... " />
+            <marker date="1509648976000" expanded="true" signature="13989:14117" ph="insert into Courses... " />
+            <marker date="1509648976000" expanded="true" signature="13989:14137" ph="insert into Courses... " />
+            <marker date="1509648976000" expanded="true" signature="13989:14155" ph="insert into Courses... " />
+            <marker date="1509648976000" expanded="true" signature="14557:14628" ph="insert into Students... " />
+            <marker date="1509648976000" expanded="true" signature="14557:14629" ph="insert into Students... " />
+            <marker date="1509648976000" expanded="true" signature="15087:15116" ph="insert into Records... " />
+            <marker date="1509648976000" expanded="true" signature="15087:15203" ph="insert into Records... " />
+            <marker date="1509648976000" expanded="true" signature="15716:15860" ph="select atten... Records" />
+            <marker date="1509648976000" expanded="true" signature="16537:16668" ph="select atten... Records" />
+            <marker date="1509648976000" expanded="true" signature="16537:16677" ph="select atten... Records" />
+            <marker date="1509648976000" expanded="true" signature="17361:17453" ph="select atten... Records" />
+            <marker date="1509648976000" expanded="true" signature="18126:18209" ph="select atten... Records" />
+            <marker date="1509648976000" expanded="true" signature="18126:18222" ph="select atten... Records" />
+            <marker date="1509648976000" expanded="true" signature="18838:18955" ph="select devic... Devices" />
+            <marker date="1509648976000" expanded="true" signature="18838:18971" ph="select devic... Devices" />
+            <marker date="1509648976000" expanded="true" signature="18838:18973" ph="select devic... Devices" />
+            <marker date="1509648976000" expanded="true" signature="19584:19687" ph="select stude... Students" />
+            <marker date="1509648976000" expanded="true" signature="20316:20347" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20348" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20395" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20396" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20420" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20436" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20437" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20470" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20471" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20472" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20486" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20943:20988" ph="delete from " />
+            <marker date="1509648976000" expanded="true" signature="20943:21027" ph="delete from " />
+            <marker date="1509648976000" expanded="true" signature="20943:21028" ph="delete from " />
+            <marker date="1509648976000" expanded="true" signature="21480:21505" ph="select * fro... Instructors" />
+            <marker date="1509648976000" expanded="true" signature="22097:22119" ph="select * fro... Students" />
+            <marker date="1509648976000" expanded="true" signature="22703:22724" ph="select * fro... Courses" />
+            <marker date="1509648976000" expanded="true" signature="23595:23616" ph="select * fro... Records" />
+            <marker date="1509648976000" expanded="true" signature="24313:24334" ph="select * fro... Devices" />
           </folding>
         </state>
       </provider>
@@ -1407,8 +1444,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/roster.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4170">
-          <caret line="280" column="52" lean-forward="false" selection-start-line="280" selection-start-column="52" selection-end-line="280" selection-end-column="52" />
+        <state relative-caret-position="453">
+          <caret line="595" column="66" lean-forward="false" selection-start-line="595" selection-start-column="66" selection-end-line="595" selection-end-column="66" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#addStudentToCourse#0;class#roster#0" expanded="false" />
@@ -1429,55 +1466,59 @@
             <element signature="method#pullStudentTable#0;class#roster#0" expanded="false" />
             <element signature="method#pullCourseTable#0;class#roster#0" expanded="false" />
             <element signature="method#pullRecordTable#0;class#roster#0" expanded="false" />
-            <marker date="1509581227000" expanded="true" signature="12414:12443" ph="insert into Records... " />
-            <marker date="1509581227000" expanded="true" signature="12414:12472" ph="insert into Records... " />
-            <marker date="1509581227000" expanded="true" signature="12414:12473" ph="insert into Records... " />
-            <marker date="1509581227000" expanded="true" signature="12414:12491" ph="insert into Records... " />
-            <marker date="1509581227000" expanded="true" signature="12414:12507" ph="insert into Records... " />
-            <marker date="1509581227000" expanded="true" signature="12986:13066" ph="insert into Students... " />
-            <marker date="1509581227000" expanded="true" signature="12986:13067" ph="insert into Students... " />
-            <marker date="1509581227000" expanded="true" signature="13466:13495" ph="insert into Students... " />
-            <marker date="1509581227000" expanded="true" signature="13466:13516" ph="insert into Students... " />
-            <marker date="1509581227000" expanded="true" signature="13466:13534" ph="insert into Students... " />
-            <marker date="1509581227000" expanded="true" signature="13466:13535" ph="insert into Devices... " />
-            <marker date="1509581227000" expanded="true" signature="13934:13963" ph="insert into Courses... " />
-            <marker date="1509581227000" expanded="true" signature="13934:13983" ph="insert into Courses... " />
-            <marker date="1509581227000" expanded="true" signature="13934:14002" ph="insert into Courses... " />
-            <marker date="1509581227000" expanded="true" signature="13934:14022" ph="insert into Courses... " />
-            <marker date="1509581227000" expanded="true" signature="13934:14042" ph="insert into Courses... " />
-            <marker date="1509581227000" expanded="true" signature="13934:14062" ph="insert into Courses... " />
-            <marker date="1509581227000" expanded="true" signature="13934:14082" ph="insert into Courses... " />
-            <marker date="1509581227000" expanded="true" signature="13934:14100" ph="insert into Courses... " />
-            <marker date="1509581227000" expanded="true" signature="14502:14573" ph="insert into Students... " />
-            <marker date="1509581227000" expanded="true" signature="14502:14574" ph="insert into Students... " />
-            <marker date="1509581227000" expanded="true" signature="15032:15061" ph="insert into Records... " />
-            <marker date="1509581227000" expanded="true" signature="15032:15148" ph="insert into Records... " />
-            <marker date="1509581227000" expanded="true" signature="15661:15805" ph="select atten... Records" />
-            <marker date="1509581227000" expanded="true" signature="16482:16613" ph="select atten... Records" />
-            <marker date="1509581227000" expanded="true" signature="16482:16622" ph="select atten... Records" />
-            <marker date="1509581227000" expanded="true" signature="17306:17398" ph="select atten... Records" />
-            <marker date="1509581227000" expanded="true" signature="18071:18154" ph="select atten... Records" />
-            <marker date="1509581227000" expanded="true" signature="18071:18167" ph="select atten... Records" />
-            <marker date="1509581227000" expanded="true" signature="18783:18879" ph="select devic... Students" />
-            <marker date="1509581227000" expanded="true" signature="19501:19604" ph="select stude... Students" />
-            <marker date="1509581227000" expanded="true" signature="20233:20264" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20265" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20312" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20313" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20337" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20353" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20354" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20387" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20388" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20389" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20233:20403" ph="update Recor... " />
-            <marker date="1509581227000" expanded="true" signature="20860:20905" ph="delete from " />
-            <marker date="1509581227000" expanded="true" signature="20860:20944" ph="delete from " />
-            <marker date="1509581227000" expanded="true" signature="20860:20945" ph="delete from " />
-            <marker date="1509581227000" expanded="true" signature="21397:21422" ph="select * fro... Instructors" />
-            <marker date="1509581227000" expanded="true" signature="22014:22036" ph="select * fro... Students" />
-            <marker date="1509581227000" expanded="true" signature="22620:22641" ph="select * fro... Courses" />
-            <marker date="1509581227000" expanded="true" signature="23512:23533" ph="select * fro... Records" />
+            <element signature="method#pullDevicesTable#0;class#roster#0" expanded="false" />
+            <marker date="1509648976000" expanded="true" signature="12469:12498" ph="insert into Records... " />
+            <marker date="1509648976000" expanded="true" signature="12469:12527" ph="insert into Records... " />
+            <marker date="1509648976000" expanded="true" signature="12469:12528" ph="insert into Records... " />
+            <marker date="1509648976000" expanded="true" signature="12469:12546" ph="insert into Records... " />
+            <marker date="1509648976000" expanded="true" signature="12469:12562" ph="insert into Records... " />
+            <marker date="1509648976000" expanded="true" signature="13041:13121" ph="insert into Students... " />
+            <marker date="1509648976000" expanded="true" signature="13041:13122" ph="insert into Students... " />
+            <marker date="1509648976000" expanded="true" signature="13521:13550" ph="insert into Students... " />
+            <marker date="1509648976000" expanded="true" signature="13521:13571" ph="insert into Students... " />
+            <marker date="1509648976000" expanded="true" signature="13521:13589" ph="insert into Students... " />
+            <marker date="1509648976000" expanded="true" signature="13521:13590" ph="insert into Devices... " />
+            <marker date="1509648976000" expanded="true" signature="13989:14018" ph="insert into Courses... " />
+            <marker date="1509648976000" expanded="true" signature="13989:14038" ph="insert into Courses... " />
+            <marker date="1509648976000" expanded="true" signature="13989:14057" ph="insert into Courses... " />
+            <marker date="1509648976000" expanded="true" signature="13989:14077" ph="insert into Courses... " />
+            <marker date="1509648976000" expanded="true" signature="13989:14097" ph="insert into Courses... " />
+            <marker date="1509648976000" expanded="true" signature="13989:14117" ph="insert into Courses... " />
+            <marker date="1509648976000" expanded="true" signature="13989:14137" ph="insert into Courses... " />
+            <marker date="1509648976000" expanded="true" signature="13989:14155" ph="insert into Courses... " />
+            <marker date="1509648976000" expanded="true" signature="14557:14628" ph="insert into Students... " />
+            <marker date="1509648976000" expanded="true" signature="14557:14629" ph="insert into Students... " />
+            <marker date="1509648976000" expanded="true" signature="15087:15116" ph="insert into Records... " />
+            <marker date="1509648976000" expanded="true" signature="15087:15203" ph="insert into Records... " />
+            <marker date="1509648976000" expanded="true" signature="15716:15860" ph="select atten... Records" />
+            <marker date="1509648976000" expanded="true" signature="16537:16668" ph="select atten... Records" />
+            <marker date="1509648976000" expanded="true" signature="16537:16677" ph="select atten... Records" />
+            <marker date="1509648976000" expanded="true" signature="17361:17453" ph="select atten... Records" />
+            <marker date="1509648976000" expanded="true" signature="18126:18209" ph="select atten... Records" />
+            <marker date="1509648976000" expanded="true" signature="18126:18222" ph="select atten... Records" />
+            <marker date="1509648976000" expanded="true" signature="18838:18955" ph="select devic... Devices" />
+            <marker date="1509648976000" expanded="true" signature="18838:18971" ph="select devic... Devices" />
+            <marker date="1509648976000" expanded="true" signature="18838:18973" ph="select devic... Devices" />
+            <marker date="1509648976000" expanded="true" signature="19584:19687" ph="select stude... Students" />
+            <marker date="1509648976000" expanded="true" signature="20316:20347" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20348" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20395" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20396" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20420" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20436" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20437" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20470" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20471" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20472" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20316:20486" ph="update Recor... " />
+            <marker date="1509648976000" expanded="true" signature="20943:20988" ph="delete from " />
+            <marker date="1509648976000" expanded="true" signature="20943:21027" ph="delete from " />
+            <marker date="1509648976000" expanded="true" signature="20943:21028" ph="delete from " />
+            <marker date="1509648976000" expanded="true" signature="21480:21505" ph="select * fro... Instructors" />
+            <marker date="1509648976000" expanded="true" signature="22097:22119" ph="select * fro... Students" />
+            <marker date="1509648976000" expanded="true" signature="22703:22724" ph="select * fro... Courses" />
+            <marker date="1509648976000" expanded="true" signature="23595:23616" ph="select * fro... Records" />
+            <marker date="1509648976000" expanded="true" signature="24313:24334" ph="select * fro... Devices" />
           </folding>
         </state>
       </provider>

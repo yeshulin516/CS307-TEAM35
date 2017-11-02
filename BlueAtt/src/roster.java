@@ -279,6 +279,7 @@ public class roster {
         String string;
 
         mdb.printArrayList(mdb.pullStudentTable(), 2);
+        mdb.printArrayList(mdb.pullDevicesTable(), 2);
         mdb.printArrayList(mdb.pullInstructorTable(), 2);
         mdb.printArrayList(mdb.pullCourseTable(), 7);
         mdb.printArrayList(mdb.pullRecordTable(), 4);
@@ -596,7 +597,7 @@ public class roster {
 
         ArrayList<String> deviceIDs = new ArrayList<>();
 
-        String query = "select deviceID from Students natural join Records where recordDate = '1-JAN-00' and courseID = " + courseID;
+        String query = "select deviceID from Devices natural join Students natural join Records where recordDate = '1-JAN-00' and courseID = '" + courseID + "'";
 
         try {
             Statement stmt = con.createStatement();
@@ -785,4 +786,29 @@ public class roster {
 
         return array;
     }
+
+    /* GET DEVICES TABLE */
+    public ArrayList<String> pullDevicesTable ( ) {
+
+        ArrayList<String> array = new ArrayList<>();
+
+        String query = "select * from Devices";
+
+        try {
+            Statement stmt = con.createStatement();
+            ResultSet rs = stmt.executeQuery(query);
+
+            while ( rs.next() ) {
+                array.add(rs.getString( "studentUsername" ));
+                array.add(rs.getString( "deviceID" ));
+            }
+
+            stmt.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return array;
+    }
+
 }
