@@ -533,6 +533,30 @@ public class roster {
         return val;
     }
 
+    /* PULL STUDENT'S USERNAME USING DEVICE ID */
+    //returns username string
+    public String pullStudentUsernameUsingDeviceID (String deviceID) {
+
+
+        String query = "select studentUsername from Devices where deviceID = '" + deviceID + "'";
+
+        String val = "NULL";
+
+        try {
+            Statement stmt = con.createStatement();
+            ResultSet rs = stmt.executeQuery(query);
+
+            while ( rs.next() ) {
+                val = rs.getString( "studentUsername" );
+            }
+            stmt.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return val;
+    }
+
     /* PULL STUDENT'S ATTENDANCE ON A SPECIFIC DATE */
     //returns String of 'Y' or 'N' or "NULL"
     public String pullStudentSpecificDateAttendance ( String studentUsername, int courseID, String date) {
@@ -878,9 +902,22 @@ public class roster {
         printArrayList(mdb.pullRecordTable(), 4);
 
         Scanner sc = new Scanner(System.in);
-        String[] test = new String[2];
+        String[] test = new String[3];
 
-        //TODO
+        System.out.println("Enter student's device ID: ");
+        test[0] = sc.nextLine();
+        System.out.println("Enter date (DD-MTH-YY): ");
+        test[1] = sc.nextLine();
+        System.out.println("Attendance (Y, N): ");
+        test[2] = sc.nextLine();
+        System.out.println("Enter course ID: ");
+        int courseID = sc.nextInt();
+
+
+        String username = mdb.pullStudentUsernameUsingDeviceID(test[0]);
+
+        mdb.addRecordToDatabase(username, courseID, test[1], test[2]);
+        printArrayList(mdb.pullRecordTable(), 4);
 
 
     }
