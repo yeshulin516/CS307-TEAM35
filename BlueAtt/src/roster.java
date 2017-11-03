@@ -273,8 +273,6 @@ public class roster {
         }
 
 
-
-
         ArrayList<String> array = new ArrayList<>();
         String string;
 
@@ -284,7 +282,46 @@ public class roster {
         mdb.printArrayList(mdb.pullCourseTable(), 7);
         mdb.printArrayList(mdb.pullRecordTable(), 4);
 
+        //add attendance  record for a student based on device ID present
+        //add device ID to the database
+        //add another device to the database
+        //update a device in the database
+        //get attendance record from a class for a specific student
         boolean cont = true;
+        while (cont == true) {
+            System.out.println(
+                    "1. add attendance  record for a student based on device ID present\n"
+                    + "2. add device ID to the database\n"
+                    + "3. add another device to the database\n"
+                    + "4. update a device in the database\n"
+                    + "5. get attendance record from a class for a specific student\n"
+            );
+            int key = sc.nextInt();
+            switch (key) {
+                case 1:
+                    testAddAttendance();
+                    break;
+                case 2:
+                    testAddDevice();
+                    break;
+                case 3:
+                    testAddDevice();
+                    break;
+                case 4:
+                    testUpdateDevice();
+                    break;
+                case 5:
+                    testGetAttendance();
+                    break;
+                default:
+                    System.out.println("Invalid Input");
+            }
+
+        }
+
+
+
+/*
         while (cont == true) {
             System.out.println("1. pullStudentSpecificDateAttendance\n"
                     + "2. pullCourseSemesterAttendance\n"
@@ -347,12 +384,13 @@ public class roster {
                     System.out.println("Invalid Input");
             }
         }
+        */
 
 
 
     }
 
-    public void printArrayList( ArrayList<String> array, int rowSize ) {
+    public static void printArrayList( ArrayList<String> array, int rowSize ) {
 
         int j = 0;
         for (int i = 0; i < array.size(); i++) {
@@ -684,6 +722,28 @@ public class roster {
 
     }
 
+    /* UPDATE STUDENT'S DEVICE */
+    //returns
+    public int updateDevice (String studentUsername, String oldDeviceID, String newDeviceID) {
+
+        int val = 0;
+
+        String query = "update Devices set deviceID = '" + newDeviceID +  "' where studentUsername = '" + studentUsername + "' and deviceID = '" + oldDeviceID + "'";
+
+        try {
+            Statement stmt = con.createStatement();
+            int rs = stmt.executeUpdate(query);
+
+            val = rs;
+
+            stmt.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return val;
+    }
+
     /* GET INSTRUCTOR TABLE */
     public ArrayList<String> pullInstructorTable ( ) {
 
@@ -811,4 +871,74 @@ public class roster {
         return array;
     }
 
+
+    //add attendance record for a student based on device ID present
+    public static void testAddAttendance ( ) {
+        roster mdb = new roster();
+        printArrayList(mdb.pullRecordTable(), 4);
+
+        Scanner sc = new Scanner(System.in);
+        String[] test = new String[2];
+
+        //TODO
+
+
+    }
+
+    //add device ID to the database
+    public static void testAddDevice () {
+        roster mdb = new roster();
+        printArrayList(mdb.pullDevicesTable(), 2);
+
+        Scanner sc = new Scanner(System.in);
+        String[] test = new String[2];
+
+        System.out.println("Enter student's username: ");
+        test[0] = sc.nextLine();
+        System.out.println("Enter student's device ID: ");
+        test[1] = sc.nextLine();
+
+        mdb.addDeviceToDatabase(test);
+        printArrayList(mdb.pullDevicesTable(), 2);
+    }
+
+    //update a device in the database
+    public static void testUpdateDevice ( ) {
+        roster mdb = new roster();
+        printArrayList(mdb.pullDevicesTable(), 2);
+
+        Scanner sc = new Scanner(System.in);
+        String[] test = new String[3];
+
+        System.out.println("Enter student's username: ");
+        test[0] = sc.nextLine();
+        System.out.println("Enter student's old device ID: ");
+        test[1] = sc.nextLine();
+        System.out.println("Enter student's new device ID: ");
+        test[2] = sc.nextLine();
+
+        mdb.updateDevice(test[0], test[1], test[2]);
+        printArrayList(mdb.pullDevicesTable(), 2);
+
+    }
+
+    //get attendance record from a class for a specific student
+    public static void testGetAttendance ( ) {
+        roster mdb = new roster();
+
+        //add a unique record to the table to pull
+        mdb.addRecordToDatabase("justin5", 307, "10-OCT-17", "Y");
+        mdb.addRecordToDatabase("justin5", 307, "12-OCT-17", "Y");
+        mdb.addRecordToDatabase("justin5", 307, "14-OCT-17", "N");
+
+        printArrayList(mdb.pullRecordTable(), 4);
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter student's username: ");
+        String zero = sc.nextLine();
+        System.out.println("Enter course id: ");
+        int one = sc.nextInt();
+
+        printArrayList(mdb.pullStudentSemesterAttendance(zero, one), 1);
+    }
 }
