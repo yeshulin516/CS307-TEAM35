@@ -29,7 +29,17 @@ public class Select_Date_Result extends AppCompatActivity {
 
 
             TextView tv = (TextView)findViewById(R.id.date_TextView);
-            tv.setText(String.valueOf(month)+ "/" + String.valueOf(day) + ", " + String.valueOf(year));
+            tv.setText(String.valueOf(month)+ "/" + String.valueOf(day) + "/" + String.valueOf(year));
+
+
+            if (month == 11 && day == 18) {
+                TextView attendance = (TextView) findViewById(R.id.textView);
+                attendance.setText("You did not attend");
+            }
+            else {
+                TextView attendance = (TextView) findViewById(R.id.textView);
+                attendance.setText("You did attend");
+            }
 
             Button btn = (Button) findViewById(R.id.home);
 
