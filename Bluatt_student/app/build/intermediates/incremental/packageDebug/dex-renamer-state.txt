@@ -1,7 +1,7 @@
-#Tue Oct 31 23:15:45 EDT 2017
-base.0=/Users/moonsunhwang/Desktop/Bluatt_student/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_1efecd03a7c7c7caf980d02cf537359add23f8f2
-renamed.1=classes.dex
-renamed.0=classes2.dex
-file.1=/Users/moonsunhwang/Desktop/Bluatt_student/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_85a27ca418543af3d825af6fa3d06f32faabfdde/classes.dex
-base.1=/Users/moonsunhwang/Desktop/Bluatt_student/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_85a27ca418543af3d825af6fa3d06f32faabfdde
-file.0=/Users/moonsunhwang/Desktop/Bluatt_student/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_1efecd03a7c7c7caf980d02cf537359add23f8f2/classes.dex
+#Fri Nov 03 17:40:21 EDT 2017
+base.0=/Users/moonsunhwang/Documents/2017 Fall/CS 307/UI백업 (11\:1)/Bluatt_student/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_4acd5f4f4a1ec6d83274dea422bc9e534b2af5b7
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=/Users/moonsunhwang/Documents/2017 Fall/CS 307/UI백업 (11\:1)/Bluatt_student/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_a986a86a63972bbb03314f47c241739ef22de59b/classes.dex
+base.1=/Users/moonsunhwang/Documents/2017 Fall/CS 307/UI백업 (11\:1)/Bluatt_student/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_a986a86a63972bbb03314f47c241739ef22de59b
+file.0=/Users/moonsunhwang/Documents/2017 Fall/CS 307/UI백업 (11\:1)/Bluatt_student/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_4acd5f4f4a1ec6d83274dea422bc9e534b2af5b7/classes.dex

@@ -13,6 +13,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+
+
         Button btn = (Button)findViewById(R.id.register);
 
         btn.setOnClickListener(new View.OnClickListener() {
@@ -39,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                startActivity(new Intent(MainActivity.this, Select_Class.class));
+                startActivity(new Intent(MainActivity.this, Attendance_Trend_and_Data.class));
             }
         });
 

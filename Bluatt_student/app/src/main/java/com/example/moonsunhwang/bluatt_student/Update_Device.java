@@ -19,6 +19,8 @@ public class Update_Device extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_update__device);
 
+        //Function, if you want to call right after opening the page.
+
         final Button btn = (Button)findViewById(R.id.submit);
 
         btn.setOnClickListener(new View.OnClickListener() {
@@ -32,6 +34,8 @@ public class Update_Device extends AppCompatActivity {
                 //Integer deviceID = Integer.valueOf(et2.getText().toString());
                 deviceID = et2.getText().toString();
 
+                //add data to database
+                //if it got saved
                 showSuccessMessage(btn);
 
 

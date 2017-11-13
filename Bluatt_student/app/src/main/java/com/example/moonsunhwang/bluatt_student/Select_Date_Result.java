@@ -31,6 +31,18 @@ public class Select_Date_Result extends AppCompatActivity {
             TextView tv = (TextView)findViewById(R.id.date_TextView);
             tv.setText(String.valueOf(month)+ "/" + String.valueOf(day) + ", " + String.valueOf(year));
 
+            //use date data
+            if (month == 11 && day == 18) {
+                TextView attendance = (TextView) findViewById(R.id.textView);
+                attendance.setText("You have NOT attended");
+            } else {
+                TextView attendance = (TextView) findViewById(R.id.textView);
+                attendance.setText("You have YES attended");
+            }
+
+
+
+
             Button btn = (Button) findViewById(R.id.home);
 
             btn.setOnClickListener(new View.OnClickListener() {

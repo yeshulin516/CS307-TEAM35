@@ -1,18 +1,10 @@
 [
     {
-        "merged": "/Users/moonsunhwang/Desktop/Bluatt_student/app/build/intermediates/res/merged/debug/mipmap-xhdpi/ic_launcher_round.png",
-        "source": "/Users/moonsunhwang/Desktop/Bluatt_student/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
-    },
-    {
         "merged": "/Users/moonsunhwang/Documents/2017 Fall/CS 307/UI백업 (11:1)/Bluatt_student/app/build/intermediates/res/merged/debug/mipmap-xhdpi/ic_launcher.png",
         "source": "/Users/moonsunhwang/Documents/2017 Fall/CS 307/UI백업 (11:1)/Bluatt_student/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
     },
     {
         "merged": "/Users/moonsunhwang/Documents/2017 Fall/CS 307/UI백업 (11:1)/Bluatt_student/app/build/intermediates/res/merged/debug/mipmap-xhdpi/ic_launcher_round.png",
         "source": "/Users/moonsunhwang/Documents/2017 Fall/CS 307/UI백업 (11:1)/Bluatt_student/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
-    },
-    {
-        "merged": "/Users/moonsunhwang/Desktop/Bluatt_student/app/build/intermediates/res/merged/debug/mipmap-xhdpi/ic_launcher.png",
-        "source": "/Users/moonsunhwang/Desktop/Bluatt_student/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
     }
 ]
