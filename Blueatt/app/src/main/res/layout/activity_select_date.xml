@@ -6,22 +6,29 @@
     android:layout_height="match_parent"
     tools:context="com.example.moonsunhwang.blueatt.Select_date">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Select a date to view attendance for"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-
-        tools:layout_editor_absoluteX="78dp"
-        tools:layout_editor_absoluteY="16dp" />
-
     <DatePicker
         android:id="@+id/datePicker"
+        android:layout_width="341dp"
+        android:layout_height="432dp"
+        android:layout_marginBottom="-16dp"
+        android:layout_marginLeft="-6dp"
+        android:layout_marginStart="17dp"
+        app:layout_constraintBottom_toTopOf="@+id/submit_date"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1" />
+
+    <Button
+        android:id="@+id/submit_date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
-        tools:layout_editor_absoluteY="39dp"
-        tools:layout_editor_absoluteX="18dp" />
+        android:text="Submit"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="7dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

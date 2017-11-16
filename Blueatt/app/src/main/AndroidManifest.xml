@@ -21,19 +21,16 @@
             android:label="Please select a course to view" />
         <activity
             android:name=".Select_date"
-            android:label="Attendance for Class 1" />
+            android:label="Attendance for the class" />
         <activity
             android:name=".Attendance_class_on_date"
-            android:label="Attendance for the class on &apos;&apos;date&apos;&apos;" />
+            android:label="Attendance for the class" />
         <activity
             android:name=".Modify_attendance_date"
             android:label="Modify Attendance Date" />
         <activity
             android:name=".View_my_courses"
-            android:label="Courses taught by &apos;&apos;Instructor Name&apos;&apos;" />
-        <activity
-            android:name=".Students_list_enrolled"
-            android:label="Students Enrolled &apos;&apos;Course Name&apos;&apos;" />
+            android:label="Select a course" />
         <activity
             android:name=".Scanning_time_intervals"
             android:label="Select Timing Intervals" />
@@ -42,14 +39,19 @@
             android:label="Scanning for Attendance" />
         <activity android:name=".check" />
         <activity
-            android:name=".View_registered_courses"
-            android:label="Registered Courses for &apos;&apos;Student name&apos;&apos;" />
-        <activity
-            android:name=".Attendance_for_class"
-            android:label="Attendance for Class 1" />
+            android:name=".Scanning_Select_Course"
+            android:label="Registered Courses" />
         <activity
             android:name=".Import_roster"
             android:label="Import Roster" />
+        <activity android:name=".List_of_Students_Attended" />
+        <activity android:name=".List_of_Students_Missed" />
+        <activity android:name=".Find_student" />
+        <activity android:name=".Specific_Student_Select_Date" />
+        <activity android:name=".Student_Record_Result" />
+        <activity android:name=".Attendance_Record" />
+        <activity android:name=".Add_Student" />
+        <activity android:name=".Remove_Student"></activity>
     </application>
 
 </manifest>

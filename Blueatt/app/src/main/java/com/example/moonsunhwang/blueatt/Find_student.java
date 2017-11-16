@@ -8,14 +8,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class Scanning_for_attendance extends AppCompatActivity {
+public class Find_student extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_scanning_for_attendance);
+        setContentView(R.layout.activity_find_student);
 
-        final Button btn = (Button)findViewById(R.id.stop);
+        final Button btn = (Button)findViewById(R.id.submit);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -32,15 +32,15 @@ public class Scanning_for_attendance extends AppCompatActivity {
 
         // setup the alert builder
         AlertDialog.Builder success_message = new AlertDialog.Builder(this);
-        success_message.setTitle("Scanning Success!");
-        success_message.setMessage("Attendance has been successfully scanned.");
+        success_message.setTitle("Student Found!");
+        success_message.setMessage("Found a student. Now, please select a date you wish to view attendance record");
 
         // add a button
         success_message.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int id) {
 
-                startActivity(new Intent(Scanning_for_attendance.this, MainActivity.class));
+                startActivity(new Intent(Find_student.this, Specific_Student_Select_Date.class));
 
             }
         });

@@ -10,7 +10,7 @@ import android.widget.DatePicker;
 
 import java.util.Calendar;
 
-public class Select_date extends AppCompatActivity {
+public class Specific_Student_Select_Date extends AppCompatActivity {
 
     private int mDay;
     private int mMonth;
@@ -19,7 +19,7 @@ public class Select_date extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_select_date);
+        setContentView(R.layout.activity_specific__student__select__date);
 
         Calendar calendar = Calendar.getInstance();
         mDay = calendar.get(Calendar.DAY_OF_MONTH);
@@ -39,14 +39,14 @@ public class Select_date extends AppCompatActivity {
         });
 
 
-        Button btn = (Button)findViewById(R.id.submit_date);
+        Button btn = (Button)findViewById(R.id.submit);
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
 
-                Intent intent = new Intent(Select_date.this,Attendance_class_on_date.class);
+                Intent intent = new Intent(Specific_Student_Select_Date.this,Student_Record_Result.class);
 
                 // Put the date values to the intent
                 intent.putExtra("Day",mDay);

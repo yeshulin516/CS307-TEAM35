@@ -6,18 +6,18 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class View_my_courses extends AppCompatActivity {
+public class Scanning_Select_Course extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_view_my_courses);
+        setContentView(R.layout.activity_scanning__select__course);
 
         Button class1 = (Button)findViewById(R.id.class1);
         class1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(View_my_courses.this, Find_student.class));
+                startActivity(new Intent(Scanning_Select_Course.this, Scanning_time_intervals.class));
             }
         });
 
@@ -25,7 +25,7 @@ public class View_my_courses extends AppCompatActivity {
         class2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(View_my_courses.this, Find_student.class));
+                startActivity(new Intent(Scanning_Select_Course.this, Scanning_time_intervals.class));
             }
         });
 
@@ -33,7 +33,7 @@ public class View_my_courses extends AppCompatActivity {
         class3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(View_my_courses.this, Find_student.class));
+                startActivity(new Intent(Scanning_Select_Course.this, Scanning_time_intervals.class));
             }
         });
 
@@ -41,7 +41,7 @@ public class View_my_courses extends AppCompatActivity {
         class4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(View_my_courses.this, Find_student.class));
+                startActivity(new Intent(Scanning_Select_Course.this, Scanning_time_intervals.class));
             }
         });
 
@@ -49,7 +49,7 @@ public class View_my_courses extends AppCompatActivity {
         class5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(View_my_courses.this, Find_student.class));
+                startActivity(new Intent(Scanning_Select_Course.this, Scanning_time_intervals.class));
             }
         });
 
@@ -57,10 +57,8 @@ public class View_my_courses extends AppCompatActivity {
         class6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(View_my_courses.this, Find_student.class));
+                startActivity(new Intent(Scanning_Select_Course.this, Scanning_time_intervals.class));
             }
         });
-
-
     }
 }

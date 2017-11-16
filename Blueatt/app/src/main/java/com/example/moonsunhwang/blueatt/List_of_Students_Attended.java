@@ -8,14 +8,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class Scanning_for_attendance extends AppCompatActivity {
+public class List_of_Students_Attended extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_scanning_for_attendance);
+        setContentView(R.layout.activity_list_of__students__attended);
 
-        final Button btn = (Button)findViewById(R.id.stop);
+        final Button btn = (Button)findViewById(R.id.modify_attendance);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -25,22 +25,30 @@ public class Scanning_for_attendance extends AppCompatActivity {
             }
         });
 
-    }
 
+        Button home = (Button)findViewById(R.id.home);
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(List_of_Students_Attended.this, MainActivity.class));
+            }
+        });
+
+    }
 
     public void showSuccessMessage(View view) {
 
         // setup the alert builder
         AlertDialog.Builder success_message = new AlertDialog.Builder(this);
-        success_message.setTitle("Scanning Success!");
-        success_message.setMessage("Attendance has been successfully scanned.");
+        success_message.setTitle("Success!");
+        success_message.setMessage("Selected students' attendance record for this day has been modified to:\n'Absent'.");
 
         // add a button
         success_message.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int id) {
 
-                startActivity(new Intent(Scanning_for_attendance.this, MainActivity.class));
+                startActivity(new Intent(List_of_Students_Attended.this, Attendance_class_on_date.class));
 
             }
         });
@@ -49,6 +57,5 @@ public class Scanning_for_attendance extends AppCompatActivity {
         AlertDialog successMessage = success_message.create();
         successMessage.show();
     }
-
 
 }
