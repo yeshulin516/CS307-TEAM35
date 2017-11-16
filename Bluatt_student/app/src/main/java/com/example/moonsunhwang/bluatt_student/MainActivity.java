@@ -6,11 +6,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-
 import com.google.firebase.database.*;
-
-import java.util.ArrayList;
-import java.util.HashMap;
+import java.util.*;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -81,12 +78,7 @@ public class MainActivity extends AppCompatActivity {
                     stuList.add(value);
                 }
 
-                System.out.println(stuList.size());
-
-                for (String values : stuList) {
-                    System.out.println(values);
-                    //Log.i("students", values);
-                }
+                //System.out.println(stuList.size());
 
             }
 
@@ -113,9 +105,35 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+        Date currentTime = Calendar.getInstance().getTime();
+        System.out.println(currentTime.toString());
 
+        students.child("justin1").setValue("11:22:33");
+        students.child("moon1").setValue("44:55:66");
+        students.child("mike1").setValue("77:88:99");
+        students.child("shulin1").setValue("00:99:00");
 
+        instructors.child("jeff1").child("CS307").child("justin1").setValue("11:22:33");
+        instructors.child("jeff1").child("CS307").child("shulin1").setValue("00:99:00");
+        instructors.child("jeff1").child("CS307").child("mike1").setValue("77:88:99");
+        instructors.child("jeff1").child("CS307").child("moon1").setValue("44:55:66");
 
+        records.child("CS307").child("justin1").child("11-14-17").setValue("Y");
+        records.child("CS307").child("shulin1").child("11-14-17").setValue("Y");
+        records.child("CS307").child("mike1").child("11-14-17").setValue("Y");
+        records.child("CS307").child("moon1").child("11-14-17").setValue("N");
+
+        records.child("CS307").child("justin1").child("11-16-17").setValue("N");
+        records.child("CS307").child("shulin1").child("11-16-17").setValue("Y");
+        records.child("CS307").child("mike1").child("11-16-17").setValue("N");
+        records.child("CS307").child("moon1").child("11-16-17").setValue("Y");
+
+        for (String values : stuList) {
+            System.out.println(values);
+            //Log.i("students", values);
+        }
+
+        /*
         //add student tree
         students.child("justin1").child("name").setValue("Justin Boudreau");
         students.child("justin1").child("device ID").setValue("123");
@@ -145,10 +163,12 @@ public class MainActivity extends AppCompatActivity {
         records.child("CS307").child("shulin1").child("11-16-17").setValue("Y");
         records.child("CS307").child("mike1").child("11-16-17").setValue("N");
         records.child("CS307").child("moon1").child("11-16-17").setValue("Y");
+        */
 
 
-                /* USE ONLY ONE TREE FOR ALL VALUES */
 
+        /* USE ONLY ONE TREE FOR ALL VALUES */
+        /*
         //add instructors, names, and courses
         root.child("Instructors").child("jeff1").child("name").setValue("Jeff Turkstra");
         root.child("Instructors").child("jeff1").child("Courses").child("CS307").child("course title").setValue("Software Engineering I");
@@ -181,7 +201,7 @@ public class MainActivity extends AppCompatActivity {
         root.child("Instructors").child("jeff1").child("Courses").child("CS307").child("Records").child("11-14-17").child("moon1").setValue("Y");
         root.child("Instructors").child("jeff1").child("Courses").child("CS307").child("Records").child("11-14-17").child("justin1").setValue("Y");
         root.child("Instructors").child("jeff1").child("Courses").child("CS307").child("Records").child("11-14-17").child("mike1").setValue("Y");
-
+        */
 
     }
 
