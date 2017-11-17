@@ -30,18 +30,11 @@
             android:name=".Attendance_class_on_date"
             android:label="Attendance for the class" />
         <activity
-            android:name=".Modify_attendance_date"
-            android:label="Modify Attendance Date" />
-        <activity
             android:name=".Scanning_time_intervals"
             android:label="Select Timing Intervals" />
         <activity
             android:name=".Scanning_for_attendance"
             android:label="Scanning for Attendance" />
-        <activity android:name=".check" />
-        <activity
-            android:name=".Scanning_Select_Course"
-            android:label="Registered Courses" />
         <activity
             android:name=".Import_roster"
             android:label="Import Roster" />

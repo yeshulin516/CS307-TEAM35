@@ -42,7 +42,7 @@ public class Main_Page extends AppCompatActivity {
         scan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Main_Page.this, Scanning_Select_Course.class));
+                startActivity(new Intent(Main_Page.this, Scanning_time_intervals.class));
             }
         });
 
