@@ -58,7 +58,7 @@ public class Student_Record_Result extends AppCompatActivity {
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Student_Record_Result.this, MainActivity.class));
+                startActivity(new Intent(Student_Record_Result.this, Main_Page.class));
             }
         });
 
@@ -78,7 +78,7 @@ public class Student_Record_Result extends AppCompatActivity {
             @Override
             public void onClick(DialogInterface dialog, int id) {
 
-                startActivity(new Intent(Student_Record_Result.this, MainActivity.class));
+                startActivity(new Intent(Student_Record_Result.this, Main_Page.class));
 
             }
         });

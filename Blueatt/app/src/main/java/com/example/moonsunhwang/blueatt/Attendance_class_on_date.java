@@ -1,7 +1,6 @@
 package com.example.moonsunhwang.blueatt;
 
 import android.content.Intent;
-import android.support.v4.app.DialogFragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -52,7 +51,7 @@ public class Attendance_class_on_date extends AppCompatActivity {
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Attendance_class_on_date.this, MainActivity.class));
+                startActivity(new Intent(Attendance_class_on_date.this, Main_Page.class));
             }
         });
 

@@ -30,7 +30,7 @@ public class List_of_Students_Attended extends AppCompatActivity {
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(List_of_Students_Attended.this, MainActivity.class));
+                startActivity(new Intent(List_of_Students_Attended.this, Main_Page.class));
             }
         });
 

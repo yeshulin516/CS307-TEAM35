@@ -41,7 +41,7 @@ public class Attendance_Record extends AppCompatActivity {
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Attendance_Record.this, MainActivity.class));
+                startActivity(new Intent(Attendance_Record.this, Main_Page.class));
             }
         });
 
