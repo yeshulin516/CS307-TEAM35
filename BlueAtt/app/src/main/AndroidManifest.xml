@@ -2,6 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.moonsunhwang.blueatt">
 
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -17,30 +24,17 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".View_my_attendance_report"
-            android:label="Please select a course to view" />
-        <activity
             android:name=".Select_date"
             android:label="Attendance for the class" />
         <activity
             android:name=".Attendance_class_on_date"
             android:label="Attendance for the class" />
         <activity
-            android:name=".Modify_attendance_date"
-            android:label="Modify Attendance Date" />
-        <activity
-            android:name=".View_my_courses"
-            android:label="Select a course" />
-        <activity
             android:name=".Scanning_time_intervals"
             android:label="Select Timing Intervals" />
         <activity
             android:name=".Scanning_for_attendance"
             android:label="Scanning for Attendance" />
-        <activity android:name=".check" />
-        <activity
-            android:name=".Scanning_Select_Course"
-            android:label="Registered Courses" />
         <activity
             android:name=".Import_roster"
             android:label="Import Roster" />
@@ -51,7 +45,11 @@
         <activity android:name=".Student_Record_Result" />
         <activity android:name=".Attendance_Record" />
         <activity android:name=".Add_Student" />
-        <activity android:name=".Remove_Student"></activity>
+        <activity android:name=".Remove_Student" />
+        <activity android:name=".Bluetooth_MainPage" />
+        <activity android:name=".Bluetooth_DeviceList" />
+        <activity android:name=".Main_Page" />
+
     </application>
 
 </manifest>

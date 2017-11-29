@@ -17,7 +17,7 @@ public class Import_roster extends AppCompatActivity {
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Import_roster.this, MainActivity.class));
+                startActivity(new Intent(Import_roster.this, Main_Page.class));
             }
         });
 

@@ -1,7 +1,6 @@
 package com.example.moonsunhwang.blueatt;
 
 import android.content.Intent;
-import android.support.v4.app.DialogFragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -30,6 +29,8 @@ public class Attendance_class_on_date extends AppCompatActivity {
 
             TextView tv = (TextView) findViewById(R.id.date_TextView);
             tv.setText(String.valueOf(month) + "/" + String.valueOf(day) + ", " + String.valueOf(year));
+
+            //TODO pull whole roster attendance on the selected date
         }
 
         Button attended = (Button)findViewById(R.id.view_students_who_attended_button);
@@ -52,7 +53,7 @@ public class Attendance_class_on_date extends AppCompatActivity {
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Attendance_class_on_date.this, MainActivity.class));
+                startActivity(new Intent(Attendance_class_on_date.this, Main_Page.class));
             }
         });
 

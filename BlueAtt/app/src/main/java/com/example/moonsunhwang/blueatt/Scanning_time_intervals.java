@@ -17,7 +17,7 @@ public class Scanning_time_intervals extends AppCompatActivity {
         twenty_sec.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Scanning_time_intervals.this, Scanning_for_attendance.class));
+                startActivity(new Intent(Scanning_time_intervals.this, Bluetooth_MainPage.class));
             }
         });
 
@@ -25,7 +25,7 @@ public class Scanning_time_intervals extends AppCompatActivity {
         forty_sec.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Scanning_time_intervals.this, Scanning_for_attendance.class));
+                startActivity(new Intent(Scanning_time_intervals.this, Bluetooth_MainPage.class));
             }
         });
 
@@ -33,7 +33,7 @@ public class Scanning_time_intervals extends AppCompatActivity {
         sixty_sec.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Scanning_time_intervals.this, Scanning_for_attendance.class));
+                startActivity(new Intent(Scanning_time_intervals.this, Bluetooth_MainPage.class));
             }
         });
 
@@ -41,7 +41,7 @@ public class Scanning_time_intervals extends AppCompatActivity {
         eighty_sec.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Scanning_time_intervals.this, Scanning_for_attendance.class));
+                startActivity(new Intent(Scanning_time_intervals.this, Bluetooth_MainPage.class));
             }
         });
 
@@ -49,7 +49,7 @@ public class Scanning_time_intervals extends AppCompatActivity {
         hundred_sec.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Scanning_time_intervals.this, Scanning_for_attendance.class));
+                startActivity(new Intent(Scanning_time_intervals.this, Bluetooth_MainPage.class));
             }
         });
 
@@ -57,7 +57,7 @@ public class Scanning_time_intervals extends AppCompatActivity {
         hundredAndTwenty_sec.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Scanning_time_intervals.this, Scanning_for_attendance.class));
+                startActivity(new Intent(Scanning_time_intervals.this, Bluetooth_MainPage.class));
             }
         });
 

@@ -30,7 +30,7 @@ public class List_of_Students_Missed extends AppCompatActivity {
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(List_of_Students_Missed.this, MainActivity.class));
+                startActivity(new Intent(List_of_Students_Missed.this, Main_Page.class));
             }
         });
 

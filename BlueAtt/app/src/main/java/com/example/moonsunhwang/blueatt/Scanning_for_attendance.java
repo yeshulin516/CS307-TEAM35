@@ -40,7 +40,7 @@ public class Scanning_for_attendance extends AppCompatActivity {
             @Override
             public void onClick(DialogInterface dialog, int id) {
 
-                startActivity(new Intent(Scanning_for_attendance.this, MainActivity.class));
+                startActivity(new Intent(Scanning_for_attendance.this, Main_Page.class));
 
             }
         });
