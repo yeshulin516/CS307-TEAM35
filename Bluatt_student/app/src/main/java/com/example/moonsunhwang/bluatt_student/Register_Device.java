@@ -11,6 +11,13 @@ import com.google.firebase.database.*;
 
 
 public class Register_Device extends AppCompatActivity {
+    final FirebaseDatabase database = FirebaseDatabase.getInstance();
+
+
+    final DatabaseReference students = database.getReference("Students");
+    final DatabaseReference instructors = database.getReference("Instructors");
+    final DatabaseReference courses = database.getReference("Courses");
+    final DatabaseReference records = database.getReference("Records");
 
     String username;
     String deviceID;
@@ -38,6 +45,11 @@ public class Register_Device extends AppCompatActivity {
                 Bundle extras = new Bundle();
                 extras.putString("USERNAME",username);
                 extras.putString("DEVICE_ID",deviceID);
+
+
+                //TODO check if device ID is null otherwise dont add
+                students.child(username).setValue(deviceID);
+
 
                 intent.putExtras(extras);
                 startActivity(intent);

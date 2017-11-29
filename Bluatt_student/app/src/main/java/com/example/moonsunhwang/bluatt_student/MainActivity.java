@@ -11,6 +11,13 @@ import java.util.*;
 
 public class MainActivity extends AppCompatActivity {
 
+    final FirebaseDatabase database = FirebaseDatabase.getInstance();
+
+
+    final DatabaseReference students = database.getReference("Students");
+    final DatabaseReference instructors = database.getReference("Instructors");
+    final DatabaseReference records = database.getReference("Records");
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,27 +65,22 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        final FirebaseDatabase database = FirebaseDatabase.getInstance();
-
-        final DatabaseReference students = database.getReference("Students");
-        final DatabaseReference instructors = database.getReference("Instructors");
-        final DatabaseReference courses = database.getReference("Courses");
-        final DatabaseReference records = database.getReference("Records");
-        final DatabaseReference root = database.getReference("ROOT");
 
         final ArrayList<String> stuList = new ArrayList<>();
 
         students.addChildEventListener(new ChildEventListener() {
             @Override
             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
-
-                for (DataSnapshot node: dataSnapshot.getChildren()) {
+/*
+                for (DataSnapshot node: dataSnapshot.) {
                     String value = node.toString();
 
                     stuList.add(value);
+                    System.out.println(value);
+                    Log.i("students", value);
                 }
-
-                //System.out.println(stuList.size());
+*/
+                System.out.println(dataSnapshot.toString());
 
             }
 
@@ -104,10 +106,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
-        Date currentTime = Calendar.getInstance().getTime();
-        System.out.println(currentTime.toString());
-
         students.child("justin1").setValue("11:22:33");
         students.child("moon1").setValue("44:55:66");
         students.child("mike1").setValue("77:88:99");
@@ -128,10 +126,19 @@ public class MainActivity extends AppCompatActivity {
         records.child("CS307").child("mike1").child("11-16-17").setValue("N");
         records.child("CS307").child("moon1").child("11-16-17").setValue("Y");
 
-        for (String values : stuList) {
-            System.out.println(values);
-            //Log.i("students", values);
-        }
+        students.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                for (DataSnapshot node: dataSnapshot.getChildren()) {
+                    System.out.println(node.getKey() + " " + node.getValue());
+                }
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
 
         /*
         //add student tree

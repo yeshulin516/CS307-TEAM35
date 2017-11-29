@@ -9,7 +9,18 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 public class Update_Device extends AppCompatActivity {
+
+    final FirebaseDatabase database = FirebaseDatabase.getInstance();
+
+
+    final DatabaseReference students = database.getReference("Students");
+    final DatabaseReference instructors = database.getReference("Instructors");
+    final DatabaseReference courses = database.getReference("Courses");
+    final DatabaseReference records = database.getReference("Records");
 
     String username;
     String deviceID;
@@ -32,8 +43,13 @@ public class Update_Device extends AppCompatActivity {
                 //Integer deviceID = Integer.valueOf(et2.getText().toString());
                 deviceID = et2.getText().toString();
 
-                showSuccessMessage(btn);
+                //update student's device ID under Student branch
+                students.child(username).setValue(deviceID);
 
+                //update student's device ID under the Instructor branch
+                instructors.child("jeff1").child("CS307").child(username).setValue(deviceID.toLowerCase());
+
+                showSuccessMessage(btn);
 
 
             }
