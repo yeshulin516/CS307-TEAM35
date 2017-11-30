@@ -47,8 +47,8 @@ public class MainActivity extends AppCompatActivity {
                             roster_devices.add(node.getValue().toString());
                         }
 
-                        System.out.println(roster_usernames.toString());
-                        System.out.println(roster_devices.toString());
+                        //System.out.println(roster_usernames.toString());
+                        //System.out.println(roster_devices.toString());
 
                     }
 

@@ -168,12 +168,9 @@ public class Bluetooth_MainPage extends AppCompatActivity {
             records.child("CS307").child(MainActivity.roster_usernames.get(i)).child(MainActivity.getDate()).setValue(MainActivity.roster_attendance.get(i));
         }
 
-
         MainActivity.roster_attendance.clear();
 
         //System.out.println(MainActivity.roster_attendance.toString());
-
-
     }
 
 
