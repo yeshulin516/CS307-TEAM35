@@ -5,10 +5,8 @@ import android.content.Intent;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 
 public class Give_Feedback extends AppCompatActivity {
 
@@ -22,17 +20,15 @@ public class Give_Feedback extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                EditText et1 = (EditText) findViewById(R.id.feedback);
-                String feedback = et1.getText().toString();
-                Test.feedback[Test.feedbackCount] = feedback;
-                Test.feedbackCount ++;
-                Log.i("TestFeedbackStorage-#8", Test.feedback[Test.feedbackCount - 1]);
+
                 showSuccessMessage(btn);
 
             }
         });
 
     }
+
+
 
     public void showSuccessMessage(View view) {
 

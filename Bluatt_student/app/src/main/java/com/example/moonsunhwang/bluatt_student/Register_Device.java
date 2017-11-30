@@ -3,13 +3,21 @@ package com.example.moonsunhwang.bluatt_student;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.google.firebase.database.*;
+
 
 public class Register_Device extends AppCompatActivity {
+    final FirebaseDatabase database = FirebaseDatabase.getInstance();
+
+
+    final DatabaseReference students = database.getReference("Students");
+    final DatabaseReference instructors = database.getReference("Instructors");
+    final DatabaseReference courses = database.getReference("Courses");
+    final DatabaseReference records = database.getReference("Records");
 
     String username;
     String deviceID;
@@ -18,8 +26,6 @@ public class Register_Device extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register__device);
-
-
 
         Button btn = (Button)findViewById(R.id.submit);
 
@@ -35,17 +41,16 @@ public class Register_Device extends AppCompatActivity {
                 deviceID = et2.getText().toString();
 
 
-                Log.i("StuCountB4Registration", "" +Test.stuCount);
-                Student toAdd = new Student(username, deviceID);
-                Test.roster[Test.stuCount] = toAdd;
-                Test.stuCount ++;
-                Log.i("StuCountAftRegistration", "" +Test.stuCount);
-                Log.i("NewStuName", Test.roster[Test.stuCount -1].getName());
-                Log.i("NewStuID", Test.roster[Test.stuCount - 1].getUserId());
                 Intent intent = new Intent(Register_Device.this, Register_Device_Result.class);
                 Bundle extras = new Bundle();
                 extras.putString("USERNAME",username);
                 extras.putString("DEVICE_ID",deviceID);
+
+
+                //TODO check if device ID is null otherwise dont add
+                students.child(username).setValue(deviceID);
+
+
                 intent.putExtras(extras);
                 startActivity(intent);
 

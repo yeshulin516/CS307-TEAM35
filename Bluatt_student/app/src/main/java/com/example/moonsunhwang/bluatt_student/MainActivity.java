@@ -3,50 +3,25 @@ package com.example.moonsunhwang.bluatt_student;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import com.google.firebase.database.*;
+import java.util.*;
 
 public class MainActivity extends AppCompatActivity {
 
+    final FirebaseDatabase database = FirebaseDatabase.getInstance();
+
+
+    final DatabaseReference students = database.getReference("Students");
+    final DatabaseReference instructors = database.getReference("Instructors");
+    final DatabaseReference records = database.getReference("Records");
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //
-        Student stu1 = new Student("Student 1", "01");
-        Student stu2 = new Student("Student 2", "02");
-        Student stu3 = new Student("Student 3", "03");
-        Test.roster[0] = stu1;
-        Test.roster[1] = stu2;
-        Test.roster[2] = stu3;
-
-        Instructor ins1 = new Instructor("Instructor 1", "11");
-        Instructor ins2 = new Instructor("Instructor 2", "12");
-        Instructor ins3 = new Instructor("Instructor 3", "13");
-        Test.instList[0] = ins1;
-        Test.instList[1] = ins2;
-        Test.instList[2] = ins3;
-
-        Course course1 = new Course("Course 1", ins1);
-        Course course2 = new Course("Course 2", ins2);
-        Course course3 = new Course("Course 3", ins3);
-        Test.courses[0] = course1;
-        Test.courses[1] = course2;
-        Test.courses[2] = course3;
-
-        stu1.addCourse(course1);
-        stu1.addCourse(course3);
-        stu2.addCourse(course2);
-        stu2.addCourse(course1);
-        stu3.addCourse(course3);
-        stu3.addCourse(course2);
-        stu3.addCourse(course1);
-
-        ins1.addCourse(course1);
-        ins2.addCourse(course2);
-        ins3.addCourse(course3);
-
 
         Button btn = (Button)findViewById(R.id.register);
 
@@ -87,6 +62,153 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, Give_Feedback.class));
             }
         });
+
+
+
+
+        final ArrayList<String> stuList = new ArrayList<>();
+
+        students.addChildEventListener(new ChildEventListener() {
+            @Override
+            public void onChildAdded(DataSnapshot dataSnapshot, String s) {
+/*
+                for (DataSnapshot node: dataSnapshot.) {
+                    String value = node.toString();
+
+                    stuList.add(value);
+                    System.out.println(value);
+                    Log.i("students", value);
+                }
+*/
+                System.out.println(dataSnapshot.toString());
+
+            }
+
+            @Override
+            public void onChildChanged(DataSnapshot dataSnapshot, String s) {
+
+            }
+
+            @Override
+            public void onChildRemoved(DataSnapshot dataSnapshot) {
+
+            }
+
+            @Override
+            public void onChildMoved(DataSnapshot dataSnapshot, String s) {
+
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+                System.out.println("The read failed: " + databaseError.getCode());
+
+            }
+        });
+
+        students.child("justin1").setValue("11:22:33");
+        students.child("moon1").setValue("44:55:66");
+        students.child("mike1").setValue("77:88:99");
+        students.child("shulin1").setValue("00:99:00");
+
+        instructors.child("jeff1").child("CS307").child("justin1").setValue("11:22:33");
+        instructors.child("jeff1").child("CS307").child("shulin1").setValue("00:99:00");
+        instructors.child("jeff1").child("CS307").child("mike1").setValue("77:88:99");
+        instructors.child("jeff1").child("CS307").child("moon1").setValue("44:55:66");
+
+        records.child("CS307").child("justin1").child("11-14-17").setValue("Y");
+        records.child("CS307").child("shulin1").child("11-14-17").setValue("Y");
+        records.child("CS307").child("mike1").child("11-14-17").setValue("Y");
+        records.child("CS307").child("moon1").child("11-14-17").setValue("N");
+
+        records.child("CS307").child("justin1").child("11-16-17").setValue("N");
+        records.child("CS307").child("shulin1").child("11-16-17").setValue("Y");
+        records.child("CS307").child("mike1").child("11-16-17").setValue("N");
+        records.child("CS307").child("moon1").child("11-16-17").setValue("Y");
+
+        students.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                for (DataSnapshot node: dataSnapshot.getChildren()) {
+                    System.out.println(node.getKey() + " " + node.getValue());
+                }
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+
+        /*
+        //add student tree
+        students.child("justin1").child("name").setValue("Justin Boudreau");
+        students.child("justin1").child("device ID").setValue("123");
+
+        students.child("mike1").child("name").setValue("Mike Engright");
+        students.child("mike1").child("device ID").setValue("456");
+
+        //add instructor tree
+        instructors.child("jeff1").setValue("Jeff Turkstra");
+        instructors.child("jeff1").child("CS307").setValue("0");
+        instructors.child("jeff1").child("CS408").setValue("0");
+
+        //add course tree
+        courses.child("CS307").child("title").setValue("Software Engineering I");
+        courses.child("CS307").child("instructor").setValue("jeff");
+        courses.child("CS307").child("days").setValue("TR");
+        courses.child("CS307").child("start time").setValue("3pm");
+        courses.child("CS307").child("end time").setValue("4:15pm");
+
+        //add record tree
+        records.child("CS307").child("justin1").child("11-14-17").setValue("Y");
+        records.child("CS307").child("shulin1").child("11-14-17").setValue("Y");
+        records.child("CS307").child("mike1").child("11-14-17").setValue("Y");
+        records.child("CS307").child("moon1").child("11-14-17").setValue("N");
+
+        records.child("CS307").child("justin1").child("11-16-17").setValue("N");
+        records.child("CS307").child("shulin1").child("11-16-17").setValue("Y");
+        records.child("CS307").child("mike1").child("11-16-17").setValue("N");
+        records.child("CS307").child("moon1").child("11-16-17").setValue("Y");
+        */
+
+
+
+        /* USE ONLY ONE TREE FOR ALL VALUES */
+        /*
+        //add instructors, names, and courses
+        root.child("Instructors").child("jeff1").child("name").setValue("Jeff Turkstra");
+        root.child("Instructors").child("jeff1").child("Courses").child("CS307").child("course title").setValue("Software Engineering I");
+        root.child("Instructors").child("jeff1").child("Courses").child("CS408").child("course title").setValue("Software Testing");
+
+        root.child("Instructors").child("buster1").child("name").setValue("Buster Dunsmore");
+        root.child("Instructors").child("buster1").child("Courses").child("CS180").child("course title").setValue("Java Programming");
+        root.child("Instructors").child("buster1").child("Courses").child("CS307").child("course title").setValue("Software Engineering I");
+
+        //add course info
+        root.child("Instructors").child("jeff1").child("Courses").child("CS307").child("days of week").setValue("TR");
+        root.child("Instructors").child("jeff1").child("Courses").child("CS307").child("start time").setValue("3pm");
+        root.child("Instructors").child("jeff1").child("Courses").child("CS307").child("end time").setValue("4:15pm");
+
+        //add students to courses
+        root.child("Instructors").child("jeff1").child("Courses").child("CS307").child("Students").child("justin1").setValue("Justin");
+        root.child("Instructors").child("jeff1").child("Courses").child("CS307").child("Students").child("moon1").setValue("Moon");
+        root.child("Instructors").child("jeff1").child("Courses").child("CS307").child("Students").child("mike1").setValue("Mike");
+        root.child("Instructors").child("jeff1").child("Courses").child("CS307").child("Students").child("shulin1").setValue("Shulin");
+
+
+        //add devices to courses
+        root.child("Instructors").child("jeff1").child("Courses").child("CS307").child("Devices").child("123").setValue("justin1");
+        root.child("Instructors").child("jeff1").child("Courses").child("CS307").child("Devices").child("456").setValue("moon1");
+        root.child("Instructors").child("jeff1").child("Courses").child("CS307").child("Devices").child("789").setValue("mike1");
+        root.child("Instructors").child("jeff1").child("Courses").child("CS307").child("Devices").child("000").setValue("shulin1");
+
+        //add records for each student
+        root.child("Instructors").child("jeff1").child("Courses").child("CS307").child("Records").child("11-14-17").child("shulin1").setValue("Y");
+        root.child("Instructors").child("jeff1").child("Courses").child("CS307").child("Records").child("11-14-17").child("moon1").setValue("Y");
+        root.child("Instructors").child("jeff1").child("Courses").child("CS307").child("Records").child("11-14-17").child("justin1").setValue("Y");
+        root.child("Instructors").child("jeff1").child("Courses").child("CS307").child("Records").child("11-14-17").child("mike1").setValue("Y");
+        */
 
     }
 

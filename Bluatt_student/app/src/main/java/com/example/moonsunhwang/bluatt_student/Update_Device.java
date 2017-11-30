@@ -5,12 +5,22 @@ import android.content.Intent;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 public class Update_Device extends AppCompatActivity {
+
+    final FirebaseDatabase database = FirebaseDatabase.getInstance();
+
+
+    final DatabaseReference students = database.getReference("Students");
+    final DatabaseReference instructors = database.getReference("Instructors");
+    final DatabaseReference courses = database.getReference("Courses");
+    final DatabaseReference records = database.getReference("Records");
 
     String username;
     String deviceID;
@@ -29,21 +39,17 @@ public class Update_Device extends AppCompatActivity {
                 EditText et1 = (EditText) findViewById(R.id.username_input);
                 username = et1.getText().toString();
 
-
                 EditText et2 = (EditText) findViewById(R.id.deviceID_input);
                 //Integer deviceID = Integer.valueOf(et2.getText().toString());
                 deviceID = et2.getText().toString();
-                int found = 0;
-                for (int i = 0; i < Test.stuCount; i++) {
-                    if (username.equals(Test.roster[i].getName())) {
-                        Log.i("Old ID", Test.roster[i].getUserId());
-                        Test.roster[i].setUserId(deviceID);
-                        found = i;
-                    }
-                }
-                Log.i("New ID", Test.roster[found].getUserId());
-                showSuccessMessage(btn);
 
+                //update student's device ID under Student branch
+                students.child(username).setValue(deviceID);
+
+                //update student's device ID under the Instructor branch
+                instructors.child("jeff1").child("CS307").child(username).setValue(deviceID.toLowerCase());
+
+                showSuccessMessage(btn);
 
 
             }
