@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.moonsunhwang.blueatt.Student_Record_Result"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="203dp"
+        android:layout_height="143dp"
+        app:srcCompat="@android:drawable/btn_star_big_on"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="73dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.502" />
+
+    <TextView
+        android:id="@+id/date_TextView"
+        android:layout_width="155dp"
+        android:layout_height="22dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:layout_marginStart="3dp"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="26dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/textView3"
+        android:layout_marginLeft="3dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="154dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="46dp"
+        android:text="Attendance on the date"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintBaseline_toBaselineOf="@+id/date_TextView"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="46dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="33dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="15dp" />
+
+    <Button
+        android:id="@+id/modify_attendance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Modify Attendance"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="61dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginTop="16dp"
+        android:text="home"
+        app:layout_constraintRight_toRightOf="@+id/modify_attendance"
+        app:layout_constraintTop_toBottomOf="@+id/modify_attendance"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+</android.support.constraint.ConstraintLayout>

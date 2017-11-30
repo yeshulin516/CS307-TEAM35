@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "14599918552",
+    "firebase_url": "https://blueattinstructor.firebaseio.com",
+    "project_id": "blueattinstructor",
+    "storage_bucket": "blueattinstructor.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:14599918552:android:94aa039254fbfb4e",
+        "android_client_info": {
+          "package_name": "com.BlueAtt.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "14599918552-rcf14kmjfit01hv0i3sndl0454oo101b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzLQko6x6zgIRA-zagZ_Qp8dQeIRmvGb8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
