@@ -15,6 +15,10 @@ import java.util.Date;
 
 public class MainActivity extends AppCompatActivity {
 
+    //TODO get these values from UI
+    static String instructorID = "jeff1";
+    static String courseName = "CS307";
+
     static ArrayList<String> roster_usernames = new ArrayList<String>();
     static ArrayList<String> roster_devices = new ArrayList<String>();
     static ArrayList<String> roster_attendance = new ArrayList<String>();
@@ -38,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 //pull selected course roster's devices
-                instructors.child("jeff1").child("CS307").addListenerForSingleValueEvent(new ValueEventListener() {
+                instructors.child(instructorID).child(courseName).addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(DataSnapshot dataSnapshot) {
                         for (DataSnapshot node: dataSnapshot.getChildren()) {
