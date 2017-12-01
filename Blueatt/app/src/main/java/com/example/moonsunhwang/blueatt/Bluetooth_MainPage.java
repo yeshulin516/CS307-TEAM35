@@ -77,7 +77,7 @@ public class Bluetooth_MainPage extends AppCompatActivity {
         b5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+            showSuccessMessage(b5);
             }
         });
 
@@ -207,37 +207,22 @@ public class Bluetooth_MainPage extends AppCompatActivity {
 
     public void showSuccessMessage(View view) {
 
-        // setup the alert builder
-        final AlertDialog.Builder success_message = new AlertDialog.Builder(this);
-        success_message.setTitle("Please wait for 5 seconds");
-        success_message.setMessage("00:05");
+        final AlertDialog alertDialog;
 
-        /*
-        success_message.setPositiveButton("OK", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int id) {
+        alertDialog = new AlertDialog.Builder(this).create();
+        alertDialog.setTitle("Please wait 10 seconds for scanning.");
+        alertDialog.setMessage("00:10");
+        alertDialog.show();   //
 
-
-
-            }
-        });
-
-
-
-         */
-        // create and show the alert dialog
-        final AlertDialog successMessage = success_message.create();
-        successMessage.show();
-
-        new CountDownTimer(5000, 1000) {
+        new CountDownTimer(10000, 1000) {
             @Override
             public void onTick(long millisUntilFinished) {
-                success_message.setMessage("00:"+ (millisUntilFinished/1000));
+                alertDialog.setMessage("00:"+ (millisUntilFinished/1000));
             }
 
             @Override
             public void onFinish() {
-                successMessage.dismiss();
+                alertDialog.dismiss();
             }
         }.start();
 

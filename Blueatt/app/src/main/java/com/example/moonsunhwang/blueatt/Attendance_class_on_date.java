@@ -13,8 +13,6 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-import java.util.ArrayList;
-
 public class Attendance_class_on_date extends AppCompatActivity {
 
     final FirebaseDatabase database = FirebaseDatabase.getInstance();
@@ -29,22 +27,26 @@ public class Attendance_class_on_date extends AppCompatActivity {
     int month;
     int year;
 
+    int totalAttended;
+    int totalAbsent;
+    double percentageAttended;
+
     public void addAtt (String val) {
         //System.out.println(val);
         MainActivity.roster_attendance.add(val);
 
         if (MainActivity.roster_attendance.size() == MainActivity.roster_usernames.size()) {
             //count number of student in attendance
-            int totalAttended = 0;
+            totalAttended = 0;
 
             for (String att : MainActivity.roster_attendance) {
                 if (att.equals("Y"))
                     totalAttended++;
             }
 
-            int totalAbsent = MainActivity.roster_attendance.size() - totalAttended;
+            totalAbsent = MainActivity.roster_attendance.size() - totalAttended;
 
-            double percentageAttended = (((double)totalAttended) / MainActivity.roster_attendance.size()) * 100;
+            percentageAttended = (((double)totalAttended) / MainActivity.roster_attendance.size()) * 100;
 
         }
     }
@@ -64,6 +66,15 @@ public class Attendance_class_on_date extends AppCompatActivity {
 
             TextView tv = (TextView) findViewById(R.id.date_TextView);
             tv.setText(String.valueOf(month) + "/" + String.valueOf(day) + ", " + String.valueOf(year));
+
+            TextView tvTotalAttended = (TextView) findViewById(R.id.textView1);
+            tvTotalAttended.setText(String.valueOf(totalAttended));
+
+            TextView tvTotalAbsent = (TextView) findViewById(R.id.textView2);
+            tvTotalAbsent.setText(String.valueOf(totalAbsent));
+
+            TextView tvPercentageAttended = (TextView) findViewById(R.id.textView3);
+            tvPercentageAttended.setText(String.valueOf(percentageAttended));
 
 
             //pull whole roster attendance on the selected date in same order as roster

@@ -33,10 +33,10 @@ public class Student_Record_Result extends AppCompatActivity {
 
             //use date data
             if (day % 2 == 0) {
-                TextView attendance = (TextView) findViewById(R.id.textView);
+                TextView attendance = (TextView) findViewById(R.id.textView9);
                 attendance.setText("The student have NOT attended");
             } else {
-                TextView attendance = (TextView) findViewById(R.id.textView);
+                TextView attendance = (TextView) findViewById(R.id.textView9);
                 attendance.setText("The student have attended");
             }
         }
