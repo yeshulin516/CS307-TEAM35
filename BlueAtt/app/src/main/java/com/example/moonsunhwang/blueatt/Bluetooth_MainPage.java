@@ -55,7 +55,6 @@ public class Bluetooth_MainPage extends AppCompatActivity {
     private String a;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -137,7 +136,6 @@ public class Bluetooth_MainPage extends AppCompatActivity {
 
     public void on(View v) {
         {
-
 
             if (!mBluetoothAdapter.isEnabled()) {
                 Intent enableBtIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);

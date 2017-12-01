@@ -28,7 +28,6 @@ public class MainActivity extends AppCompatActivity {
 
     final DatabaseReference students = database.getReference("Students");
     final DatabaseReference instructors = database.getReference("Instructors");
-    final DatabaseReference courses = database.getReference("Courses");
     final DatabaseReference records = database.getReference("Records");
 
     @Override
