@@ -3,21 +3,210 @@
 
     <item
         is-multidex="true"
-        jar="/Users/moonsunhwang/Documents/2017 Fall/CS 307/UI백업 (11:1)/Bluatt_student/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jar="/Users/moonsunhwang/.android/build-cache/0948070d2954ad5fbfe3217fff21285729fb9ebc/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.2"
-        sha1="b0585cae4469f356ea52d81f0cc4f180c44925fd">
-        <dex dex="/Users/moonsunhwang/Documents/2017 Fall/CS 307/UI백업 (11:1)/Bluatt_student/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_4acd5f4f4a1ec6d83274dea422bc9e534b2af5b7/classes.dex" />
+        sha1="b62fdc4cfef174c1e456014195c83fa7de7dc041">
+        <dex dex="/Users/moonsunhwang/Downloads/CS307-TEAM35-Justin/Bluatt_student/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0c68240fad39dbf91f3ced991557ee7bb01f4e3c/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/moonsunhwang/Documents/2017 Fall/CS 307/UI백업 (11:1)/Bluatt_student/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jar="/Users/moonsunhwang/.android/build-cache/819507f34705134e7cae946c9bea4a3687c380e2/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="869a1d15fa9d8e8aa36587b042f553c1baea46bc">
+        <dex dex="/Users/moonsunhwang/Downloads/CS307-TEAM35-Justin/Bluatt_student/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_9004f588d2e10f6d2940f1dcacaeb33d7d18a484/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/moonsunhwang/.android/build-cache/75bd12a2e22bcb322e99b18f45a2622ade343fa8/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="40392f30a601db5675cdf18192aab013d6fee6ec">
+        <dex dex="/Users/moonsunhwang/Downloads/CS307-TEAM35-Justin/Bluatt_student/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c904b620e8ec68076cd63dd6396e8b6410732a1d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/moonsunhwang/.android/build-cache/90be22d74ec1771efea4e0227d1a1881ce513480/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="508f50705b4fde51a16259f29c854201a3044516">
+        <dex dex="/Users/moonsunhwang/Downloads/CS307-TEAM35-Justin/Bluatt_student/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_01a828d52f599d1fb7b8607abe7665fab8457bca/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/moonsunhwang/Downloads/CS307-TEAM35-Justin/Bluatt_student/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="9eab5746104c2dc9147aa9b0219f81e7b4c4acdf">
+        <dex dex="/Users/moonsunhwang/Downloads/CS307-TEAM35-Justin/Bluatt_student/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_83a54f8d886ac1fc16c8edc20e0821df065c4346/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/moonsunhwang/.android/build-cache/973ce4f45a3a45a23fee0c31214e984169e5a171/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="2442771a5590dd4eb4bce00c2e9dca9e22e4c963">
+        <dex dex="/Users/moonsunhwang/Downloads/CS307-TEAM35-Justin/Bluatt_student/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_5db2fbc7299797445700776f6e9471c6388b3aeb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/moonsunhwang/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/26.1.0/814258103cf26a15fcc26ecce35f5b7d24b73f8/support-annotations-26.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="0814258103cf26a15fcc26ecce35f5b7d24b73f8">
+        <dex dex="/Users/moonsunhwang/Downloads/CS307-TEAM35-Justin/Bluatt_student/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-26.1.0_24d31757dc5acf99b84c0851ba48763c15c99fb9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/moonsunhwang/.android/build-cache/f0be89695f262097331a71e07e44941fcf9b38e6/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="f97cf85b0fe70d37a705111dafa6b1b418ea1650">
+        <dex dex="/Users/moonsunhwang/Downloads/CS307-TEAM35-Justin/Bluatt_student/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_4d04d85accffc76977b80aa778b3d9bed5b9615b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/moonsunhwang/.android/build-cache/14493784b8612868b07366ab6a5dbccb7a4f7884/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="47bcd0b3eac50dbe2f150987250a6507e10ef28a">
+        <dex dex="/Users/moonsunhwang/Downloads/CS307-TEAM35-Justin/Bluatt_student/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c9df78dadea55f87d60d6b386e94c05471e530b7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/moonsunhwang/.android/build-cache/d090988e6cdf5c67757709789e5c61c6f2dbba53/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="e9b8fd995f9c6c2caeb49827f0b52e0e8cc621e0">
+        <dex dex="/Users/moonsunhwang/Downloads/CS307-TEAM35-Justin/Bluatt_student/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_9ce301c45dfc4af7b8a2f4d9e9248ee9f64a154c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/moonsunhwang/.android/build-cache/77fbce3ab35d626cef6b2d76f665622aaf589a3c/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="d6399340139f67ce4faba06e97f256ef0d6817c0">
+        <dex dex="/Users/moonsunhwang/Downloads/CS307-TEAM35-Justin/Bluatt_student/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_49db39243c02db4fbe522a6067ffd0d3b61619bd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/moonsunhwang/.android/build-cache/e477952dcd7addbace9d09feb9dc54eb57789057/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="f428e2fbc9ed0b297e3a3f420e51e6982f66822d">
+        <dex dex="/Users/moonsunhwang/Downloads/CS307-TEAM35-Justin/Bluatt_student/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_54f5ffadcc3bd7e9fd12e54029b4367feae82aac/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/moonsunhwang/.android/build-cache/63e4ea8dbba59ec21b8c727857073146bfe7076d/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="6f4138a4e065826cb044d49faea4cfd7191773d1">
+        <dex dex="/Users/moonsunhwang/Downloads/CS307-TEAM35-Justin/Bluatt_student/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_7b4abe8b2e5f86852e8ed12c3dca591e9e17d592/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/moonsunhwang/Downloads/CS307-TEAM35-Justin/Bluatt_student/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.2"
         sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="/Users/moonsunhwang/Documents/2017 Fall/CS 307/UI백업 (11:1)/Bluatt_student/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_a986a86a63972bbb03314f47c241739ef22de59b/classes.dex" />
+        <dex dex="/Users/moonsunhwang/Downloads/CS307-TEAM35-Justin/Bluatt_student/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_2b99e1a7275b465d123dca3ea0e39c5837537d7d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/moonsunhwang/.gradle/caches/modules-2/files-2.1/android.arch.core/common/1.0.0/a2d487452376193fc8c103dd2b9bd5f2b1b44563/common-1.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="a2d487452376193fc8c103dd2b9bd5f2b1b44563">
+        <dex dex="/Users/moonsunhwang/Downloads/CS307-TEAM35-Justin/Bluatt_student/app/build/intermediates/transforms/dex/debug/folders/1000/10/common-1.0.0_32f14e009a6a5d322dd419d6022a077b1bda8a32/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/moonsunhwang/.android/build-cache/eeb483384cdf9de02507d00b594906b403d1f48f/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="729a6a1975c19d7461378172c7932f5c57f1c3fe">
+        <dex dex="/Users/moonsunhwang/Downloads/CS307-TEAM35-Justin/Bluatt_student/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_bd352baca381e724924221f72d2d4a0775c2530c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/moonsunhwang/.android/build-cache/dc04b429ce2452c3bfe1a7dd5145dd813f793806/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="1cde19cbf9be88547ab4b7f03668eac5d91bd611">
+        <dex dex="/Users/moonsunhwang/Downloads/CS307-TEAM35-Justin/Bluatt_student/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_30c05dfd9e33cac329aacca467e80564bf7d57dc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/moonsunhwang/.android/build-cache/0c8e5679820cf2543c0ab30883daafb103c2654e/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="e4a9d8510de319af17459d3ec70e23559b83495b">
+        <dex dex="/Users/moonsunhwang/Downloads/CS307-TEAM35-Justin/Bluatt_student/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_58325a131cf22385e662ecdb5a67af711dfdcea5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/moonsunhwang/.android/build-cache/62066283139a2133242d195a7d54f676fb60aafd/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="da443aff9cd3c2cd75b957e0547e1ca2c4f30308">
+        <dex dex="/Users/moonsunhwang/Downloads/CS307-TEAM35-Justin/Bluatt_student/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_002b6a626d05b2903d78a93a051b59f2fc6c36c0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/moonsunhwang/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/common/1.0.0/e414a4cb28434e25c4f6aa71426eb20cf4874ae9/common-1.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="e414a4cb28434e25c4f6aa71426eb20cf4874ae9">
+        <dex dex="/Users/moonsunhwang/Downloads/CS307-TEAM35-Justin/Bluatt_student/app/build/intermediates/transforms/dex/debug/folders/1000/10/common-1.0.0_85601661b0d6f83ca46ca1a6f83c24d96b8c4831/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/moonsunhwang/.android/build-cache/614c8e30dcef18dfd4f95a5320cab09a5be554f3/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="233f60a165ae622c8b36731502ebbda0f65e1930">
+        <dex dex="/Users/moonsunhwang/Downloads/CS307-TEAM35-Justin/Bluatt_student/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d5dd13173a7df9101890fe405579872bc67a6663/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/moonsunhwang/.android/build-cache/24f811a50bbb210e612bf2274c78c935bd8a9c10/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/moonsunhwang/Downloads/CS307-TEAM35-Justin/Bluatt_student/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_9f16d7f0cd750c75512fa96a807d51a1219d3326/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/moonsunhwang/.android/build-cache/2f642cb67e10a8d6540e87fb2c82b6c9118be0c1/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="7efef32744ca4a436492d5cf28c08698cc2af256">
+        <dex dex="/Users/moonsunhwang/Downloads/CS307-TEAM35-Justin/Bluatt_student/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_4f8e40b626f6da1b1d578679ca04038113bbbb22/classes.dex" />
     </item>
 
 </items>

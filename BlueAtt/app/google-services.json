@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "121972786513",
+    "firebase_url": "https://blueatt-c1ec9.firebaseio.com",
+    "project_id": "blueatt-c1ec9",
+    "storage_bucket": "blueatt-c1ec9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:121972786513:android:18dcb47ffde22256",
+        "android_client_info": {
+          "package_name": "com.example.moonsunhwang.bluatt_student"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "121972786513-2i9lcqmk2trh751g523v8nurar8l28ar.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLDKrUihAOXZK_XCdlddywINtA4JeA7Ho"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:121972786513:android:810760050eaaa096",
+        "android_client_info": {
+          "package_name": "com.example.moonsunhwang.blueatt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "121972786513-2i9lcqmk2trh751g523v8nurar8l28ar.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLDKrUihAOXZK_XCdlddywINtA4JeA7Ho"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

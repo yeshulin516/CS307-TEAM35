@@ -1,9 +1,12 @@
 package com.example.moonsunhwang.blueatt;
 
 import android.bluetooth.BluetoothManager;
+import android.content.DialogInterface;
 import android.content.pm.PackageManager;
+import android.os.CountDownTimer;
 import android.os.Handler;
 import android.support.v4.content.ContextCompat;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.bluetooth.BluetoothAdapter;
@@ -25,10 +28,24 @@ import android.widget.Button;
 import android.widget.ListView;
 
 import android.widget.Toast;
+
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 import java.util.ArrayList;
 import java.util.Set;
 
+import static com.example.moonsunhwang.blueatt.R.id.info;
+
 public class Bluetooth_MainPage extends AppCompatActivity {
+
+    final FirebaseDatabase database = FirebaseDatabase.getInstance();
+
+
+    final DatabaseReference students = database.getReference("Students");
+    final DatabaseReference instructors = database.getReference("Instructors");
+    final DatabaseReference courses = database.getReference("Courses");
+    final DatabaseReference records = database.getReference("Records");
 
     private final static int REQUEST_ENABLE_BT = 1;
     BluetoothAdapter mBluetoothAdapter;
@@ -41,7 +58,6 @@ public class Bluetooth_MainPage extends AppCompatActivity {
     static ArrayList<String> Address = new ArrayList<String>();
     private String n;
     private String a;
-
 
 
     @Override
@@ -58,35 +74,20 @@ public class Bluetooth_MainPage extends AppCompatActivity {
         b5 = (Button) findViewById(R.id.scan);
 
 
+        b5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+
 
         int permissionCheck = ContextCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION);
 
         if (permissionCheck != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 1);
         }
-//        } else {
-//            if(areLocationServicesEnabled(this)) {
-//                mHandler = new Handler();
-//
-//                if (!getPackageManager().hasSystemFeature(PackageManager.FEATURE_BLUETOOTH_LE)) {
-//                    Toast.makeText(this, R.string.ble_not_supported, Toast.LENGTH_SHORT).show();
-//                    finish();
-//                }
-//
-//                final BluetoothManager bluetoothManager = (BluetoothManager) getSystemService(Context.BLUETOOTH_SERVICE);
-//                mBluetoothAdapter = bluetoothManager.getAdapter();
-//
-//                scanLeDevice(true);
-//            }
-//        }
-        /*
-        IntentFilter filter = new IntentFilter();
-        filter.addAction(BluetoothAdapter.ACTION_STATE_CHANGED);
-        filter.addAction(BluetoothDevice.ACTION_FOUND);
-        filter.addAction(BluetoothAdapter.ACTION_DISCOVERY_STARTED);
-        filter.addAction(BluetoothAdapter.ACTION_DISCOVERY_FINISHED);
-        registerReceiver(mReceiver, filter);
-        */
 
     }
 
@@ -109,27 +110,20 @@ public class Bluetooth_MainPage extends AppCompatActivity {
     private final BroadcastReceiver mReceiver = new BroadcastReceiver() {
 
         public void onReceive(Context context, Intent intent) {
-            //intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             String action = intent.getAction();
-            //Log.d("myTag", action);
-            //Toast.makeText(getApplicationContext(), "Hello3",Toast.LENGTH_SHORT).show();
+
             if (BluetoothDevice.ACTION_FOUND.equals(action)) {
-                // Discovery has found a device. Get the BluetoothDevice
-                // object and its info from the Intent.
+                // Discovery has found a device. Get the BluetoothDevice object and its info from the Intent.
                 BluetoothDevice device = intent.getParcelableExtra(BluetoothDevice.EXTRA_DEVICE);
                 String deviceName = device.getName();
                 if (deviceName == null) {
                     deviceName = "[unknown]";
                 }
                 String deviceHardwareAddress = device.getAddress(); // MAC address
-                //Toast.makeText(getApplicationContext(), "Hello",Toast.LENGTH_SHORT).show();
-                //Log.i("myTag", device.getName());
-                //Log.i("..", deviceHardwareAddress);
+
                 Name.add(deviceName);
                 if (!Address.contains(deviceHardwareAddress))
-                    Address.add(deviceHardwareAddress);
-                //n = deviceName;
-                //a = deviceHardwareAddress;
+                    Address.add(deviceHardwareAddress.toLowerCase());
             }
         }
     };
@@ -142,12 +136,10 @@ public class Bluetooth_MainPage extends AppCompatActivity {
 
 
     public void scan(View v) {
-        //Log.d("myTag", "hello2");
         // start looking for bluetooth devices
         Address.clear();
         Name.clear();
         mBluetoothAdapter.startDiscovery();
-        //Toast.makeText(getApplicationContext(), "Hello2",Toast.LENGTH_SHORT).show();
         IntentFilter filter = new IntentFilter(BluetoothDevice.ACTION_FOUND);
         registerReceiver(mReceiver, filter);
 
@@ -157,7 +149,6 @@ public class Bluetooth_MainPage extends AppCompatActivity {
 
     public void on(View v) {
         {
-
 
             if (!mBluetoothAdapter.isEnabled()) {
                 Intent enableBtIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
@@ -172,6 +163,25 @@ public class Bluetooth_MainPage extends AppCompatActivity {
     public void off(View v) {
         mBluetoothAdapter.disable();
         Toast.makeText(getApplicationContext(), "Turned off", Toast.LENGTH_LONG).show();
+
+        //compares roster's device list to scanned devices
+        for (String roster_device : MainActivity.roster_devices) {
+            if (Address.contains(roster_device)) {
+                MainActivity.roster_attendance.add("Y");
+            }
+            else
+                MainActivity.roster_attendance.add("N");
+        }
+
+        //
+
+        for (int i = 0; i < MainActivity.roster_usernames.size(); i++ ) {
+            records.child(MainActivity.courseID).child(MainActivity.roster_usernames.get(i)).child(MainActivity.getDate()).setValue(MainActivity.roster_attendance.get(i));
+        }
+
+        MainActivity.roster_attendance.clear();
+
+        //System.out.println(MainActivity.roster_attendance.toString());
     }
 
 
@@ -192,6 +202,44 @@ public class Bluetooth_MainPage extends AppCompatActivity {
         Toast.makeText(getApplicationContext(), "Showing Paired Devices", Toast.LENGTH_SHORT).show();
 
         final ArrayAdapter adapter2 = new ArrayAdapter(this, android.R.layout.simple_list_item_1, name);
+
+    }
+
+    public void showSuccessMessage(View view) {
+
+        // setup the alert builder
+        final AlertDialog.Builder success_message = new AlertDialog.Builder(this);
+        success_message.setTitle("Please wait for 5 seconds");
+        success_message.setMessage("00:05");
+
+        /*
+        success_message.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int id) {
+
+
+
+            }
+        });
+
+
+
+         */
+        // create and show the alert dialog
+        final AlertDialog successMessage = success_message.create();
+        successMessage.show();
+
+        new CountDownTimer(5000, 1000) {
+            @Override
+            public void onTick(long millisUntilFinished) {
+                success_message.setMessage("00:"+ (millisUntilFinished/1000));
+            }
+
+            @Override
+            public void onFinish() {
+                successMessage.dismiss();
+            }
+        }.start();
 
     }
 

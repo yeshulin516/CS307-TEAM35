@@ -9,17 +9,28 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 public class Update_Device extends AppCompatActivity {
+
+    final FirebaseDatabase database = FirebaseDatabase.getInstance();
+
+
+    final DatabaseReference students = database.getReference("Students");
+    final DatabaseReference instructors = database.getReference("Instructors");
+    final DatabaseReference courses = database.getReference("Courses");
+    final DatabaseReference records = database.getReference("Records");
 
     String username;
     String deviceID;
+
+    String currentDeviceID;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_update__device);
-
-        //Function, if you want to call right after opening the page.
 
         final Button btn = (Button)findViewById(R.id.submit);
 
@@ -34,12 +45,26 @@ public class Update_Device extends AppCompatActivity {
                 //Integer deviceID = Integer.valueOf(et2.getText().toString());
                 deviceID = et2.getText().toString();
 
-                //add data to database
-                //if it got saved
+                //update student's device ID under Student branch
+                students.child(username).setValue(deviceID);
+
+                //update student's device ID under the Instructor branch
+                instructors.child("jeff1").child("CS307").child(username).setValue(deviceID.toLowerCase());
+
                 showSuccessMessage(btn);
+            }
+        });
 
+        //TODO
+        //students.child(MainActivity.studentID)
 
+        final Button checkIDbtn = (Button)findViewById(R.id.check_id);
 
+        checkIDbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                showCurrentID(checkIDbtn);
             }
         });
 
@@ -54,18 +79,40 @@ public class Update_Device extends AppCompatActivity {
 
         // add a button
         success_message.setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int id) {
+            @Override
+            public void onClick(DialogInterface dialog, int id) {
 
-                        Intent intent = new Intent(Update_Device.this, Update_Device_Result.class);
-                        Bundle extras = new Bundle();
-                        extras.putString("USERNAME",username);
-                        extras.putString("DEVICE_ID",deviceID);
-                        intent.putExtras(extras);
-                        startActivity(intent);
+                Intent intent = new Intent(Update_Device.this, Update_Device_Result.class);
+                Bundle extras = new Bundle();
+                extras.putString("USERNAME",username);
+                extras.putString("DEVICE_ID",deviceID);
+                intent.putExtras(extras);
+                startActivity(intent);
 
-                    }
-                });
+            }
+        });
+
+        // create and show the alert dialog
+        AlertDialog successMessage = success_message.create();
+        successMessage.show();
+    }
+
+    public void showCurrentID(View view) {
+
+        // setup the alert builder
+        AlertDialog.Builder success_message = new AlertDialog.Builder(this);
+        success_message.setTitle("Your current ID");
+        success_message.setMessage("Your current device ID is:\n" + currentDeviceID);
+
+        // add a button
+        success_message.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int id) {
+
+
+
+            }
+        });
 
         // create and show the alert dialog
         AlertDialog successMessage = success_message.create();

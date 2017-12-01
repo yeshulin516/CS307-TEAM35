@@ -1,18 +1,18 @@
 [
     {
-        "merged": "/Users/moonsunhwang/Documents/2017 Fall/CS 307/UI백업 (11:1)/Bluatt_student/app/build/intermediates/res/merged/debug/drawable-v21/abc_btn_colored_material.xml",
-        "source": "/Users/moonsunhwang/.android/build-cache/182618bbedc40c45d13c95bb513cb2e171a7118d/output/res/drawable-v21/abc_btn_colored_material.xml"
+        "merged": "/Users/moonsunhwang/Downloads/CS307-TEAM35-Justin/Bluatt_student/app/build/intermediates/res/merged/debug/drawable-v21/abc_btn_colored_material.xml",
+        "source": "/Users/moonsunhwang/.android/build-cache/e477952dcd7addbace9d09feb9dc54eb57789057/output/res/drawable-v21/abc_btn_colored_material.xml"
     },
     {
-        "merged": "/Users/moonsunhwang/Documents/2017 Fall/CS 307/UI백업 (11:1)/Bluatt_student/app/build/intermediates/res/merged/debug/drawable-v21/notification_action_background.xml",
-        "source": "/Users/moonsunhwang/.android/build-cache/182618bbedc40c45d13c95bb513cb2e171a7118d/output/res/drawable-v21/notification_action_background.xml"
+        "merged": "/Users/moonsunhwang/Downloads/CS307-TEAM35-Justin/Bluatt_student/app/build/intermediates/res/merged/debug/drawable-v21/abc_action_bar_item_background_material.xml",
+        "source": "/Users/moonsunhwang/.android/build-cache/e477952dcd7addbace9d09feb9dc54eb57789057/output/res/drawable-v21/abc_action_bar_item_background_material.xml"
     },
     {
-        "merged": "/Users/moonsunhwang/Documents/2017 Fall/CS 307/UI백업 (11:1)/Bluatt_student/app/build/intermediates/res/merged/debug/drawable-v21/abc_edit_text_material.xml",
-        "source": "/Users/moonsunhwang/.android/build-cache/182618bbedc40c45d13c95bb513cb2e171a7118d/output/res/drawable-v21/abc_edit_text_material.xml"
+        "merged": "/Users/moonsunhwang/Downloads/CS307-TEAM35-Justin/Bluatt_student/app/build/intermediates/res/merged/debug/drawable-v21/notification_action_background.xml",
+        "source": "/Users/moonsunhwang/.android/build-cache/973ce4f45a3a45a23fee0c31214e984169e5a171/output/res/drawable-v21/notification_action_background.xml"
     },
     {
-        "merged": "/Users/moonsunhwang/Documents/2017 Fall/CS 307/UI백업 (11:1)/Bluatt_student/app/build/intermediates/res/merged/debug/drawable-v21/abc_action_bar_item_background_material.xml",
-        "source": "/Users/moonsunhwang/.android/build-cache/182618bbedc40c45d13c95bb513cb2e171a7118d/output/res/drawable-v21/abc_action_bar_item_background_material.xml"
+        "merged": "/Users/moonsunhwang/Downloads/CS307-TEAM35-Justin/Bluatt_student/app/build/intermediates/res/merged/debug/drawable-v21/abc_edit_text_material.xml",
+        "source": "/Users/moonsunhwang/.android/build-cache/e477952dcd7addbace9d09feb9dc54eb57789057/output/res/drawable-v21/abc_edit_text_material.xml"
     }
 ]

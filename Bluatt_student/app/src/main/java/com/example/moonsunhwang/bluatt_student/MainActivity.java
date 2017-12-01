@@ -3,18 +3,33 @@ package com.example.moonsunhwang.bluatt_student;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import com.google.firebase.database.*;
+
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.*;
 
 public class MainActivity extends AppCompatActivity {
+
+    //TODO get these values from UI
+    static String studentID = "justin1";
+    static String courseID = "CS307";
+
+
+    final FirebaseDatabase database = FirebaseDatabase.getInstance();
+
+
+    final DatabaseReference students = database.getReference("Students");
+    final DatabaseReference instructors = database.getReference("Instructors");
+    final DatabaseReference records = database.getReference("Records");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
-
 
         Button btn = (Button)findViewById(R.id.register);
 
@@ -42,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                startActivity(new Intent(MainActivity.this, Attendance_Trend_and_Data.class));
+                startActivity(new Intent(MainActivity.this, Select_Class.class));
             }
         });
 
@@ -56,7 +71,49 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+
+        //listens for attendance record to be added for current student
+        records.child(courseID).child(studentID).addChildEventListener(new ChildEventListener() {
+            @Override
+            public void onChildAdded(DataSnapshot dataSnapshot, String s) {
+
+                //prints out if attendance is added for current day
+                if (dataSnapshot.getKey().toString().equals(getDate()))
+                    //TODO output values to the UI
+                    System.out.println(dataSnapshot.toString());
+            }
+
+
+            @Override
+            public void onChildChanged(DataSnapshot dataSnapshot, String s) {
+
+            }
+
+            @Override
+            public void onChildRemoved(DataSnapshot dataSnapshot) {
+
+            }
+
+            @Override
+            public void onChildMoved(DataSnapshot dataSnapshot, String s) {
+
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+                System.out.println("The read failed: " + databaseError.getCode());
+
+            }
+        });
+
     }
 
+    public static String getDate() {
+        DateFormat df = new SimpleDateFormat("MM-dd-yy");
+
+        Date dateobj = new Date();
+        return df.format(dateobj);
+    }
 
 }

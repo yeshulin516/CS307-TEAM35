@@ -7,9 +7,21 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 public class Remove_Student extends AppCompatActivity {
+
+    final FirebaseDatabase database = FirebaseDatabase.getInstance();
+
+
+    final DatabaseReference students = database.getReference("Students");
+    final DatabaseReference instructors = database.getReference("Instructors");
+    final DatabaseReference courses = database.getReference("Courses");
+    final DatabaseReference records = database.getReference("Records");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +33,25 @@ public class Remove_Student extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                confirmMessage(btn);
+                EditText et1 = (EditText) findViewById(R.id.student_name);
+                String input_name = et1.getText().toString();
+
+                //check if input username is in the course roster
+                if (MainActivity.roster_usernames.contains(input_name)) {
+                    //TODO stop deletion if dont confirm
+                    confirmMessage(btn);
+
+                    instructors.child("jeff1").child("CS307").child(input_name).removeValue();
+                    records.child("CS307").child(input_name).removeValue();
+
+                    //remove student's username and device ID from global array list
+                    int index =  MainActivity.roster_usernames.indexOf(input_name);
+                    MainActivity.roster_usernames.remove(index);
+                    MainActivity.roster_devices.remove(index);
+
+                }
+                //TODO display error meassage, student not in course
+                else;
 
 
             }

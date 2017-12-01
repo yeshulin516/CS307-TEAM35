@@ -7,12 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-
-
 public class Update_Device_Result extends AppCompatActivity {
-
-    public static String username;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +16,7 @@ public class Update_Device_Result extends AppCompatActivity {
 
         Intent intent = getIntent();
         Bundle extras = intent.getExtras();
-        username = extras.getString("USERNAME");
+        String username = extras.getString("USERNAME");
         String device_id = extras.getString("DEVICE_ID");
 
         TextView usernameTextView = (TextView)findViewById(R.id.username_TextView);

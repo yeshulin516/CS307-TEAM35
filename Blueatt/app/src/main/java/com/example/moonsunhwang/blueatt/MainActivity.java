@@ -5,8 +5,30 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import com.google.firebase.database.*;
+
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
+
 
 public class MainActivity extends AppCompatActivity {
+
+    //TODO get these values from UI
+    static String instructorID = "jeff1";
+    static String courseID = "CS307";
+
+    static ArrayList<String> roster_usernames = new ArrayList<String>();
+    static ArrayList<String> roster_devices = new ArrayList<String>();
+    static ArrayList<String> roster_attendance = new ArrayList<String>();
+
+    final FirebaseDatabase database = FirebaseDatabase.getInstance();
+
+
+    final DatabaseReference students = database.getReference("Students");
+    final DatabaseReference instructors = database.getReference("Instructors");
+    final DatabaseReference records = database.getReference("Records");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +39,29 @@ public class MainActivity extends AppCompatActivity {
         class1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                //pull selected course roster's devices
+                instructors.child(instructorID).child(courseID).addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(DataSnapshot dataSnapshot) {
+                        for (DataSnapshot node: dataSnapshot.getChildren()) {
+                            //System.out.println(node.getKey() + " " + node.getValue());
+                            roster_usernames.add(node.getKey());
+                            roster_devices.add(node.getValue().toString());
+                        }
+
+                        //System.out.println(roster_usernames.toString());
+                        //System.out.println(roster_devices.toString());
+
+                    }
+
+
+                    @Override
+                    public void onCancelled(DatabaseError databaseError) {
+
+                    }
+                });
+
                 startActivity(new Intent(MainActivity.this, Main_Page.class));
             }
         });
@@ -62,4 +107,12 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
+
+    public static String getDate() {
+        DateFormat df = new SimpleDateFormat("MM-dd-yy");
+
+        Date dateobj = new Date();
+        return df.format(dateobj);
+    }
+
 }

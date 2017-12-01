@@ -46,6 +46,14 @@ public class Main_Page extends AppCompatActivity {
             }
         });
 
+        Button test = (Button)findViewById(R.id.test);
+        test.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Main_Page.this, Test.class));
+            }
+        });
+
 
 
 

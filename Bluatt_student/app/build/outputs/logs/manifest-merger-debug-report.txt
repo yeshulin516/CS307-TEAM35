@@ -1,123 +1,287 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/moonsunhwang/Documents/2017 Fall/CS 307/UI백업 (11:1)/Bluatt_student/app/src/main/AndroidManifest.xml:2:1-30:12
+ADDED from /Users/moonsunhwang/Downloads/CS307-TEAM35-Justin/Bluatt_student/app/src/main/AndroidManifest.xml:2:1-30:12
 	package
-		ADDED from /Users/moonsunhwang/Documents/2017 Fall/CS 307/UI백업 (11:1)/Bluatt_student/app/src/main/AndroidManifest.xml:3:5-54
-		INJECTED from /Users/moonsunhwang/Documents/2017 Fall/CS 307/UI백업 (11:1)/Bluatt_student/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/moonsunhwang/Documents/2017 Fall/CS 307/UI백업 (11:1)/Bluatt_student/app/src/main/AndroidManifest.xml
+		ADDED from /Users/moonsunhwang/Downloads/CS307-TEAM35-Justin/Bluatt_student/app/src/main/AndroidManifest.xml:3:5-54
+		INJECTED from /Users/moonsunhwang/Downloads/CS307-TEAM35-Justin/Bluatt_student/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/moonsunhwang/Downloads/CS307-TEAM35-Justin/Bluatt_student/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/moonsunhwang/Documents/2017 Fall/CS 307/UI백업 (11:1)/Bluatt_student/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/moonsunhwang/Documents/2017 Fall/CS 307/UI백업 (11:1)/Bluatt_student/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/moonsunhwang/Downloads/CS307-TEAM35-Justin/Bluatt_student/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/moonsunhwang/Downloads/CS307-TEAM35-Justin/Bluatt_student/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/moonsunhwang/Documents/2017 Fall/CS 307/UI백업 (11:1)/Bluatt_student/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from /Users/moonsunhwang/Downloads/CS307-TEAM35-Justin/Bluatt_student/app/src/main/AndroidManifest.xml:2:11-69
 	android:versionCode
-		INJECTED from /Users/moonsunhwang/Documents/2017 Fall/CS 307/UI백업 (11:1)/Bluatt_student/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/moonsunhwang/Documents/2017 Fall/CS 307/UI백업 (11:1)/Bluatt_student/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/moonsunhwang/Downloads/CS307-TEAM35-Justin/Bluatt_student/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/moonsunhwang/Downloads/CS307-TEAM35-Justin/Bluatt_student/app/src/main/AndroidManifest.xml
 application
-ADDED from /Users/moonsunhwang/Documents/2017 Fall/CS 307/UI백업 (11:1)/Bluatt_student/app/src/main/AndroidManifest.xml:5:5-28:19
-MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/moonsunhwang/.android/build-cache/182618bbedc40c45d13c95bb513cb2e171a7118d/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-v4:26.0.0-alpha1] /Users/moonsunhwang/.android/build-cache/1579bb609598e7ea9d11b43ad061e4433b0c8868/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /Users/moonsunhwang/.android/build-cache/9adf583ae158430d91e94faf855ba9124baad313/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /Users/moonsunhwang/.android/build-cache/f0f69c9e1793f6cc9e07b8998fd557907206720f/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /Users/moonsunhwang/.android/build-cache/331745adfd60c1a27dafbf9b8d9346f489590c20/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /Users/moonsunhwang/.android/build-cache/0b0e303896abacb138997f90127b2d04891d240d/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /Users/moonsunhwang/.android/build-cache/fa6fe0875bcaf15c359cad0e44c7d3ba9a1e844c/output/AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /Users/moonsunhwang/.android/build-cache/ea870786189bbf2efa404d6ffbd07307f44bcfe5/output/AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Users/moonsunhwang/.android/build-cache/13bcb852191be9bc4168e3edaaaca9322a89fa2e/output/AndroidManifest.xml:29:5-20
+ADDED from /Users/moonsunhwang/Downloads/CS307-TEAM35-Justin/Bluatt_student/app/src/main/AndroidManifest.xml:5:5-28:19
+MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/moonsunhwang/.android/build-cache/e477952dcd7addbace9d09feb9dc54eb57789057/output/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/moonsunhwang/.android/build-cache/75bd12a2e22bcb322e99b18f45a2622ade343fa8/output/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/moonsunhwang/.android/build-cache/63e4ea8dbba59ec21b8c727857073146bfe7076d/output/AndroidManifest.xml:22:5-26:19
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/moonsunhwang/.android/build-cache/816fc91bac13f667d65d3865bdec43517814a149/output/AndroidManifest.xml:9:5-20
+MERGED from [com.google.firebase:firebase-core:11.6.0] /Users/moonsunhwang/.android/build-cache/5ed240b42b085986c64c26378d6f898c951a6dde/output/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-analytics:11.6.0] /Users/moonsunhwang/.android/build-cache/d090988e6cdf5c67757709789e5c61c6f2dbba53/output/AndroidManifest.xml:24:5-34:19
+MERGED from [com.google.firebase:firebase-analytics-impl:11.6.0] /Users/moonsunhwang/.android/build-cache/62066283139a2133242d195a7d54f676fb60aafd/output/AndroidManifest.xml:24:5-28:19
+MERGED from [com.google.firebase:firebase-iid:11.6.0] /Users/moonsunhwang/.android/build-cache/77fbce3ab35d626cef6b2d76f665622aaf589a3c/output/AndroidManifest.xml:29:5-46:19
+MERGED from [com.google.firebase:firebase-iid-license:11.6.0] /Users/moonsunhwang/.android/build-cache/18fdeefc28d485e7a03a90722b76478c0f453b99/output/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-analytics-impl-license:11.6.0] /Users/moonsunhwang/.android/build-cache/6f51f35e7702988c6f7f5bccb46ade544bea59c0/output/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-analytics-license:11.6.0] /Users/moonsunhwang/.android/build-cache/334e50e97b834af0f9495a06689f474989a02cd4/output/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-database-connection-license:11.6.0] /Users/moonsunhwang/.android/build-cache/029271c7b9408171a82e09dab1afbf87dd194a8d/output/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-common:11.6.0] /Users/moonsunhwang/.android/build-cache/dc04b429ce2452c3bfe1a7dd5145dd813f793806/output/AndroidManifest.xml:4:5-7:19
+MERGED from [com.google.firebase:firebase-common-license:11.6.0] /Users/moonsunhwang/.android/build-cache/cd1c1d5a4c085a4d1af552267316b8770b7648ee/output/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks:11.6.0] /Users/moonsunhwang/.android/build-cache/eeb483384cdf9de02507d00b594906b403d1f48f/output/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-basement:11.6.0] /Users/moonsunhwang/.android/build-cache/819507f34705134e7cae946c9bea4a3687c380e2/output/AndroidManifest.xml:19:5-21:19
+MERGED from [com.android.support:support-v4:26.1.0] /Users/moonsunhwang/.android/build-cache/24f811a50bbb210e612bf2274c78c935bd8a9c10/output/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/moonsunhwang/.android/build-cache/f0be89695f262097331a71e07e44941fcf9b38e6/output/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/moonsunhwang/.android/build-cache/2f642cb67e10a8d6540e87fb2c82b6c9118be0c1/output/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/moonsunhwang/.android/build-cache/90be22d74ec1771efea4e0227d1a1881ce513480/output/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/moonsunhwang/.android/build-cache/614c8e30dcef18dfd4f95a5320cab09a5be554f3/output/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.1.0] /Users/moonsunhwang/.android/build-cache/973ce4f45a3a45a23fee0c31214e984169e5a171/output/AndroidManifest.xml:25:5-29:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/moonsunhwang/.android/build-cache/0948070d2954ad5fbfe3217fff21285729fb9ebc/output/AndroidManifest.xml:24:5-28:19
+MERGED from [com.google.android.gms:play-services-basement-license:11.6.0] /Users/moonsunhwang/.android/build-cache/0334047eb8e6bbfc82fe9becc2dd9507f416e806/output/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks-license:11.6.0] /Users/moonsunhwang/.android/build-cache/be2534a0f3141eedd4a9bffd243fc0a6a970496b/output/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-database-license:11.6.0] /Users/moonsunhwang/.android/build-cache/1086930e41d9af3b3a81ebe64c391ba452afa25c/output/AndroidManifest.xml:5:5-20
 	android:label
-		ADDED from /Users/moonsunhwang/Documents/2017 Fall/CS 307/UI백업 (11:1)/Bluatt_student/app/src/main/AndroidManifest.xml:8:9-41
+		ADDED from /Users/moonsunhwang/Downloads/CS307-TEAM35-Justin/Bluatt_student/app/src/main/AndroidManifest.xml:8:9-41
 	android:supportsRtl
-		ADDED from /Users/moonsunhwang/Documents/2017 Fall/CS 307/UI백업 (11:1)/Bluatt_student/app/src/main/AndroidManifest.xml:10:9-35
+		ADDED from /Users/moonsunhwang/Downloads/CS307-TEAM35-Justin/Bluatt_student/app/src/main/AndroidManifest.xml:10:9-35
 	android:roundIcon
-		ADDED from /Users/moonsunhwang/Documents/2017 Fall/CS 307/UI백업 (11:1)/Bluatt_student/app/src/main/AndroidManifest.xml:9:9-54
+		ADDED from /Users/moonsunhwang/Downloads/CS307-TEAM35-Justin/Bluatt_student/app/src/main/AndroidManifest.xml:9:9-54
 	android:allowBackup
-		ADDED from /Users/moonsunhwang/Documents/2017 Fall/CS 307/UI백업 (11:1)/Bluatt_student/app/src/main/AndroidManifest.xml:6:9-35
+		ADDED from /Users/moonsunhwang/Downloads/CS307-TEAM35-Justin/Bluatt_student/app/src/main/AndroidManifest.xml:6:9-35
 	android:icon
-		ADDED from /Users/moonsunhwang/Documents/2017 Fall/CS 307/UI백업 (11:1)/Bluatt_student/app/src/main/AndroidManifest.xml:7:9-43
+		ADDED from /Users/moonsunhwang/Downloads/CS307-TEAM35-Justin/Bluatt_student/app/src/main/AndroidManifest.xml:7:9-43
 	android:theme
-		ADDED from /Users/moonsunhwang/Documents/2017 Fall/CS 307/UI백업 (11:1)/Bluatt_student/app/src/main/AndroidManifest.xml:11:9-40
+		ADDED from /Users/moonsunhwang/Downloads/CS307-TEAM35-Justin/Bluatt_student/app/src/main/AndroidManifest.xml:11:9-40
 activity#com.example.moonsunhwang.bluatt_student.MainActivity
-ADDED from /Users/moonsunhwang/Documents/2017 Fall/CS 307/UI백업 (11:1)/Bluatt_student/app/src/main/AndroidManifest.xml:12:9-18:20
+ADDED from /Users/moonsunhwang/Downloads/CS307-TEAM35-Justin/Bluatt_student/app/src/main/AndroidManifest.xml:12:9-18:20
 	android:name
-		ADDED from /Users/moonsunhwang/Documents/2017 Fall/CS 307/UI백업 (11:1)/Bluatt_student/app/src/main/AndroidManifest.xml:12:19-47
+		ADDED from /Users/moonsunhwang/Downloads/CS307-TEAM35-Justin/Bluatt_student/app/src/main/AndroidManifest.xml:12:19-47
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /Users/moonsunhwang/Documents/2017 Fall/CS 307/UI백업 (11:1)/Bluatt_student/app/src/main/AndroidManifest.xml:13:13-17:29
+ADDED from /Users/moonsunhwang/Downloads/CS307-TEAM35-Justin/Bluatt_student/app/src/main/AndroidManifest.xml:13:13-17:29
 action#android.intent.action.MAIN
-ADDED from /Users/moonsunhwang/Documents/2017 Fall/CS 307/UI백업 (11:1)/Bluatt_student/app/src/main/AndroidManifest.xml:14:17-69
+ADDED from /Users/moonsunhwang/Downloads/CS307-TEAM35-Justin/Bluatt_student/app/src/main/AndroidManifest.xml:14:17-69
 	android:name
-		ADDED from /Users/moonsunhwang/Documents/2017 Fall/CS 307/UI백업 (11:1)/Bluatt_student/app/src/main/AndroidManifest.xml:14:25-66
+		ADDED from /Users/moonsunhwang/Downloads/CS307-TEAM35-Justin/Bluatt_student/app/src/main/AndroidManifest.xml:14:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/moonsunhwang/Documents/2017 Fall/CS 307/UI백업 (11:1)/Bluatt_student/app/src/main/AndroidManifest.xml:16:17-77
+ADDED from /Users/moonsunhwang/Downloads/CS307-TEAM35-Justin/Bluatt_student/app/src/main/AndroidManifest.xml:16:17-77
 	android:name
-		ADDED from /Users/moonsunhwang/Documents/2017 Fall/CS 307/UI백업 (11:1)/Bluatt_student/app/src/main/AndroidManifest.xml:16:27-74
+		ADDED from /Users/moonsunhwang/Downloads/CS307-TEAM35-Justin/Bluatt_student/app/src/main/AndroidManifest.xml:16:27-74
 activity#com.example.moonsunhwang.bluatt_student.Register_Device
-ADDED from /Users/moonsunhwang/Documents/2017 Fall/CS 307/UI백업 (11:1)/Bluatt_student/app/src/main/AndroidManifest.xml:19:9-53
+ADDED from /Users/moonsunhwang/Downloads/CS307-TEAM35-Justin/Bluatt_student/app/src/main/AndroidManifest.xml:19:9-53
 	android:name
-		ADDED from /Users/moonsunhwang/Documents/2017 Fall/CS 307/UI백업 (11:1)/Bluatt_student/app/src/main/AndroidManifest.xml:19:19-50
+		ADDED from /Users/moonsunhwang/Downloads/CS307-TEAM35-Justin/Bluatt_student/app/src/main/AndroidManifest.xml:19:19-50
 activity#com.example.moonsunhwang.bluatt_student.Register_Device_Result
-ADDED from /Users/moonsunhwang/Documents/2017 Fall/CS 307/UI백업 (11:1)/Bluatt_student/app/src/main/AndroidManifest.xml:20:9-60
+ADDED from /Users/moonsunhwang/Downloads/CS307-TEAM35-Justin/Bluatt_student/app/src/main/AndroidManifest.xml:20:9-60
 	android:name
-		ADDED from /Users/moonsunhwang/Documents/2017 Fall/CS 307/UI백업 (11:1)/Bluatt_student/app/src/main/AndroidManifest.xml:20:19-57
+		ADDED from /Users/moonsunhwang/Downloads/CS307-TEAM35-Justin/Bluatt_student/app/src/main/AndroidManifest.xml:20:19-57
 activity#com.example.moonsunhwang.bluatt_student.Update_Device
-ADDED from /Users/moonsunhwang/Documents/2017 Fall/CS 307/UI백업 (11:1)/Bluatt_student/app/src/main/AndroidManifest.xml:21:9-51
+ADDED from /Users/moonsunhwang/Downloads/CS307-TEAM35-Justin/Bluatt_student/app/src/main/AndroidManifest.xml:21:9-51
 	android:name
-		ADDED from /Users/moonsunhwang/Documents/2017 Fall/CS 307/UI백업 (11:1)/Bluatt_student/app/src/main/AndroidManifest.xml:21:19-48
+		ADDED from /Users/moonsunhwang/Downloads/CS307-TEAM35-Justin/Bluatt_student/app/src/main/AndroidManifest.xml:21:19-48
 activity#com.example.moonsunhwang.bluatt_student.Update_Device_Result
-ADDED from /Users/moonsunhwang/Documents/2017 Fall/CS 307/UI백업 (11:1)/Bluatt_student/app/src/main/AndroidManifest.xml:22:9-58
+ADDED from /Users/moonsunhwang/Downloads/CS307-TEAM35-Justin/Bluatt_student/app/src/main/AndroidManifest.xml:22:9-58
 	android:name
-		ADDED from /Users/moonsunhwang/Documents/2017 Fall/CS 307/UI백업 (11:1)/Bluatt_student/app/src/main/AndroidManifest.xml:22:19-55
+		ADDED from /Users/moonsunhwang/Downloads/CS307-TEAM35-Justin/Bluatt_student/app/src/main/AndroidManifest.xml:22:19-55
 activity#com.example.moonsunhwang.bluatt_student.Attendance_Trend_and_Data
-ADDED from /Users/moonsunhwang/Documents/2017 Fall/CS 307/UI백업 (11:1)/Bluatt_student/app/src/main/AndroidManifest.xml:23:9-63
+ADDED from /Users/moonsunhwang/Downloads/CS307-TEAM35-Justin/Bluatt_student/app/src/main/AndroidManifest.xml:23:9-63
 	android:name
-		ADDED from /Users/moonsunhwang/Documents/2017 Fall/CS 307/UI백업 (11:1)/Bluatt_student/app/src/main/AndroidManifest.xml:23:19-60
+		ADDED from /Users/moonsunhwang/Downloads/CS307-TEAM35-Justin/Bluatt_student/app/src/main/AndroidManifest.xml:23:19-60
 activity#com.example.moonsunhwang.bluatt_student.Select_Date
-ADDED from /Users/moonsunhwang/Documents/2017 Fall/CS 307/UI백업 (11:1)/Bluatt_student/app/src/main/AndroidManifest.xml:24:9-49
+ADDED from /Users/moonsunhwang/Downloads/CS307-TEAM35-Justin/Bluatt_student/app/src/main/AndroidManifest.xml:24:9-49
 	android:name
-		ADDED from /Users/moonsunhwang/Documents/2017 Fall/CS 307/UI백업 (11:1)/Bluatt_student/app/src/main/AndroidManifest.xml:24:19-46
+		ADDED from /Users/moonsunhwang/Downloads/CS307-TEAM35-Justin/Bluatt_student/app/src/main/AndroidManifest.xml:24:19-46
 activity#com.example.moonsunhwang.bluatt_student.Select_Date_Result
-ADDED from /Users/moonsunhwang/Documents/2017 Fall/CS 307/UI백업 (11:1)/Bluatt_student/app/src/main/AndroidManifest.xml:25:9-56
+ADDED from /Users/moonsunhwang/Downloads/CS307-TEAM35-Justin/Bluatt_student/app/src/main/AndroidManifest.xml:25:9-56
 	android:name
-		ADDED from /Users/moonsunhwang/Documents/2017 Fall/CS 307/UI백업 (11:1)/Bluatt_student/app/src/main/AndroidManifest.xml:25:19-53
+		ADDED from /Users/moonsunhwang/Downloads/CS307-TEAM35-Justin/Bluatt_student/app/src/main/AndroidManifest.xml:25:19-53
 activity#com.example.moonsunhwang.bluatt_student.Select_Class
-ADDED from /Users/moonsunhwang/Documents/2017 Fall/CS 307/UI백업 (11:1)/Bluatt_student/app/src/main/AndroidManifest.xml:26:9-50
+ADDED from /Users/moonsunhwang/Downloads/CS307-TEAM35-Justin/Bluatt_student/app/src/main/AndroidManifest.xml:26:9-50
 	android:name
-		ADDED from /Users/moonsunhwang/Documents/2017 Fall/CS 307/UI백업 (11:1)/Bluatt_student/app/src/main/AndroidManifest.xml:26:19-47
+		ADDED from /Users/moonsunhwang/Downloads/CS307-TEAM35-Justin/Bluatt_student/app/src/main/AndroidManifest.xml:26:19-47
 activity#com.example.moonsunhwang.bluatt_student.Give_Feedback
-ADDED from /Users/moonsunhwang/Documents/2017 Fall/CS 307/UI백업 (11:1)/Bluatt_student/app/src/main/AndroidManifest.xml:27:9-60
+ADDED from /Users/moonsunhwang/Downloads/CS307-TEAM35-Justin/Bluatt_student/app/src/main/AndroidManifest.xml:27:9-60
 	android:name
-		ADDED from /Users/moonsunhwang/Documents/2017 Fall/CS 307/UI백업 (11:1)/Bluatt_student/app/src/main/AndroidManifest.xml:27:19-48
+		ADDED from /Users/moonsunhwang/Downloads/CS307-TEAM35-Justin/Bluatt_student/app/src/main/AndroidManifest.xml:27:19-48
 uses-sdk
-INJECTED from /Users/moonsunhwang/Documents/2017 Fall/CS 307/UI백업 (11:1)/Bluatt_student/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/moonsunhwang/.android/build-cache/182618bbedc40c45d13c95bb513cb2e171a7118d/output/AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:support-v4:26.0.0-alpha1] /Users/moonsunhwang/.android/build-cache/1579bb609598e7ea9d11b43ad061e4433b0c8868/output/AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /Users/moonsunhwang/.android/build-cache/9adf583ae158430d91e94faf855ba9124baad313/output/AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /Users/moonsunhwang/.android/build-cache/f0f69c9e1793f6cc9e07b8998fd557907206720f/output/AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /Users/moonsunhwang/.android/build-cache/331745adfd60c1a27dafbf9b8d9346f489590c20/output/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /Users/moonsunhwang/.android/build-cache/0b0e303896abacb138997f90127b2d04891d240d/output/AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /Users/moonsunhwang/.android/build-cache/fa6fe0875bcaf15c359cad0e44c7d3ba9a1e844c/output/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /Users/moonsunhwang/.android/build-cache/ea870786189bbf2efa404d6ffbd07307f44bcfe5/output/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Users/moonsunhwang/.android/build-cache/13bcb852191be9bc4168e3edaaaca9322a89fa2e/output/AndroidManifest.xml:21:5-23:58
+INJECTED from /Users/moonsunhwang/Downloads/CS307-TEAM35-Justin/Bluatt_student/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/moonsunhwang/.android/build-cache/e477952dcd7addbace9d09feb9dc54eb57789057/output/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/moonsunhwang/.android/build-cache/75bd12a2e22bcb322e99b18f45a2622ade343fa8/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/moonsunhwang/.android/build-cache/63e4ea8dbba59ec21b8c727857073146bfe7076d/output/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/moonsunhwang/.android/build-cache/816fc91bac13f667d65d3865bdec43517814a149/output/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-core:11.6.0] /Users/moonsunhwang/.android/build-cache/5ed240b42b085986c64c26378d6f898c951a6dde/output/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-analytics:11.6.0] /Users/moonsunhwang/.android/build-cache/d090988e6cdf5c67757709789e5c61c6f2dbba53/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-analytics-impl:11.6.0] /Users/moonsunhwang/.android/build-cache/62066283139a2133242d195a7d54f676fb60aafd/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-iid:11.6.0] /Users/moonsunhwang/.android/build-cache/77fbce3ab35d626cef6b2d76f665622aaf589a3c/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-iid-license:11.6.0] /Users/moonsunhwang/.android/build-cache/18fdeefc28d485e7a03a90722b76478c0f453b99/output/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-analytics-impl-license:11.6.0] /Users/moonsunhwang/.android/build-cache/6f51f35e7702988c6f7f5bccb46ade544bea59c0/output/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-analytics-license:11.6.0] /Users/moonsunhwang/.android/build-cache/334e50e97b834af0f9495a06689f474989a02cd4/output/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-database:11.6.0] /Users/moonsunhwang/.android/build-cache/0c8e5679820cf2543c0ab30883daafb103c2654e/output/AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-database-connection:11.6.0] /Users/moonsunhwang/.android/build-cache/14493784b8612868b07366ab6a5dbccb7a4f7884/output/AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-database-connection-license:11.6.0] /Users/moonsunhwang/.android/build-cache/029271c7b9408171a82e09dab1afbf87dd194a8d/output/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-common:11.6.0] /Users/moonsunhwang/.android/build-cache/dc04b429ce2452c3bfe1a7dd5145dd813f793806/output/AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-common-license:11.6.0] /Users/moonsunhwang/.android/build-cache/cd1c1d5a4c085a4d1af552267316b8770b7648ee/output/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks:11.6.0] /Users/moonsunhwang/.android/build-cache/eeb483384cdf9de02507d00b594906b403d1f48f/output/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-basement:11.6.0] /Users/moonsunhwang/.android/build-cache/819507f34705134e7cae946c9bea4a3687c380e2/output/AndroidManifest.xml:17:5-43
+MERGED from [com.android.support:support-v4:26.1.0] /Users/moonsunhwang/.android/build-cache/24f811a50bbb210e612bf2274c78c935bd8a9c10/output/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/moonsunhwang/.android/build-cache/f0be89695f262097331a71e07e44941fcf9b38e6/output/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/moonsunhwang/.android/build-cache/2f642cb67e10a8d6540e87fb2c82b6c9118be0c1/output/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/moonsunhwang/.android/build-cache/90be22d74ec1771efea4e0227d1a1881ce513480/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/moonsunhwang/.android/build-cache/614c8e30dcef18dfd4f95a5320cab09a5be554f3/output/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:26.1.0] /Users/moonsunhwang/.android/build-cache/973ce4f45a3a45a23fee0c31214e984169e5a171/output/AndroidManifest.xml:21:5-23:58
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/moonsunhwang/.android/build-cache/0948070d2954ad5fbfe3217fff21285729fb9ebc/output/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.gms:play-services-basement-license:11.6.0] /Users/moonsunhwang/.android/build-cache/0334047eb8e6bbfc82fe9becc2dd9507f416e806/output/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks-license:11.6.0] /Users/moonsunhwang/.android/build-cache/be2534a0f3141eedd4a9bffd243fc0a6a970496b/output/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-database-license:11.6.0] /Users/moonsunhwang/.android/build-cache/1086930e41d9af3b3a81ebe64c391ba452afa25c/output/AndroidManifest.xml:4:5-43
 	tools:overrideLibrary
-		ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/moonsunhwang/.android/build-cache/182618bbedc40c45d13c95bb513cb2e171a7118d/output/AndroidManifest.xml:23:9-75
+		ADDED from [com.android.support:appcompat-v7:26.1.0] /Users/moonsunhwang/.android/build-cache/e477952dcd7addbace9d09feb9dc54eb57789057/output/AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
-		INJECTED from /Users/moonsunhwang/Documents/2017 Fall/CS 307/UI백업 (11:1)/Bluatt_student/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/moonsunhwang/Documents/2017 Fall/CS 307/UI백업 (11:1)/Bluatt_student/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/moonsunhwang/Downloads/CS307-TEAM35-Justin/Bluatt_student/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/moonsunhwang/Downloads/CS307-TEAM35-Justin/Bluatt_student/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/moonsunhwang/Documents/2017 Fall/CS 307/UI백업 (11:1)/Bluatt_student/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/moonsunhwang/Documents/2017 Fall/CS 307/UI백업 (11:1)/Bluatt_student/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/moonsunhwang/Downloads/CS307-TEAM35-Justin/Bluatt_student/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/moonsunhwang/Downloads/CS307-TEAM35-Justin/Bluatt_student/app/src/main/AndroidManifest.xml
 meta-data#android.support.VERSION
-ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/moonsunhwang/.android/build-cache/182618bbedc40c45d13c95bb513cb2e171a7118d/output/AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-v4:26.0.0-alpha1] /Users/moonsunhwang/.android/build-cache/1579bb609598e7ea9d11b43ad061e4433b0c8868/output/AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /Users/moonsunhwang/.android/build-cache/9adf583ae158430d91e94faf855ba9124baad313/output/AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /Users/moonsunhwang/.android/build-cache/f0f69c9e1793f6cc9e07b8998fd557907206720f/output/AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /Users/moonsunhwang/.android/build-cache/331745adfd60c1a27dafbf9b8d9346f489590c20/output/AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /Users/moonsunhwang/.android/build-cache/0b0e303896abacb138997f90127b2d04891d240d/output/AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /Users/moonsunhwang/.android/build-cache/fa6fe0875bcaf15c359cad0e44c7d3ba9a1e844c/output/AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /Users/moonsunhwang/.android/build-cache/ea870786189bbf2efa404d6ffbd07307f44bcfe5/output/AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Users/moonsunhwang/.android/build-cache/13bcb852191be9bc4168e3edaaaca9322a89fa2e/output/AndroidManifest.xml:25:5-27:41
+ADDED from [com.android.support:appcompat-v7:26.1.0] /Users/moonsunhwang/.android/build-cache/e477952dcd7addbace9d09feb9dc54eb57789057/output/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/moonsunhwang/.android/build-cache/75bd12a2e22bcb322e99b18f45a2622ade343fa8/output/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/moonsunhwang/.android/build-cache/63e4ea8dbba59ec21b8c727857073146bfe7076d/output/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-v4:26.1.0] /Users/moonsunhwang/.android/build-cache/24f811a50bbb210e612bf2274c78c935bd8a9c10/output/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/moonsunhwang/.android/build-cache/f0be89695f262097331a71e07e44941fcf9b38e6/output/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/moonsunhwang/.android/build-cache/2f642cb67e10a8d6540e87fb2c82b6c9118be0c1/output/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/moonsunhwang/.android/build-cache/90be22d74ec1771efea4e0227d1a1881ce513480/output/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/moonsunhwang/.android/build-cache/614c8e30dcef18dfd4f95a5320cab09a5be554f3/output/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.1.0] /Users/moonsunhwang/.android/build-cache/973ce4f45a3a45a23fee0c31214e984169e5a171/output/AndroidManifest.xml:26:9-28:38
 	android:value
-		ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/moonsunhwang/.android/build-cache/182618bbedc40c45d13c95bb513cb2e171a7118d/output/AndroidManifest.xml:27:9-38
+		ADDED from [com.android.support:appcompat-v7:26.1.0] /Users/moonsunhwang/.android/build-cache/e477952dcd7addbace9d09feb9dc54eb57789057/output/AndroidManifest.xml:28:13-35
 	android:name
-		ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/moonsunhwang/.android/build-cache/182618bbedc40c45d13c95bb513cb2e171a7118d/output/AndroidManifest.xml:26:9-47
+		ADDED from [com.android.support:appcompat-v7:26.1.0] /Users/moonsunhwang/.android/build-cache/e477952dcd7addbace9d09feb9dc54eb57789057/output/AndroidManifest.xml:27:13-51
+uses-permission#android.permission.INTERNET
+ADDED from [com.google.firebase:firebase-analytics:11.6.0] /Users/moonsunhwang/.android/build-cache/d090988e6cdf5c67757709789e5c61c6f2dbba53/output/AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-analytics-impl:11.6.0] /Users/moonsunhwang/.android/build-cache/62066283139a2133242d195a7d54f676fb60aafd/output/AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-iid:11.6.0] /Users/moonsunhwang/.android/build-cache/77fbce3ab35d626cef6b2d76f665622aaf589a3c/output/AndroidManifest.xml:20:5-66
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.6.0] /Users/moonsunhwang/.android/build-cache/d090988e6cdf5c67757709789e5c61c6f2dbba53/output/AndroidManifest.xml:20:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.firebase:firebase-analytics:11.6.0] /Users/moonsunhwang/.android/build-cache/d090988e6cdf5c67757709789e5c61c6f2dbba53/output/AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-analytics-impl:11.6.0] /Users/moonsunhwang/.android/build-cache/62066283139a2133242d195a7d54f676fb60aafd/output/AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-iid:11.6.0] /Users/moonsunhwang/.android/build-cache/77fbce3ab35d626cef6b2d76f665622aaf589a3c/output/AndroidManifest.xml:19:5-78
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.6.0] /Users/moonsunhwang/.android/build-cache/d090988e6cdf5c67757709789e5c61c6f2dbba53/output/AndroidManifest.xml:21:22-76
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [com.google.firebase:firebase-analytics:11.6.0] /Users/moonsunhwang/.android/build-cache/d090988e6cdf5c67757709789e5c61c6f2dbba53/output/AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:11.6.0] /Users/moonsunhwang/.android/build-cache/62066283139a2133242d195a7d54f676fb60aafd/output/AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-iid:11.6.0] /Users/moonsunhwang/.android/build-cache/77fbce3ab35d626cef6b2d76f665622aaf589a3c/output/AndroidManifest.xml:21:5-67
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.6.0] /Users/moonsunhwang/.android/build-cache/d090988e6cdf5c67757709789e5c61c6f2dbba53/output/AndroidManifest.xml:22:22-65
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.firebase:firebase-analytics:11.6.0] /Users/moonsunhwang/.android/build-cache/d090988e6cdf5c67757709789e5c61c6f2dbba53/output/AndroidManifest.xml:25:7-26:18
+MERGED from [com.google.firebase:firebase-analytics-impl:11.6.0] /Users/moonsunhwang/.android/build-cache/62066283139a2133242d195a7d54f676fb60aafd/output/AndroidManifest.xml:25:7-26:18
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:11.6.0] /Users/moonsunhwang/.android/build-cache/d090988e6cdf5c67757709789e5c61c6f2dbba53/output/AndroidManifest.xml:25:90-112
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:11.6.0] /Users/moonsunhwang/.android/build-cache/d090988e6cdf5c67757709789e5c61c6f2dbba53/output/AndroidManifest.xml:25:113-137
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.6.0] /Users/moonsunhwang/.android/build-cache/d090988e6cdf5c67757709789e5c61c6f2dbba53/output/AndroidManifest.xml:25:17-89
+receiver#com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver
+ADDED from [com.google.firebase:firebase-analytics:11.6.0] /Users/moonsunhwang/.android/build-cache/d090988e6cdf5c67757709789e5c61c6f2dbba53/output/AndroidManifest.xml:27:7-31:18
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:11.6.0] /Users/moonsunhwang/.android/build-cache/d090988e6cdf5c67757709789e5c61c6f2dbba53/output/AndroidManifest.xml:27:162-184
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:11.6.0] /Users/moonsunhwang/.android/build-cache/d090988e6cdf5c67757709789e5c61c6f2dbba53/output/AndroidManifest.xml:27:185-208
+	android:permission
+		ADDED from [com.google.firebase:firebase-analytics:11.6.0] /Users/moonsunhwang/.android/build-cache/d090988e6cdf5c67757709789e5c61c6f2dbba53/output/AndroidManifest.xml:27:105-161
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.6.0] /Users/moonsunhwang/.android/build-cache/d090988e6cdf5c67757709789e5c61c6f2dbba53/output/AndroidManifest.xml:27:17-104
+intent-filter#com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.firebase:firebase-analytics:11.6.0] /Users/moonsunhwang/.android/build-cache/d090988e6cdf5c67757709789e5c61c6f2dbba53/output/AndroidManifest.xml:28:11-30:27
+action#com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.firebase:firebase-analytics:11.6.0] /Users/moonsunhwang/.android/build-cache/d090988e6cdf5c67757709789e5c61c6f2dbba53/output/AndroidManifest.xml:29:15-76
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.6.0] /Users/moonsunhwang/.android/build-cache/d090988e6cdf5c67757709789e5c61c6f2dbba53/output/AndroidManifest.xml:29:23-74
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.firebase:firebase-analytics:11.6.0] /Users/moonsunhwang/.android/build-cache/d090988e6cdf5c67757709789e5c61c6f2dbba53/output/AndroidManifest.xml:32:7-137
+MERGED from [com.google.firebase:firebase-analytics-impl:11.6.0] /Users/moonsunhwang/.android/build-cache/62066283139a2133242d195a7d54f676fb60aafd/output/AndroidManifest.xml:27:7-137
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:11.6.0] /Users/moonsunhwang/.android/build-cache/d090988e6cdf5c67757709789e5c61c6f2dbba53/output/AndroidManifest.xml:32:88-110
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:11.6.0] /Users/moonsunhwang/.android/build-cache/d090988e6cdf5c67757709789e5c61c6f2dbba53/output/AndroidManifest.xml:32:111-135
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.6.0] /Users/moonsunhwang/.android/build-cache/d090988e6cdf5c67757709789e5c61c6f2dbba53/output/AndroidManifest.xml:32:16-87
+service#com.google.android.gms.measurement.AppMeasurementJobService
+ADDED from [com.google.firebase:firebase-analytics:11.6.0] /Users/moonsunhwang/.android/build-cache/d090988e6cdf5c67757709789e5c61c6f2dbba53/output/AndroidManifest.xml:33:7-197
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:11.6.0] /Users/moonsunhwang/.android/build-cache/d090988e6cdf5c67757709789e5c61c6f2dbba53/output/AndroidManifest.xml:33:148-170
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:11.6.0] /Users/moonsunhwang/.android/build-cache/d090988e6cdf5c67757709789e5c61c6f2dbba53/output/AndroidManifest.xml:33:171-195
+	android:permission
+		ADDED from [com.google.firebase:firebase-analytics:11.6.0] /Users/moonsunhwang/.android/build-cache/d090988e6cdf5c67757709789e5c61c6f2dbba53/output/AndroidManifest.xml:33:91-147
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.6.0] /Users/moonsunhwang/.android/build-cache/d090988e6cdf5c67757709789e5c61c6f2dbba53/output/AndroidManifest.xml:33:16-90
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:11.6.0] /Users/moonsunhwang/.android/build-cache/77fbce3ab35d626cef6b2d76f665622aaf589a3c/output/AndroidManifest.xml:23:5-81
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.6.0] /Users/moonsunhwang/.android/build-cache/77fbce3ab35d626cef6b2d76f665622aaf589a3c/output/AndroidManifest.xml:23:22-79
+permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:11.6.0] /Users/moonsunhwang/.android/build-cache/77fbce3ab35d626cef6b2d76f665622aaf589a3c/output/AndroidManifest.xml:25:5-109
+	android:protectionLevel
+		ADDED from [com.google.firebase:firebase-iid:11.6.0] /Users/moonsunhwang/.android/build-cache/77fbce3ab35d626cef6b2d76f665622aaf589a3c/output/AndroidManifest.xml:25:72-107
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.6.0] /Users/moonsunhwang/.android/build-cache/77fbce3ab35d626cef6b2d76f665622aaf589a3c/output/AndroidManifest.xml:25:17-71
+uses-permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:11.6.0] /Users/moonsunhwang/.android/build-cache/77fbce3ab35d626cef6b2d76f665622aaf589a3c/output/AndroidManifest.xml:27:5-78
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.6.0] /Users/moonsunhwang/.android/build-cache/77fbce3ab35d626cef6b2d76f665622aaf589a3c/output/AndroidManifest.xml:27:22-76
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-iid:11.6.0] /Users/moonsunhwang/.android/build-cache/77fbce3ab35d626cef6b2d76f665622aaf589a3c/output/AndroidManifest.xml:31:9-36:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:11.6.0] /Users/moonsunhwang/.android/build-cache/77fbce3ab35d626cef6b2d76f665622aaf589a3c/output/AndroidManifest.xml:31:85-108
+	android:permission
+		ADDED from [com.google.firebase:firebase-iid:11.6.0] /Users/moonsunhwang/.android/build-cache/77fbce3ab35d626cef6b2d76f665622aaf589a3c/output/AndroidManifest.xml:31:109-169
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.6.0] /Users/moonsunhwang/.android/build-cache/77fbce3ab35d626cef6b2d76f665622aaf589a3c/output/AndroidManifest.xml:31:19-84
+intent-filter#${applicationId}+com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:11.6.0] /Users/moonsunhwang/.android/build-cache/77fbce3ab35d626cef6b2d76f665622aaf589a3c/output/AndroidManifest.xml:32:13-35:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:11.6.0] /Users/moonsunhwang/.android/build-cache/77fbce3ab35d626cef6b2d76f665622aaf589a3c/output/AndroidManifest.xml:33:17-80
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.6.0] /Users/moonsunhwang/.android/build-cache/77fbce3ab35d626cef6b2d76f665622aaf589a3c/output/AndroidManifest.xml:33:25-78
+category#${applicationId}
+ADDED from [com.google.firebase:firebase-iid:11.6.0] /Users/moonsunhwang/.android/build-cache/77fbce3ab35d626cef6b2d76f665622aaf589a3c/output/AndroidManifest.xml:34:17-60
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.6.0] /Users/moonsunhwang/.android/build-cache/77fbce3ab35d626cef6b2d76f665622aaf589a3c/output/AndroidManifest.xml:34:27-58
+service#com.google.firebase.iid.FirebaseInstanceIdService
+ADDED from [com.google.firebase:firebase-iid:11.6.0] /Users/moonsunhwang/.android/build-cache/77fbce3ab35d626cef6b2d76f665622aaf589a3c/output/AndroidManifest.xml:40:9-44:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:11.6.0] /Users/moonsunhwang/.android/build-cache/77fbce3ab35d626cef6b2d76f665622aaf589a3c/output/AndroidManifest.xml:40:83-106
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.6.0] /Users/moonsunhwang/.android/build-cache/77fbce3ab35d626cef6b2d76f665622aaf589a3c/output/AndroidManifest.xml:40:18-82
+intent-filter#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:11.6.0] /Users/moonsunhwang/.android/build-cache/77fbce3ab35d626cef6b2d76f665622aaf589a3c/output/AndroidManifest.xml:41:13-43:29
+	android:priority
+		ADDED from [com.google.firebase:firebase-iid:11.6.0] /Users/moonsunhwang/.android/build-cache/77fbce3ab35d626cef6b2d76f665622aaf589a3c/output/AndroidManifest.xml:41:28-51
+action#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:11.6.0] /Users/moonsunhwang/.android/build-cache/77fbce3ab35d626cef6b2d76f665622aaf589a3c/output/AndroidManifest.xml:42:17-79
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.6.0] /Users/moonsunhwang/.android/build-cache/77fbce3ab35d626cef6b2d76f665622aaf589a3c/output/AndroidManifest.xml:42:25-77
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:11.6.0] /Users/moonsunhwang/.android/build-cache/dc04b429ce2452c3bfe1a7dd5145dd813f793806/output/AndroidManifest.xml:6:9-194
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:11.6.0] /Users/moonsunhwang/.android/build-cache/dc04b429ce2452c3bfe1a7dd5145dd813f793806/output/AndroidManifest.xml:6:19-78
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:11.6.0] /Users/moonsunhwang/.android/build-cache/dc04b429ce2452c3bfe1a7dd5145dd813f793806/output/AndroidManifest.xml:6:144-168
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:11.6.0] /Users/moonsunhwang/.android/build-cache/dc04b429ce2452c3bfe1a7dd5145dd813f793806/output/AndroidManifest.xml:6:169-192
+	android:name
+		ADDED from [com.google.firebase:firebase-common:11.6.0] /Users/moonsunhwang/.android/build-cache/dc04b429ce2452c3bfe1a7dd5145dd813f793806/output/AndroidManifest.xml:6:79-143
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:11.6.0] /Users/moonsunhwang/.android/build-cache/819507f34705134e7cae946c9bea4a3687c380e2/output/AndroidManifest.xml:20:9-121
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:11.6.0] /Users/moonsunhwang/.android/build-cache/819507f34705134e7cae946c9bea4a3687c380e2/output/AndroidManifest.xml:20:66-119
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:11.6.0] /Users/moonsunhwang/.android/build-cache/819507f34705134e7cae946c9bea4a3687c380e2/output/AndroidManifest.xml:20:20-65
+meta-data#android.arch.lifecycle.VERSION
+ADDED from [android.arch.lifecycle:runtime:1.0.0] /Users/moonsunhwang/.android/build-cache/0948070d2954ad5fbfe3217fff21285729fb9ebc/output/AndroidManifest.xml:25:9-27:47
+	android:value
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] /Users/moonsunhwang/.android/build-cache/0948070d2954ad5fbfe3217fff21285729fb9ebc/output/AndroidManifest.xml:27:13-44
+	android:name
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] /Users/moonsunhwang/.android/build-cache/0948070d2954ad5fbfe3217fff21285729fb9ebc/output/AndroidManifest.xml:26:13-58
