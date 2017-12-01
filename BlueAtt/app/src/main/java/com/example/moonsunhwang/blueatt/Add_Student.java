@@ -7,20 +7,33 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 
 public class Add_Student extends AppCompatActivity {
+
+    EditText txtUserID;
+    String userID;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add__student);
 
+        txtUserID = (EditText) findViewById(R.id.student_name);
+
+
         final Button btn = (Button)findViewById(R.id.submit);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
+                if (txtUserID.getText() != null) {
+                    userID = txtUserID.getText().toString();
+                }
+
                 showSuccessMessage(btn);
+
+
 
             }
         });

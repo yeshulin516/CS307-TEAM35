@@ -165,7 +165,7 @@ public class Bluetooth_MainPage extends AppCompatActivity {
         //
 
         for (int i = 0; i < MainActivity.roster_usernames.size(); i++ ) {
-            records.child(MainActivity.courseName).child(MainActivity.roster_usernames.get(i)).child(MainActivity.getDate()).setValue(MainActivity.roster_attendance.get(i));
+            records.child(MainActivity.courseID).child(MainActivity.roster_usernames.get(i)).child(MainActivity.getDate()).setValue(MainActivity.roster_attendance.get(i));
         }
 
         MainActivity.roster_attendance.clear();

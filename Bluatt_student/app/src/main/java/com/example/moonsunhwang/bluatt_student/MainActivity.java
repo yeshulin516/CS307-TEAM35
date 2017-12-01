@@ -14,6 +14,11 @@ import java.util.*;
 
 public class MainActivity extends AppCompatActivity {
 
+    //TODO get these values from UI
+    static String studentID = "justin1";
+    static String courseID = "CS307";
+
+
     final FirebaseDatabase database = FirebaseDatabase.getInstance();
 
 
@@ -69,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         //listens for attendance record to be added for current student
-        records.child("CS307").child("justin1").addChildEventListener(new ChildEventListener() {
+        records.child(courseID).child(studentID).addChildEventListener(new ChildEventListener() {
             @Override
             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
 

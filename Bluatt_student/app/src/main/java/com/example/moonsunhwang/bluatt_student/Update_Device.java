@@ -50,10 +50,11 @@ public class Update_Device extends AppCompatActivity {
                 instructors.child("jeff1").child("CS307").child(username).setValue(deviceID.toLowerCase());
 
                 showSuccessMessage(btn);
-
-
             }
         });
+
+        //TODO
+        //students.child(MainActivity.studentID)
 
     }
 

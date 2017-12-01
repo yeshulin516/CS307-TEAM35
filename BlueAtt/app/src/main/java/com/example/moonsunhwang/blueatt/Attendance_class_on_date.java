@@ -46,7 +46,6 @@ public class Attendance_class_on_date extends AppCompatActivity {
 
             double percentageAttended = (((double)totalAttended) / MainActivity.roster_attendance.size()) * 100;
 
-
         }
     }
 
