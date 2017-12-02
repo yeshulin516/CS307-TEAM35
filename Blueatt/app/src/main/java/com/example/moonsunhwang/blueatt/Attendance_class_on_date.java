@@ -64,17 +64,7 @@ public class Attendance_class_on_date extends AppCompatActivity {
             year = intent.getIntExtra("Year", 0);
 
 
-            TextView tv = (TextView) findViewById(R.id.date_TextView);
-            tv.setText(String.valueOf(month) + "/" + String.valueOf(day) + ", " + String.valueOf(year));
 
-            TextView tvTotalAttended = (TextView) findViewById(R.id.textView1);
-            tvTotalAttended.setText(String.valueOf(totalAttended));
-
-            TextView tvTotalAbsent = (TextView) findViewById(R.id.textView2);
-            tvTotalAbsent.setText(String.valueOf(totalAbsent));
-
-            TextView tvPercentageAttended = (TextView) findViewById(R.id.textView3);
-            tvPercentageAttended.setText(String.valueOf(percentageAttended));
 
 
             //pull whole roster attendance on the selected date in same order as roster
@@ -102,6 +92,18 @@ public class Attendance_class_on_date extends AppCompatActivity {
 
 
             System.out.println(MainActivity.roster_attendance.toString());
+
+            TextView tv = (TextView) findViewById(R.id.date_TextView);
+            tv.setText(String.valueOf(month) + "/" + String.valueOf(day) + ", " + String.valueOf(year));
+
+            TextView tvTotalAttended = (TextView) findViewById(R.id.textView1);
+            tvTotalAttended.setText(String.valueOf(totalAttended));
+
+            TextView tvTotalAbsent = (TextView) findViewById(R.id.textView2);
+            tvTotalAbsent.setText(String.valueOf(totalAbsent));
+
+            TextView tvPercentageAttended = (TextView) findViewById(R.id.textView3);
+            tvPercentageAttended.setText(String.valueOf(percentageAttended));
 
             //TODO figure out why arrayList is being cleared
 

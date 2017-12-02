@@ -73,14 +73,14 @@ public class Bluetooth_MainPage extends AppCompatActivity {
         b4 = (Button) findViewById(R.id.off);
         b5 = (Button) findViewById(R.id.scan);
 
-
+        /*
         b5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
             showSuccessMessage(b5);
             }
         });
-
+        */
 
 
         int permissionCheck = ContextCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION);
@@ -143,6 +143,7 @@ public class Bluetooth_MainPage extends AppCompatActivity {
         IntentFilter filter = new IntentFilter(BluetoothDevice.ACTION_FOUND);
         registerReceiver(mReceiver, filter);
 
+        showSuccessMessage(b5);
 
     }
 
