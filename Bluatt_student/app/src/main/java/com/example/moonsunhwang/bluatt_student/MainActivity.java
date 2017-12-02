@@ -15,8 +15,9 @@ import java.util.*;
 public class MainActivity extends AppCompatActivity {
 
     //TODO get these values from UI
-    static String studentID = "justin1";
+    static String studentID = "phone";
     static String courseID = "CS307";
+    static String deviceID;
 
 
     final FirebaseDatabase database = FirebaseDatabase.getInstance();
@@ -32,6 +33,64 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Button btn = (Button)findViewById(R.id.register);
+
+        //automatically get student's device ID
+        students.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                for (DataSnapshot node: dataSnapshot.getChildren()) {
+
+                    if (node.getKey().equals(MainActivity.studentID)) {
+                        deviceID = node.getValue().toString();
+                    }
+
+                }
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+
+
+        //listens for attendance record to be added for current student
+        records.child(courseID).child(studentID).addChildEventListener(new ChildEventListener() {
+            @Override
+            public void onChildAdded(DataSnapshot dataSnapshot, String s) {
+                //prints out if attendance is added for current day
+                if (dataSnapshot.getKey().toString().equals(getDate()))
+                    //TODO output values to the UI, current day's attendance
+                    System.out.println(dataSnapshot.toString());
+            }
+
+
+            @Override
+            public void onChildChanged(DataSnapshot dataSnapshot, String s) {
+
+                //prints out if attendance is changed for current day
+                if (dataSnapshot.getKey().toString().equals(getDate()))
+                    //TODO output values to the UI, current day's attendance changed
+                    System.out.println(dataSnapshot.toString());
+            }
+
+            @Override
+            public void onChildRemoved(DataSnapshot dataSnapshot) {
+
+            }
+
+            @Override
+            public void onChildMoved(DataSnapshot dataSnapshot, String s) {
+
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+                System.out.println("The read failed: " + databaseError.getCode());
+
+            }
+        });
+
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -73,39 +132,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        //listens for attendance record to be added for current student
-        records.child(courseID).child(studentID).addChildEventListener(new ChildEventListener() {
-            @Override
-            public void onChildAdded(DataSnapshot dataSnapshot, String s) {
 
-                //prints out if attendance is added for current day
-                if (dataSnapshot.getKey().toString().equals(getDate()))
-                    //TODO output values to the UI
-                    System.out.println(dataSnapshot.toString());
-            }
-
-
-            @Override
-            public void onChildChanged(DataSnapshot dataSnapshot, String s) {
-
-            }
-
-            @Override
-            public void onChildRemoved(DataSnapshot dataSnapshot) {
-
-            }
-
-            @Override
-            public void onChildMoved(DataSnapshot dataSnapshot, String s) {
-
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-                System.out.println("The read failed: " + databaseError.getCode());
-
-            }
-        });
 
     }
 

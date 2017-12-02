@@ -9,8 +9,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 public class Update_Device extends AppCompatActivity {
 
@@ -23,7 +26,8 @@ public class Update_Device extends AppCompatActivity {
     final DatabaseReference records = database.getReference("Records");
 
     String username;
-    String deviceID;
+    String oldDeviceID;
+    String newDeviceID;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +35,8 @@ public class Update_Device extends AppCompatActivity {
         setContentView(R.layout.activity_update__device);
 
         final Button btn = (Button)findViewById(R.id.submit);
+
+
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -40,21 +46,39 @@ public class Update_Device extends AppCompatActivity {
                 username = et1.getText().toString();
 
                 EditText et2 = (EditText) findViewById(R.id.deviceID_input);
-                //Integer deviceID = Integer.valueOf(et2.getText().toString());
-                deviceID = et2.getText().toString();
+                newDeviceID = et2.getText().toString();
+
+                EditText et3 = (EditText) findViewById(R.id.old_deviceID_input);
+                oldDeviceID = et2.getText().toString();
+
+                if (oldDeviceID != MainActivity.deviceID) {
+                    //TODO add fail message, IDs don't match
+                }
+
 
                 //update student's device ID under Student branch
-                students.child(username).setValue(deviceID);
+                students.child(username).setValue(newDeviceID.toLowerCase());
 
                 //update student's device ID under the Instructor branch
-                instructors.child("jeff1").child("CS307").child(username).setValue(deviceID.toLowerCase());
+                instructors.child("jeff").child("CS307").child(username).setValue(newDeviceID.toLowerCase());
+
+                MainActivity.deviceID = newDeviceID.toLowerCase();
 
                 showSuccessMessage(btn);
             }
         });
 
-        //TODO
-        //students.child(MainActivity.studentID)
+
+
+        final Button checkIDbtn = (Button)findViewById(R.id.check_id);
+
+        checkIDbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                showCurrentID(checkIDbtn);
+            }
+        });
 
     }
 
@@ -67,18 +91,40 @@ public class Update_Device extends AppCompatActivity {
 
         // add a button
         success_message.setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int id) {
+            @Override
+            public void onClick(DialogInterface dialog, int id) {
 
-                        Intent intent = new Intent(Update_Device.this, Update_Device_Result.class);
-                        Bundle extras = new Bundle();
-                        extras.putString("USERNAME",username);
-                        extras.putString("DEVICE_ID",deviceID);
-                        intent.putExtras(extras);
-                        startActivity(intent);
+                Intent intent = new Intent(Update_Device.this, Update_Device_Result.class);
+                Bundle extras = new Bundle();
+                extras.putString("USERNAME",username);
+                extras.putString("DEVICE_ID",newDeviceID);
+                intent.putExtras(extras);
+                startActivity(intent);
 
-                    }
-                });
+            }
+        });
+
+        // create and show the alert dialog
+        AlertDialog successMessage = success_message.create();
+        successMessage.show();
+    }
+
+    public void showCurrentID(View view) {
+
+        // setup the alert builder
+        AlertDialog.Builder success_message = new AlertDialog.Builder(this);
+        success_message.setTitle("Your current ID");
+        success_message.setMessage("Your current device ID is:\n" + MainActivity.deviceID);
+
+        // add a button
+        success_message.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int id) {
+
+
+
+            }
+        });
 
         // create and show the alert dialog
         AlertDialog successMessage = success_message.create();
