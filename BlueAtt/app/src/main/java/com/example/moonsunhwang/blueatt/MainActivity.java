@@ -16,7 +16,7 @@ import java.util.Date;
 public class MainActivity extends AppCompatActivity {
 
     //TODO get these values from UI
-    static String instructorID = "jeff1";
+    static String instructorID = "jeff";
     static String courseID = "CS307";
 
     static ArrayList<String> roster_usernames = new ArrayList<String>();
@@ -49,9 +49,6 @@ public class MainActivity extends AppCompatActivity {
                             roster_usernames.add(node.getKey());
                             roster_devices.add(node.getValue().toString());
                         }
-
-                        //System.out.println(roster_usernames.toString());
-                        //System.out.println(roster_devices.toString());
 
                     }
 

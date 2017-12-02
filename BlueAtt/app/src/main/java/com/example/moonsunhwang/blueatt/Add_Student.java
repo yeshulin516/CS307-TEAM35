@@ -52,6 +52,10 @@ public class Add_Student extends AppCompatActivity {
                             //add student to course roster with device ID from database
                             instructors.child(MainActivity.instructorID).child(MainActivity.courseID).child(userID).setValue(deviceID);
 
+                            //add student to current arrayList
+                            MainActivity.roster_usernames.add(userID);
+                            MainActivity.roster_devices.add(deviceID);
+
                         }
 
                         @Override

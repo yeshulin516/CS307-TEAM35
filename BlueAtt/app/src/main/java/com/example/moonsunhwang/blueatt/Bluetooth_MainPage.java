@@ -167,8 +167,6 @@ public class Bluetooth_MainPage extends AppCompatActivity {
         }
 
         MainActivity.roster_attendance.clear();
-
-        //System.out.println(MainActivity.roster_attendance.toString());
     }
 
 
