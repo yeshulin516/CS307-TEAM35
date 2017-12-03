@@ -25,7 +25,7 @@ public class Find_student extends AppCompatActivity {
     final DatabaseReference records = database.getReference("Records");
 
     EditText txtStudentID;
-    String studentID;
+    static String studentID;
     boolean found;
 
     @Override
@@ -99,7 +99,6 @@ public class Find_student extends AppCompatActivity {
         successMessage.show();
     }
 
-    //TODO create failed message
 
     public void showFailMessage(View view) {
         // setup the alert builder

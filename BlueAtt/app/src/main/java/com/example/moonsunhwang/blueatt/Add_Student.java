@@ -45,18 +45,24 @@ public class Add_Student extends AppCompatActivity {
                     userID = txtUserID.getText().toString();
 
                     //get student's device ID to add with username to course roster
-                    //TODO if student doesn't exist in database send error
                     students.child(userID).addListenerForSingleValueEvent(new ValueEventListener() {
                         @Override
                         public void onDataChange(DataSnapshot dataSnapshot) {
-                            deviceID = dataSnapshot.getValue().toString();
-                            //add student to course roster with device ID from database
-                            instructors.child(MainActivity.instructorID).child(MainActivity.courseID).child(userID).setValue(deviceID);
 
-                            //add student to current arrayList
-                            MainActivity.roster_usernames.add(userID);
-                            MainActivity.roster_devices.add(deviceID);
+                            //if student not found in database print error
+                            if (!dataSnapshot.exists())
+                                showFailMessage(btn);
+                            else {
+                                deviceID = dataSnapshot.getValue().toString();
+                                //add student to course roster with device ID from database
+                                instructors.child(MainActivity.instructorID).child(MainActivity.courseID).child(userID).setValue(deviceID);
 
+                                //add student to current arrayList
+                                MainActivity.roster_usernames.add(userID);
+                                MainActivity.roster_devices.add(deviceID);
+                                showSuccessMessage(btn);
+
+                            }
                         }
 
                         @Override
@@ -64,15 +70,12 @@ public class Add_Student extends AppCompatActivity {
 
                         }
                     });
-
                 }
-
-                showSuccessMessage(btn);
-
             }
         });
 
     }
+
 
     public void showSuccessMessage(View view) {
 
@@ -87,6 +90,25 @@ public class Add_Student extends AppCompatActivity {
             public void onClick(DialogInterface dialog, int id) {
 
                 startActivity(new Intent(Add_Student.this, Attendance_Record.class));
+
+            }
+        });
+
+        // create and show the alert dialog
+        AlertDialog successMessage = success_message.create();
+        successMessage.show();
+    }
+
+    public void showFailMessage(View view) {
+        // setup the alert builder
+        AlertDialog.Builder success_message = new AlertDialog.Builder(this);
+        success_message.setTitle("Student Not Found!");
+        success_message.setMessage("Student not in course roster! Please insert a valid student ID!");
+
+        // add a button
+        success_message.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int id) {
 
             }
         });
