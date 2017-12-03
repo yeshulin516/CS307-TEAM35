@@ -25,7 +25,6 @@ public class MainActivity extends AppCompatActivity {
 
     final FirebaseDatabase database = FirebaseDatabase.getInstance();
 
-
     final DatabaseReference students = database.getReference("Students");
     final DatabaseReference instructors = database.getReference("Instructors");
     final DatabaseReference records = database.getReference("Records");
@@ -63,8 +62,6 @@ public class MainActivity extends AppCompatActivity {
             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
                 //prints out if attendance is added for current day
                 if (dataSnapshot.getKey().toString().equals(getDate())) {
-                    //TODO output values to the UI, current day's attendance
-                    System.out.println(dataSnapshot.toString());
                     currentAtt = dataSnapshot.getValue().toString();
                     showAttendance(btn);
                 }
@@ -76,8 +73,6 @@ public class MainActivity extends AppCompatActivity {
 
                 //prints out if attendance is changed for current day
                 if (dataSnapshot.getKey().toString().equals(getDate())) {
-                    //TODO output values to the UI, current day's attendance changed
-                    System.out.println(dataSnapshot.toString());
                     currentAtt = dataSnapshot.getValue().toString();
                     showAttendance(btn);
                 }
@@ -147,7 +142,6 @@ public class MainActivity extends AppCompatActivity {
         // setup the alert builder
         AlertDialog.Builder success_message = new AlertDialog.Builder(this);
         success_message.setTitle("Today's Attendance!");
-        //TODO pass variable with attendance value
         if (currentAtt.equals("Y"))
             success_message.setMessage(courseID + " has marked you as attended for " + getDate() + "!");
         else
