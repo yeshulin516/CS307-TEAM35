@@ -25,19 +25,6 @@ public class List_of_Students_Missed extends AppCompatActivity {
 
         lv.setAdapter(adapter);
 
-        /*
-        final Button btn = (Button)findViewById(R.id.modify_attendance);
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                showSuccessMessage(btn);
-
-            }
-        });
-        */
-
-
         Button home = (Button)findViewById(R.id.home);
         home.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,30 +34,5 @@ public class List_of_Students_Missed extends AppCompatActivity {
         });
 
     }
-
-
-    /*
-    public void showSuccessMessage(View view) {
-
-        // setup the alert builder
-        AlertDialog.Builder success_message = new AlertDialog.Builder(this);
-        success_message.setTitle("Success!");
-        success_message.setMessage("Selected students' attendance record for this day has been modified to:\n'Present'.");
-
-        // add a button
-        success_message.setPositiveButton("OK", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int id) {
-
-                startActivity(new Intent(List_of_Students_Missed.this, Attendance_class_on_date.class));
-
-            }
-        });
-
-        // create and show the alert dialog
-        AlertDialog successMessage = success_message.create();
-        successMessage.show();
-    }
-    */
 
 }

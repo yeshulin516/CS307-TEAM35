@@ -9,7 +9,21 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 public class Student_Record_Result extends AppCompatActivity {
+
+    final FirebaseDatabase database = FirebaseDatabase.getInstance();
+
+    final DatabaseReference students = database.getReference("Students");
+    final DatabaseReference instructors = database.getReference("Instructors");
+    final DatabaseReference courses = database.getReference("Courses");
+    final DatabaseReference records = database.getReference("Records");
+
+    int totalAttended;
+    int totalAbsent;
+    double percentageAttended;
 
     int day;
     int month;
@@ -33,9 +47,10 @@ public class Student_Record_Result extends AppCompatActivity {
 
 
             //TODO get students attendance value on date
+            //records.child("CS307").child(names).addListenerForSingleValueEvent(new ValueEve
 
 
-            //use date data
+                    //use date data
             if (day % 2 == 0) {
                 TextView attendance = (TextView) findViewById(R.id.textView);
                 attendance.setText("The student has NOT attended");

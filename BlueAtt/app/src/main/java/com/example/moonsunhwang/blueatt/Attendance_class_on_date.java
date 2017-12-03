@@ -19,7 +19,6 @@ public class Attendance_class_on_date extends AppCompatActivity {
 
     final FirebaseDatabase database = FirebaseDatabase.getInstance();
 
-
     final DatabaseReference students = database.getReference("Students");
     final DatabaseReference instructors = database.getReference("Instructors");
     final DatabaseReference courses = database.getReference("Courses");
