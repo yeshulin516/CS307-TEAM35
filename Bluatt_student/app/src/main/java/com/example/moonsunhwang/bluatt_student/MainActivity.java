@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     static String studentID = "phone";
     static String courseID = "CS307";
     static String deviceID;
+    static String currentAtt;
 
 
     final FirebaseDatabase database = FirebaseDatabase.getInstance();
@@ -34,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button btn = (Button)findViewById(R.id.register);
+        final Button btn = (Button)findViewById(R.id.register);
 
         //automatically get student's device ID
         students.addListenerForSingleValueEvent(new ValueEventListener() {
@@ -61,9 +62,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
                 //prints out if attendance is added for current day
-                if (dataSnapshot.getKey().toString().equals(getDate()))
+                if (dataSnapshot.getKey().toString().equals(getDate())) {
                     //TODO output values to the UI, current day's attendance
                     System.out.println(dataSnapshot.toString());
+                    currentAtt = dataSnapshot.getValue().toString();
+                    showAttendance(btn);
+                }
             }
 
 
@@ -71,9 +75,12 @@ public class MainActivity extends AppCompatActivity {
             public void onChildChanged(DataSnapshot dataSnapshot, String s) {
 
                 //prints out if attendance is changed for current day
-                if (dataSnapshot.getKey().toString().equals(getDate()))
+                if (dataSnapshot.getKey().toString().equals(getDate())) {
                     //TODO output values to the UI, current day's attendance changed
                     System.out.println(dataSnapshot.toString());
+                    currentAtt = dataSnapshot.getValue().toString();
+                    showAttendance(btn);
+                }
             }
 
             @Override
@@ -141,7 +148,10 @@ public class MainActivity extends AppCompatActivity {
         AlertDialog.Builder success_message = new AlertDialog.Builder(this);
         success_message.setTitle("Today's Attendance!");
         //TODO pass variable with attendance value
-        success_message.setMessage("Your device has been successfully updated!");
+        if (currentAtt.equals("Y"))
+            success_message.setMessage(courseID + " has marked you as attended for " + getDate() + "!");
+        else
+            success_message.setMessage(courseID + " has marked you as absent for " + getDate() + "!");
 
         // add a button
         success_message.setPositiveButton("OK", new DialogInterface.OnClickListener() {
