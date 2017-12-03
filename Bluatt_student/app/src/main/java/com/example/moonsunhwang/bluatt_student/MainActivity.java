@@ -1,6 +1,8 @@
 package com.example.moonsunhwang.bluatt_student;
 
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -131,9 +133,27 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+    }
 
+    public void showAttendance(View view) {
 
+        // setup the alert builder
+        AlertDialog.Builder success_message = new AlertDialog.Builder(this);
+        success_message.setTitle("Today's Attendance!");
+        //TODO pass variable with attendance value
+        success_message.setMessage("Your device has been successfully updated!");
 
+        // add a button
+        success_message.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int id) {
+
+            }
+        });
+
+        // create and show the alert dialog
+        AlertDialog successMessage = success_message.create();
+        successMessage.show();
     }
 
     public static String getDate() {

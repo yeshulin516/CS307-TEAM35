@@ -20,7 +20,6 @@ public class Bluetooth_DeviceList extends AppCompatActivity {
 
         lv = (ListView)findViewById(R.id.listView);
 
-        //pairedDevices = mBluetoothAdapter.getBondedDevices();
         DispAddress.clear();
         DispName.clear();
         for (String s : Bluetooth_MainPage.Name) {
@@ -30,24 +29,12 @@ public class Bluetooth_DeviceList extends AppCompatActivity {
             DispAddress.add(s);
         }
 
-        //for(String n : Name);
         Toast.makeText(getApplicationContext(), "Showing Scanned Devices", Toast.LENGTH_SHORT).show();
 
-        //ArrayList address = new ArrayList();
-
-        /// for(BluetoothDevice bt : pairedDevices) address.add(bt.getAddress());
-        //Toast.makeText(getApplicationContext(), "Showing Paired Devices",Toast.LENGTH_SHORT).show();
 
         final ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, DispAddress);
 
         lv.setAdapter(adapter);
-
-        //startActivity(new Intent(Bluetooth_MainPage.this, Bluetooth_DeviceList.class));
-
-        //ArrayList name = new ArrayList();
-
-        //for(BluetoothDevice bt : pairedDevices) name.add(bt.getName());
-        //Toast.makeText(getApplicationContext(), "Showing Paired Devices",Toast.LENGTH_SHORT).show();
 
         final ArrayAdapter adapter2 = new ArrayAdapter(this, android.R.layout.simple_list_item_1, DispName);
 

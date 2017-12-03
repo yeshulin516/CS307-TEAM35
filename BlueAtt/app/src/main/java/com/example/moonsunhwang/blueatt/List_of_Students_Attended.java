@@ -10,6 +10,8 @@ import android.widget.Button;
 
 public class List_of_Students_Attended extends AppCompatActivity {
 
+    //TODO create list view of students who attended
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

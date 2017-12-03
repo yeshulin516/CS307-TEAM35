@@ -20,6 +20,8 @@ public class Find_student extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+                //TODO look for student in course roster
+
                 showSuccessMessage(btn);
 
             }
@@ -50,5 +52,5 @@ public class Find_student extends AppCompatActivity {
         successMessage.show();
     }
 
-
+    //TODO create failed message
 }

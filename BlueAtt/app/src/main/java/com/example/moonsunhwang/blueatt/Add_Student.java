@@ -45,6 +45,7 @@ public class Add_Student extends AppCompatActivity {
                     userID = txtUserID.getText().toString();
 
                     //get student's device ID to add with username to course roster
+                    //TODO if student doesn't exist in database send error
                     students.child(userID).addListenerForSingleValueEvent(new ValueEventListener() {
                         @Override
                         public void onDataChange(DataSnapshot dataSnapshot) {

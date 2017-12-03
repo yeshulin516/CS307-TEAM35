@@ -33,6 +33,9 @@ public class Attendance_class_on_date extends AppCompatActivity {
     int month;
     int year;
 
+    static ArrayList<String> attendedList = new ArrayList<String>();
+    static ArrayList<String> absentList = new ArrayList<String>();
+
 
     public void getAtt ( ) {
         for (String names : MainActivity.roster_usernames) {
@@ -72,6 +75,19 @@ public class Attendance_class_on_date extends AppCompatActivity {
                                 TextView tvPercentageAttended = (TextView) findViewById(R.id.textView3);
                                 tvPercentageAttended.setText(String.valueOf(percentageAttended));
 
+                                attendedList.clear();
+                                absentList.clear();
+
+                                for (int i = 0; i < MainActivity.roster_attendance.size(); i++) {
+
+                                    //add usernames to attended and absent list
+                                    if (MainActivity.roster_attendance.get(i).equals("Y"))
+                                        attendedList.add(MainActivity.roster_usernames.get(i));
+                                    else
+                                        absentList.add(MainActivity.roster_usernames.get(i));
+                                }
+
+
                                 MainActivity.roster_attendance.clear();
                             }
                         }
@@ -83,10 +99,7 @@ public class Attendance_class_on_date extends AppCompatActivity {
 
                 }
             });
-
         }
-
-
     }
 
     @Override

@@ -1,9 +1,12 @@
 package com.example.moonsunhwang.blueatt;
 
 import android.bluetooth.BluetoothManager;
+import android.content.DialogInterface;
 import android.content.pm.PackageManager;
+import android.os.CountDownTimer;
 import android.os.Handler;
 import android.support.v4.content.ContextCompat;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.bluetooth.BluetoothAdapter;
@@ -31,6 +34,8 @@ import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
 import java.util.Set;
+
+import static com.example.moonsunhwang.blueatt.R.id.info;
 
 public class Bluetooth_MainPage extends AppCompatActivity {
 
@@ -62,12 +67,18 @@ public class Bluetooth_MainPage extends AppCompatActivity {
 
         mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
 
-        b1 = (Button) findViewById(R.id.on);
-
         b3 = (Button) findViewById(R.id.ld);
         b4 = (Button) findViewById(R.id.off);
         b5 = (Button) findViewById(R.id.scan);
 
+        /*
+        b5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+            showSuccessMessage(b5);
+            }
+        });
+        */
 
 
         int permissionCheck = ContextCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION);
@@ -123,6 +134,17 @@ public class Bluetooth_MainPage extends AppCompatActivity {
 
 
     public void scan(View v) {
+
+        //turn ons bluetooth if not already
+        if (!mBluetoothAdapter.isEnabled()) {
+            Intent enableBtIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
+            startActivityForResult(enableBtIntent, REQUEST_ENABLE_BT);
+            Toast.makeText(getApplicationContext(), "Turned on", Toast.LENGTH_LONG).show();
+        } else {
+            Toast.makeText(getApplicationContext(), "Already on", Toast.LENGTH_LONG).show();
+        }
+
+
         // start looking for bluetooth devices
         Address.clear();
         Name.clear();
@@ -130,10 +152,11 @@ public class Bluetooth_MainPage extends AppCompatActivity {
         IntentFilter filter = new IntentFilter(BluetoothDevice.ACTION_FOUND);
         registerReceiver(mReceiver, filter);
 
+        showSuccessMessage(b5);
 
     }
 
-
+/*
     public void on(View v) {
         {
 
@@ -146,6 +169,7 @@ public class Bluetooth_MainPage extends AppCompatActivity {
             }
         }
     }
+    */
 
     public void off(View v) {
         mBluetoothAdapter.disable();
@@ -167,6 +191,8 @@ public class Bluetooth_MainPage extends AppCompatActivity {
         }
 
         MainActivity.roster_attendance.clear();
+
+        //System.out.println(MainActivity.roster_attendance.toString());
     }
 
 
@@ -187,6 +213,29 @@ public class Bluetooth_MainPage extends AppCompatActivity {
         Toast.makeText(getApplicationContext(), "Showing Paired Devices", Toast.LENGTH_SHORT).show();
 
         final ArrayAdapter adapter2 = new ArrayAdapter(this, android.R.layout.simple_list_item_1, name);
+
+    }
+
+    public void showSuccessMessage(View view) {
+
+        final AlertDialog alertDialog;
+
+        alertDialog = new AlertDialog.Builder(this).create();
+        alertDialog.setTitle("Please wait " + Scanning_time_intervals.numSeconds + " seconds for scanning.");
+        alertDialog.setMessage("00:" + Scanning_time_intervals.numSeconds);
+        alertDialog.show();   //
+
+        new CountDownTimer(Scanning_time_intervals.numSeconds * 1000, 1000) {
+            @Override
+            public void onTick(long millisUntilFinished) {
+                alertDialog.setMessage("00:"+ (millisUntilFinished/1000));
+            }
+
+            @Override
+            public void onFinish() {
+                alertDialog.dismiss();
+            }
+        }.start();
 
     }
 

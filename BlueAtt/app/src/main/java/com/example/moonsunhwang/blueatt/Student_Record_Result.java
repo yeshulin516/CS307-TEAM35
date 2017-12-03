@@ -31,13 +31,17 @@ public class Student_Record_Result extends AppCompatActivity {
             TextView tv = (TextView) findViewById(R.id.date_TextView);
             tv.setText(String.valueOf(month) + "/" + String.valueOf(day) + ", " + String.valueOf(year));
 
+
+            //TODO get students attendance value on date
+
+
             //use date data
             if (day % 2 == 0) {
                 TextView attendance = (TextView) findViewById(R.id.textView);
-                attendance.setText("The student have NOT attended");
+                attendance.setText("The student has NOT attended");
             } else {
                 TextView attendance = (TextView) findViewById(R.id.textView);
-                attendance.setText("The student have attended");
+                attendance.setText("The student has attended");
             }
         }
 
@@ -48,6 +52,8 @@ public class Student_Record_Result extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                //TODO flip attendance value
 
                 showSuccessMessage(btn);
 
@@ -71,6 +77,8 @@ public class Student_Record_Result extends AppCompatActivity {
         // setup the alert builder
         AlertDialog.Builder success_message = new AlertDialog.Builder(this);
         success_message.setTitle("Success!");
+
+        //TODO add if else statement to show result
         success_message.setMessage("The student's attendance record for this day has been modified to:\n'Absent'.");
 
         // add a button

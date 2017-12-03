@@ -53,6 +53,7 @@ public class Update_Device extends AppCompatActivity {
 
                 if (oldDeviceID != MainActivity.deviceID) {
                     //TODO add fail message, IDs don't match
+
                 }
 
 
