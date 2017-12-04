@@ -31,6 +31,7 @@ public class Attendance_class_on_date extends AppCompatActivity {
     int day;
     int month;
     int year;
+    String sDay;
 
     static ArrayList<String> attendedList = new ArrayList<String>();
     static ArrayList<String> absentList = new ArrayList<String>();
@@ -45,7 +46,7 @@ public class Attendance_class_on_date extends AppCompatActivity {
                 public void onDataChange(DataSnapshot dataSnapshot) {
                     for (DataSnapshot node: dataSnapshot.getChildren()) {
 
-                        if (node.getKey().toString().equals((month + "-0" + day + "-" + Integer.toString(year).substring(2)))) {
+                        if (node.getKey().toString().equals((month + "-" + sDay + "-" + Integer.toString(year).substring(2)))) {
 
                             MainActivity.roster_attendance.add(node.getValue().toString());
 
@@ -113,6 +114,13 @@ public class Attendance_class_on_date extends AppCompatActivity {
             day = intent.getIntExtra("Day", 0);
             month = intent.getIntExtra("Month", 0);
             year = intent.getIntExtra("Year", 0);
+
+
+
+            if (day <= 9)
+                sDay = "0" + day;
+            else
+                sDay = "" + day;
 
 
             getAtt();

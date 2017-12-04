@@ -103,7 +103,7 @@ public class Add_Student extends AppCompatActivity {
         // setup the alert builder
         AlertDialog.Builder success_message = new AlertDialog.Builder(this);
         success_message.setTitle("Student Not Found!");
-        success_message.setMessage("Student not in course roster! Please insert a valid student ID!");
+        success_message.setMessage("Student not registered in database! Please insert a valid student ID!");
 
         // add a button
         success_message.setPositiveButton("OK", new DialogInterface.OnClickListener() {

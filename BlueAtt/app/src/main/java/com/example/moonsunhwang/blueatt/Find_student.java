@@ -56,8 +56,9 @@ public class Find_student extends AppCompatActivity {
                             }
 
                             //display correct message
-                            if (found)
+                            if (found) {
                                 showSuccessMessage(btn);
+                            }
                             else
                                 showFailMessage(btn);
 

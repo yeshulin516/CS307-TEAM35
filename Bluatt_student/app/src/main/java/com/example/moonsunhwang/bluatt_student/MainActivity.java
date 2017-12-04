@@ -17,10 +17,13 @@ import java.util.*;
 public class MainActivity extends AppCompatActivity {
 
     //TODO get these values from UI
-    static String studentID = "phone";
+    static String studentID = "";
     static String courseID = "CS307";
     static String deviceID;
     static String currentAtt;
+    static boolean attMsg = false;
+    static boolean abtMsg = false;
+
 
 
     final FirebaseDatabase database = FirebaseDatabase.getInstance();
@@ -36,64 +39,65 @@ public class MainActivity extends AppCompatActivity {
 
         final Button btn = (Button)findViewById(R.id.register);
 
-        //automatically get student's device ID
-        students.addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                for (DataSnapshot node: dataSnapshot.getChildren()) {
+        if (!studentID.equals("")) {
+            //automatically get student's device ID
+            students.addListenerForSingleValueEvent(new ValueEventListener() {
+                @Override
+                public void onDataChange(DataSnapshot dataSnapshot) {
+                    for (DataSnapshot node : dataSnapshot.getChildren()) {
 
-                    if (node.getKey().equals(MainActivity.studentID)) {
-                        deviceID = node.getValue().toString();
+                        if (node.getKey().equals(MainActivity.studentID)) {
+                            deviceID = node.getValue().toString();
+                        }
+
                     }
+                }
+
+                @Override
+                public void onCancelled(DatabaseError databaseError) {
 
                 }
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-
-            }
-        });
+            });
 
 
-        //listens for attendance record to be added for current student
-        records.child(courseID).child(studentID).addChildEventListener(new ChildEventListener() {
-            @Override
-            public void onChildAdded(DataSnapshot dataSnapshot, String s) {
-                //prints out if attendance is added for current day
-                if (dataSnapshot.getKey().toString().equals(getDate())) {
-                    currentAtt = dataSnapshot.getValue().toString();
-                    showAttendance(btn);
+            //listens for attendance record to be added for current student
+            records.child(courseID).child(studentID).addChildEventListener(new ChildEventListener() {
+                @Override
+                public void onChildAdded(DataSnapshot dataSnapshot, String s) {
+                    //prints out if attendance is added for current day
+                    if (dataSnapshot.getKey().toString().equals(getDate())) {
+                        currentAtt = dataSnapshot.getValue().toString();
+                        showAttendance(btn);
+                    }
                 }
-            }
 
+                @Override
+                public void onChildChanged(DataSnapshot dataSnapshot, String s) {
 
-            @Override
-            public void onChildChanged(DataSnapshot dataSnapshot, String s) {
-
-                //prints out if attendance is changed for current day
-                if (dataSnapshot.getKey().toString().equals(getDate())) {
-                    currentAtt = dataSnapshot.getValue().toString();
-                    showAttendance(btn);
+                    //prints out if attendance is changed for current day
+                    if (dataSnapshot.getKey().toString().equals(getDate())) {
+                        currentAtt = dataSnapshot.getValue().toString();
+                        showAttendance(btn);
+                    }
                 }
-            }
 
-            @Override
-            public void onChildRemoved(DataSnapshot dataSnapshot) {
+                @Override
+                public void onChildRemoved(DataSnapshot dataSnapshot) {
 
-            }
+                }
 
-            @Override
-            public void onChildMoved(DataSnapshot dataSnapshot, String s) {
+                @Override
+                public void onChildMoved(DataSnapshot dataSnapshot, String s) {
 
-            }
+                }
 
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-                System.out.println("The read failed: " + databaseError.getCode());
+                @Override
+                public void onCancelled(DatabaseError databaseError) {
+                    System.out.println("The read failed: " + databaseError.getCode());
 
-            }
-        });
+                }
+            });
+        }
 
 
         btn.setOnClickListener(new View.OnClickListener() {
@@ -140,24 +144,47 @@ public class MainActivity extends AppCompatActivity {
     public void showAttendance(View view) {
 
         // setup the alert builder
-        AlertDialog.Builder success_message = new AlertDialog.Builder(this);
-        success_message.setTitle("Today's Attendance!");
-        if (currentAtt.equals("Y"))
+
+        if (currentAtt.equals("Y") && attMsg != true) {
+            AlertDialog.Builder success_message = new AlertDialog.Builder(this);
+
+            success_message.setTitle("Today's Attendance!");
             success_message.setMessage(courseID + " has marked you as attended for " + getDate() + "!");
-        else
+            attMsg = true;
+
+            // add a button
+            success_message.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int id) {
+
+                }
+            });
+
+            // create and show the alert dialog
+            AlertDialog successMessage = success_message.create();
+            successMessage.show();
+
+        }
+        else if (currentAtt.equals("N") && abtMsg != true){
+            AlertDialog.Builder success_message = new AlertDialog.Builder(this);
+
+            success_message.setTitle("Today's Attendance!");
             success_message.setMessage(courseID + " has marked you as absent for " + getDate() + "!");
+            abtMsg = true;
 
-        // add a button
-        success_message.setPositiveButton("OK", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int id) {
+            // add a button
+            success_message.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int id) {
 
-            }
-        });
+                }
+            });
 
-        // create and show the alert dialog
-        AlertDialog successMessage = success_message.create();
-        successMessage.show();
+            // create and show the alert dialog
+            AlertDialog successMessage = success_message.create();
+            successMessage.show();
+        }
+
     }
 
     public static String getDate() {

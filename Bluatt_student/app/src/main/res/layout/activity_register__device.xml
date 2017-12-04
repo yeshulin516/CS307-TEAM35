@@ -35,12 +35,13 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="110dp"
         app:layout_constraintTop_toBottomOf="@+id/username_input"
         tools:layout_constraintLeft_creator="1"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp" />
+        android:layout_marginRight="8dp"
+        app:layout_constraintHorizontal_bias="0.0" />
 
 
 
@@ -52,9 +53,25 @@
         tools:layout_constraintTop_creator="1"
         tools:layout_constraintRight_creator="1"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="66dp"
+        android:layout_marginTop="80dp"
         app:layout_constraintTop_toBottomOf="@+id/deviceID_input"
         tools:layout_constraintLeft_creator="1"
         app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="170dp"
+        android:layout_height="36dp"
+        android:text="If not registered type in device ID"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/deviceID_input"
+        android:layout_marginTop="58dp"
+        app:layout_constraintTop_toBottomOf="@+id/username_input"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="59dp" />
 
 </android.support.constraint.ConstraintLayout>

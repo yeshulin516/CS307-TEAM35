@@ -44,8 +44,12 @@ public class MainActivity extends AppCompatActivity {
                 instructors.child(instructorID).child(courseID).addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(DataSnapshot dataSnapshot) {
+
+                        roster_usernames.clear();
+                        roster_devices.clear();
+                        roster_attendance.clear();
+
                         for (DataSnapshot node: dataSnapshot.getChildren()) {
-                            //System.out.println(node.getKey() + " " + node.getValue());
                             roster_usernames.add(node.getKey());
                             roster_devices.add(node.getValue().toString());
                         }

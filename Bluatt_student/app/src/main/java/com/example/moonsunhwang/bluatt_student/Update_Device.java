@@ -52,20 +52,21 @@ public class Update_Device extends AppCompatActivity {
                 oldDeviceID = et2.getText().toString();
 
                 if (oldDeviceID != MainActivity.deviceID) {
-                    //TODO add fail message, IDs don't match
 
+                    showFailMessage(btn);
                 }
+                else {
 
+                    //update student's device ID under Student branch
+                    students.child(username).setValue(newDeviceID.toLowerCase());
 
-                //update student's device ID under Student branch
-                students.child(username).setValue(newDeviceID.toLowerCase());
+                    //update student's device ID under the Instructor branch
+                    instructors.child("jeff").child(MainActivity.courseID).child(MainActivity.studentID).setValue(newDeviceID.toLowerCase());
 
-                //update student's device ID under the Instructor branch
-                instructors.child("jeff").child("CS307").child(username).setValue(newDeviceID.toLowerCase());
+                    MainActivity.deviceID = newDeviceID.toLowerCase();
 
-                MainActivity.deviceID = newDeviceID.toLowerCase();
-
-                showSuccessMessage(btn);
+                    showSuccessMessage(btn);
+                }
             }
         });
 
@@ -101,6 +102,27 @@ public class Update_Device extends AppCompatActivity {
                 extras.putString("DEVICE_ID",newDeviceID);
                 intent.putExtras(extras);
                 startActivity(intent);
+
+            }
+        });
+
+        // create and show the alert dialog
+        AlertDialog successMessage = success_message.create();
+        successMessage.show();
+    }
+
+    public void showFailMessage(View view) {
+
+        // setup the alert builder
+        AlertDialog.Builder success_message = new AlertDialog.Builder(this);
+        success_message.setTitle("Fail!");
+        success_message.setMessage("Your device ID does not match currently registered device!");
+
+        // add a button
+        success_message.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int id) {
+
 
             }
         });
