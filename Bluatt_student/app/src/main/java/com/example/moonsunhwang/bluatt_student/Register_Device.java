@@ -1,6 +1,8 @@
 package com.example.moonsunhwang.bluatt_student;
 
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -40,16 +42,22 @@ public class Register_Device extends AppCompatActivity {
                 //Integer deviceID = Integer.valueOf(et2.getText().toString());
                 deviceID = et2.getText().toString();
 
-
                 Intent intent = new Intent(Register_Device.this, Register_Device_Result.class);
                 Bundle extras = new Bundle();
                 extras.putString("USERNAME",username);
                 extras.putString("DEVICE_ID",deviceID);
 
+                MainActivity.studentID = username;
+
+
 
                 //TODO check if device ID is null otherwise dont add
-                students.child(username).setValue(deviceID);
+                if (!deviceID.equals(""))
+                    students.child(username).setValue(deviceID);
 
+
+                MainActivity.abtMsg = false;
+                MainActivity.attMsg = false;
 
                 intent.putExtras(extras);
                 startActivity(intent);
@@ -57,9 +65,26 @@ public class Register_Device extends AppCompatActivity {
             }
         });
 
+    }
+
+    public void showFailMessage(View view) {
+
+        // setup the alert builder
+        AlertDialog.Builder success_message = new AlertDialog.Builder(this);
+        success_message.setTitle("Fail!");
+        success_message.setMessage("Your device ID does not match currently registered device!");
+
+        // add a button
+        success_message.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int id) {
 
 
+            }
+        });
 
-
+        // create and show the alert dialog
+        AlertDialog successMessage = success_message.create();
+        successMessage.show();
     }
 }

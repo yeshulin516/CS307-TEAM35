@@ -12,32 +12,101 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import
 
 import java.util.ArrayList;
 
 public class Attendance_class_on_date extends AppCompatActivity {
 
-    static ArrayList<String> roster_usernames = new ArrayList<String>();
-    static ArrayList<String> roster_devices = new ArrayList<String>();
-    static ArrayList<String> roster_attendance = new ArrayList<String>();
-
     final FirebaseDatabase database = FirebaseDatabase.getInstance();
-
 
     final DatabaseReference students = database.getReference("Students");
     final DatabaseReference instructors = database.getReference("Instructors");
     final DatabaseReference courses = database.getReference("Courses");
     final DatabaseReference records = database.getReference("Records");
+
+    int totalAttended;
+    int totalAbsent;
+    double percentageAttended;
+
     int day;
     int month;
     int year;
+    String sDay;
 
+    static ArrayList<String> attendedList = new ArrayList<String>();
+    static ArrayList<String> absentList = new ArrayList<String>();
+
+
+    public void getAtt ( ) {
+        for (String names : MainActivity.roster_usernames) {
+
+            //pull selected student's attendance record for the course
+            records.child("CS307").child(names).addListenerForSingleValueEvent(new ValueEventListener() {
+                @Override
+                public void onDataChange(DataSnapshot dataSnapshot) {
+                    for (DataSnapshot node: dataSnapshot.getChildren()) {
+
+                        if (node.getKey().toString().equals((month + "-" + sDay + "-" + Integer.toString(year).substring(2)))) {
+
+                            MainActivity.roster_attendance.add(node.getValue().toString());
+
+                            //if all students attendance values have been added
+                            //calculates values and updates UI
+                            if (MainActivity.roster_attendance.size() == MainActivity.roster_usernames.size()) {
+                                //count number of student in attendance
+                                int totalAttended = 0;
+
+                                for (String att : MainActivity.roster_attendance) {
+                                    if (att.equals("Y"))
+                                        totalAttended++;
+                                }
+
+                                int totalAbsent = MainActivity.roster_attendance.size() - totalAttended;
+
+                                double percentageAttended = (((double)totalAttended) / MainActivity.roster_attendance.size()) * 100;
+
+                                //update UI
+                                TextView tvTotalAttended = (TextView) findViewById(R.id.textView1);
+                                tvTotalAttended.setText(String.valueOf(totalAttended));
+
+                                TextView tvTotalAbsent = (TextView) findViewById(R.id.textView2);
+                                tvTotalAbsent.setText(String.valueOf(totalAbsent));
+
+                                TextView tvPercentageAttended = (TextView) findViewById(R.id.textView3);
+                                tvPercentageAttended.setText(String.valueOf(percentageAttended));
+
+                                attendedList.clear();
+                                absentList.clear();
+
+                                for (int i = 0; i < MainActivity.roster_attendance.size(); i++) {
+
+                                    //add usernames to attended and absent list
+                                    if (MainActivity.roster_attendance.get(i).equals("Y"))
+                                        attendedList.add(MainActivity.roster_usernames.get(i));
+                                    else
+                                        absentList.add(MainActivity.roster_usernames.get(i));
+                                }
+
+
+                                MainActivity.roster_attendance.clear();
+                            }
+                        }
+                    }
+                }
+
+                @Override
+                public void onCancelled(DatabaseError databaseError) {
+
+                }
+            });
+        }
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_attendance_class_on_date);
+
 
         Intent intent = getIntent();
         if(intent != null) {
@@ -47,28 +116,27 @@ public class Attendance_class_on_date extends AppCompatActivity {
             year = intent.getIntExtra("Year", 0);
 
 
+
+            if (day <= 9)
+                sDay = "0" + day;
+            else
+                sDay = "" + day;
+
+
+            getAtt();
+
+
             TextView tv = (TextView) findViewById(R.id.date_TextView);
             tv.setText(String.valueOf(month) + "/" + String.valueOf(day) + ", " + String.valueOf(year));
 
-            //TODO pull whole roster attendance on the selected date
-            for (String s : MainActivity.roster_usernames) {
-                records.child("jeff1").child("CS307").child(s).addListenerForSingleValueEvent(new ValueEventListener(.addValueEventListener(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(DataSnapshot dataSnapshot) {
-                        for (DataSnapshot node: dataSnapshot.getChildren()) {
-                            //System.out.println(node.getKey() + " " + node.getValue());
-                            if (node.getKey().equals(month + "-" + day + "-" + Integer.toString(year).substring(2)));
-                            {
-                                MainActivity.roster_attendance.add(node.getValue().toString());
-                            }
-                        }
-                    }
-                    @Override
-                    public void onCancelled(DatabaseError databaseError) {
+            TextView tvTotalAttended = (TextView) findViewById(R.id.textView1);
+            tvTotalAttended.setText(String.valueOf(totalAttended));
 
-                    }
-                });
-            }
+            TextView tvTotalAbsent = (TextView) findViewById(R.id.textView2);
+            tvTotalAbsent.setText(String.valueOf(totalAbsent));
+
+            TextView tvPercentageAttended = (TextView) findViewById(R.id.textView3);
+            tvPercentageAttended.setText(String.valueOf(percentageAttended));
         }
 
         Button attended = (Button)findViewById(R.id.view_students_who_attended_button);

@@ -1,27 +1,58 @@
 {
   "project_info": {
-    "project_number": "14599918552",
-    "firebase_url": "https://blueattinstructor.firebaseio.com",
-    "project_id": "blueattinstructor",
-    "storage_bucket": "blueattinstructor.appspot.com"
+    "project_number": "121972786513",
+    "firebase_url": "https://blueatt-c1ec9.firebaseio.com",
+    "project_id": "blueatt-c1ec9",
+    "storage_bucket": "blueatt-c1ec9.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:14599918552:android:94aa039254fbfb4e",
+        "mobilesdk_app_id": "1:121972786513:android:18dcb47ffde22256",
         "android_client_info": {
-          "package_name": "com.BlueAtt.android"
+          "package_name": "com.example.moonsunhwang.bluatt_student"
         }
       },
       "oauth_client": [
         {
-          "client_id": "14599918552-rcf14kmjfit01hv0i3sndl0454oo101b.apps.googleusercontent.com",
+          "client_id": "121972786513-2i9lcqmk2trh751g523v8nurar8l28ar.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAzLQko6x6zgIRA-zagZ_Qp8dQeIRmvGb8"
+          "current_key": "AIzaSyCLDKrUihAOXZK_XCdlddywINtA4JeA7Ho"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:121972786513:android:810760050eaaa096",
+        "android_client_info": {
+          "package_name": "com.example.moonsunhwang.blueatt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "121972786513-2i9lcqmk2trh751g523v8nurar8l28ar.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLDKrUihAOXZK_XCdlddywINtA4JeA7Ho"
         }
       ],
       "services": {

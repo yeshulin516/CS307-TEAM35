@@ -8,9 +8,23 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
 
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
 import java.util.Calendar;
 
 public class Select_date extends AppCompatActivity {
+
+    final FirebaseDatabase database = FirebaseDatabase.getInstance();
+
+
+    final DatabaseReference students = database.getReference("Students");
+    final DatabaseReference instructors = database.getReference("Instructors");
+    final DatabaseReference courses = database.getReference("Courses");
+    final DatabaseReference records = database.getReference("Records");
 
     private int mDay;
     private int mMonth;
@@ -52,6 +66,8 @@ public class Select_date extends AppCompatActivity {
                 intent.putExtra("Day",mDay);
                 intent.putExtra("Month",mMonth);
                 intent.putExtra("Year",mYear);
+
+
 
                 startActivity(intent);
 

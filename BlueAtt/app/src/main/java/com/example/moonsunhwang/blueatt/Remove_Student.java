@@ -23,6 +23,8 @@ public class Remove_Student extends AppCompatActivity {
     final DatabaseReference courses = database.getReference("Courses");
     final DatabaseReference records = database.getReference("Records");
 
+    String input_name;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,30 +36,22 @@ public class Remove_Student extends AppCompatActivity {
             public void onClick(View v) {
 
                 EditText et1 = (EditText) findViewById(R.id.student_name);
-                String input_name = et1.getText().toString();
+                input_name = et1.getText().toString();
 
                 //check if input username is in the course roster
                 if (MainActivity.roster_usernames.contains(input_name)) {
-                    //TODO stop deletion if dont confirm
                     confirmMessage(btn);
-
-                    instructors.child("jeff1").child("CS307").child(input_name).removeValue();
-                    records.child("CS307").child(input_name).removeValue();
-
-                    //remove student's username and device ID from global array list
-                    int index =  MainActivity.roster_usernames.indexOf(input_name);
-                    MainActivity.roster_usernames.remove(index);
-                    MainActivity.roster_devices.remove(index);
-
                 }
-                //TODO display error meassage, student not in course
-                else;
+                //display error message if student not in roster
+                else
+                    studentDoesntExistMessage(btn);
 
 
             }
         });
 
     }
+
 
     public void confirmMessage(View view) {
 
@@ -67,7 +61,7 @@ public class Remove_Student extends AppCompatActivity {
         confirm_message.setMessage("If you click OK, all the attendance record for the student will be deleted. " +
                 "Click OK to remove a student from the class.");
 
-        // add a button
+        //cancel deletion, do nothin
         confirm_message.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int id) {
@@ -77,12 +71,14 @@ public class Remove_Student extends AppCompatActivity {
             }
         });
 
-        // add a button
+        //confirms they want to delete all data
         confirm_message.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int id) {
 
                 dialog.dismiss();
+
+                deleteRecords();
 
                 AlertDialog.Builder success_message = new AlertDialog.Builder(Remove_Student.this);
                 success_message.setTitle("Success!");
@@ -112,20 +108,27 @@ public class Remove_Student extends AppCompatActivity {
         confirmMessage.show();
     }
 
+    public void deleteRecords () {
+        instructors.child(MainActivity.instructorID).child(MainActivity.courseID).child(input_name).removeValue();
+        records.child(MainActivity.courseID).child(input_name).removeValue();
 
-    public void showSuccessMessage(View view) {
+        //remove student's username and device ID from global array list
+        int index =  MainActivity.roster_usernames.indexOf(input_name);
+        MainActivity.roster_usernames.remove(index);
+        MainActivity.roster_devices.remove(index);
+    }
+
+    public void studentDoesntExistMessage(View view) {
 
         // setup the alert builder
         AlertDialog.Builder success_message = new AlertDialog.Builder(this);
-        success_message.setTitle("Success!");
-        success_message.setMessage("Successfully removed the student from this class");
+        success_message.setTitle("Student Not Found!");
+        success_message.setMessage("Student was not found in course roster.");
 
         // add a button
         success_message.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int id) {
-
-                startActivity(new Intent(Remove_Student.this, Attendance_Record.class));
 
             }
         });

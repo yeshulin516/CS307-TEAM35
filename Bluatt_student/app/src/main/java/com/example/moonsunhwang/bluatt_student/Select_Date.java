@@ -7,26 +7,83 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
+import android.widget.TextView;
+
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.Calendar;
 
 import static android.R.attr.button;
 
 public class Select_Date extends AppCompatActivity {
+
+    final FirebaseDatabase database = FirebaseDatabase.getInstance();
+
+    final DatabaseReference students = database.getReference("Students");
+    final DatabaseReference instructors = database.getReference("Instructors");
+    final DatabaseReference records = database.getReference("Records");
+
     private int mDay;
     private int mMonth;
     private int mYear;
+
+
+    int attended = 0;
+    int absent = 0;
+
+    public void setCounters () {
+        records.child(MainActivity.courseID).child(MainActivity.studentID).addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+
+                for (DataSnapshot node : dataSnapshot.getChildren()) {
+
+                    if (node.getValue().toString().equals("Y"))
+                        attended++;
+                    else
+                        absent++;
+
+                    if (attended + absent == dataSnapshot.getChildrenCount()) {
+                        TextView tvAttended = (TextView) findViewById(R.id.textView1);
+                        tvAttended.setText(String.valueOf(attended));
+
+                        TextView tvAbsent = (TextView) findViewById(R.id.textView2);
+                        tvAbsent.setText(String.valueOf(absent));
+
+                        attended = 0;
+                        absent = 0;
+                    }
+                }
+
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+
+
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_select__date);
-        /*
-        DatePicker datePicker = (DatePicker) findViewById(R.id.datePicker1);
-        mDay = datePicker.getDayOfMonth();
-        mMonth = datePicker.getMonth() + 1;
-        mYear = datePicker.getYear();
-        */
+
+
+        setCounters();
+
+        TextView tvAttended = (TextView) findViewById(R.id.textView1);
+        tvAttended.setText(String.valueOf(attended));
+
+        TextView tvAbsent = (TextView) findViewById(R.id.textView2);
+        tvAbsent.setText(String.valueOf(absent));
+
         Calendar calendar = Calendar.getInstance();
         mDay = calendar.get(Calendar.DAY_OF_MONTH);
         mMonth = calendar.get(Calendar.MONTH) + 1;
