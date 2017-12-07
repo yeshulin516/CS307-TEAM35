@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Bluatt_student</string>
+    <string name="attendance_on_date" formatted="false">Your attendance on date %d, %d, %d.</string>
+</resources>

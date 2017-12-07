@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.moonsunhwang.blueatt">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Select_date"
+            android:label="Attendance for the class" />
+        <activity
+            android:name=".Attendance_class_on_date"
+            android:label="Attendance for the class" />
+        <activity
+            android:name=".Scanning_time_intervals"
+            android:label="Select Timing Intervals" />
+        <activity
+            android:name=".Scanning_for_attendance"
+            android:label="Scanning for Attendance" />
+        <activity
+            android:name=".Import_roster"
+            android:label="Import Roster" />
+        <activity android:name=".List_of_Students_Attended" />
+        <activity android:name=".List_of_Students_Missed" />
+        <activity android:name=".Find_student" />
+        <activity android:name=".Specific_Student_Select_Date" />
+        <activity android:name=".Student_Record_Result" />
+        <activity android:name=".Attendance_Record" />
+        <activity android:name=".Add_Student" />
+        <activity android:name=".Remove_Student" />
+        <activity android:name=".Bluetooth_MainPage" />
+        <activity android:name=".Bluetooth_DeviceList" />
+        <activity android:name=".Main_Page" />
+        <activity android:name=".Semester_view"></activity>
+    </application>
+
+</manifest>
